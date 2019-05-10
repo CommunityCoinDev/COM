@@ -13,9 +13,7 @@ The CommunityCoin (COM) is a community based and backed project for numerous dif
 We're not starting to bring up some new fancy consensus algorithms since that's not our core task. We want to have a proven stable solution that fits our needs which can be used as a base for further development.
 
 ### CommunityCoin Resources
-* Client and Source:
-Client to be released, not official yet
-[Source Code](https://github.com/CommunityCoinDev/COM)
+* Client and Source: Client to be released (not official yet), [Source Code](https://github.com/CommunityCoinDev/COM)
 * Documentation: [Peercoin Whitepaper](https://peercoin.net/resources.html#whitepaper)
 * Help: 
 [Website](https://www.communitycoin.world)
