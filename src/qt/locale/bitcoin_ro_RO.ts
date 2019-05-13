@@ -1,94 +1,81 @@
 <?xml version="1.0" ?><!DOCTYPE TS><TS language="ro_RO" version="2.0">
-<defaultcodec>UTF-8</defaultcodec>
 <context>
     <name>AboutDialog</name>
     <message>
         <location filename="../forms/aboutdialog.ui" line="+14"/>
-        <source>About Peercoin</source>
-        <translation>Despre Peercoin</translation>
+        <source>About Philosopherstone</source>
+        <translation>Despre Philosopherstone</translation>
     </message>
     <message>
         <location line="+39"/>
-        <source>&lt;b&gt;Peercoin&lt;/b&gt; version</source>
-        <translation>&lt;b&gt;Peercoin&lt;/b&gt; versiunea</translation>
+        <source>&lt;b&gt;Bitcoin&lt;/b&gt; version</source>
+        <translation>Versiune &lt;b&gt;Bitcoin&lt;/b&gt;</translation>
     </message>
     <message>
         <location line="+57"/>
         <source>
 This is experimental software.
 
-Distributed under the MIT/X11 software license, see the accompanying file COPYING or https://www.opensource.org/licenses/mit-license.php.
+Distributed under the MIT/X11 software license, see the accompanying file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-This product includes software developed by the OpenSSL Project for use in the OpenSSL Toolkit (https://www.openssl.org/) and cryptographic software written by Eric Young (eay@cryptsoft.com) and UPnP software written by Thomas Bernard.
+This product includes software developed by the OpenSSL Project for use in the OpenSSL Toolkit (http://www.openssl.org/) and cryptographic software written by Eric Young (eay@cryptsoft.com) and UPnP software written by Thomas Bernard.</source>
+        <translation>
+Acesta este un program experimental.
 
-More information can be found on the Peercoin official website: https://peercoin.net/.</source>
-        <translation type="unfinished"/>
+Distribuit sub licența de programe MIT/X11, vezi fișierul însoțitor COPYING sau http://www.opensource.org/licenses/mit-license.php.
+
+Acest produs include programe dezvoltate de către OpenSSL Project pentru a fi folosite în OpenSSL Toolkit (http://www.openssl.org/) și programe criptografice scrise de către Eric Young (eay@cryptsoft.com) și programe UPnP scrise de către Thomas Bernard.</translation>
     </message>
     <message>
         <location filename="../aboutdialog.cpp" line="+14"/>
         <source>Copyright</source>
-        <translation type="unfinished"/>
+        <translation>Drepturi de autor</translation>
     </message>
     <message>
         <location line="+0"/>
-        <source>The Peercoin developers</source>
-        <translation type="unfinished"/>
+        <source>The Philosopherstone developers</source>
+        <translation>Dezvoltatorii Philosopherstone</translation>
     </message>
 </context>
 <context>
     <name>AddressBookPage</name>
     <message>
-        <location filename="../forms/addressbookpage.ui" line="+14"/>
-        <source>Address Book</source>
-        <translation>Listă de adrese</translation>
-    </message>
-    <message>
-        <location line="+19"/>
+        <location filename="../forms/addressbookpage.ui" line="+30"/>
         <source>Double-click to edit address or label</source>
-        <translation>Dublu-click pentru a edita adresa sau eticheta</translation>
+        <translation>Dublu-clic pentru a edita adresa sau eticheta</translation>
     </message>
     <message>
         <location line="+27"/>
         <source>Create a new address</source>
-        <translation>Creaţi o adresă nouă</translation>
+        <translation>Creează o adresă nouă</translation>
     </message>
     <message>
-        <location line="+14"/>
+        <location line="+3"/>
+        <source>&amp;New</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location line="+11"/>
         <source>Copy the currently selected address to the system clipboard</source>
-        <translation>Copiați adresa selectată în clipboard</translation>
+        <translation>Copiază adresa selectată în clipboard</translation>
     </message>
     <message>
-        <location line="-11"/>
-        <source>&amp;New Address</source>
-        <translation>&amp;Adresă nouă</translation>
+        <location line="+3"/>
+        <source>&amp;Copy</source>
+        <translation type="unfinished"/>
     </message>
     <message>
-        <location filename="../addressbookpage.cpp" line="+63"/>
-        <source>These are your Peercoin addresses for receiving payments. You may want to give a different one to each sender so you can keep track of who is paying you.</source>
-        <translation>Acestea sunt adresele dumneavoastră Peercoin pentru a primi plăţi. Dacă doriţi, puteți da o adresa diferită fiecărui expeditor, pentru a putea ţine evidenţa plăţilor.</translation>
+        <location line="+52"/>
+        <source>C&amp;lose</source>
+        <translation type="unfinished"/>
     </message>
     <message>
-        <location filename="../forms/addressbookpage.ui" line="+14"/>
+        <location filename="../addressbookpage.cpp" line="+72"/>
         <source>&amp;Copy Address</source>
         <translation>&amp;Copiază adresa</translation>
     </message>
     <message>
-        <location line="+11"/>
-        <source>Show &amp;QR Code</source>
-        <translation>Arata codul QR</translation>
-    </message>
-    <message>
-        <location line="+11"/>
-        <source>Sign a message to prove you own a Peercoin address</source>
-        <translation>Semneaza mesajul pentru a dovedi ca detii aceasta adresa Bitocin</translation>
-    </message>
-    <message>
-        <location line="+3"/>
-        <source>Sign &amp;Message</source>
-        <translation>Semneaza mesajul</translation>
-    </message>
-    <message>
-        <location line="+25"/>
+        <location filename="../forms/addressbookpage.ui" line="-41"/>
         <source>Delete the currently selected address from the list</source>
         <translation>Sterge adresele curent selectate din lista</translation>
     </message>
@@ -100,30 +87,50 @@ More information can be found on the Peercoin official website: https://peercoin
     <message>
         <location line="+3"/>
         <source>&amp;Export</source>
-        <translation type="unfinished"/>
+        <translation>&amp;Exportă</translation>
     </message>
     <message>
-        <location line="-44"/>
-        <source>Verify a message to ensure it was signed with a specified Peercoin address</source>
-        <translation>Verifica mesajul pentru a te asigura ca a fost insemnat cu o adresa peercoin specifica</translation>
-    </message>
-    <message>
-        <location line="+3"/>
-        <source>&amp;Verify Message</source>
-        <translation> Verifica mesajele</translation>
-    </message>
-    <message>
-        <location line="+14"/>
+        <location line="-27"/>
         <source>&amp;Delete</source>
-        <translation>&amp;Șterge</translation>
+        <translation>Ște&amp;rge</translation>
     </message>
     <message>
-        <location filename="../addressbookpage.cpp" line="-5"/>
-        <source>These are your Peercoin addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
+        <location filename="../addressbookpage.cpp" line="-30"/>
+        <source>Choose the address to send stones to</source>
         <translation type="unfinished"/>
     </message>
     <message>
-        <location line="+13"/>
+        <location line="+1"/>
+        <source>Choose the address to receive stones with</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location line="+5"/>
+        <source>C&amp;hoose</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location line="+6"/>
+        <source>Sending addresses</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Receiving addresses</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location line="+7"/>
+        <source>These are your Philosopherstone addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location line="+4"/>
+        <source>These are your Philosopherstone addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location line="+7"/>
         <source>Copy &amp;Label</source>
         <translation>Copiază &amp;eticheta</translation>
     </message>
@@ -133,35 +140,30 @@ More information can be found on the Peercoin official website: https://peercoin
         <translation>&amp;Editează</translation>
     </message>
     <message>
-        <location line="+1"/>
-        <source>Send &amp;Coins</source>
+        <location line="+197"/>
+        <source>Export Address List</source>
         <translation type="unfinished"/>
-    </message>
-    <message>
-        <location line="+260"/>
-        <source>Export Address Book Data</source>
-        <translation>Exportă Lista de adrese</translation>
     </message>
     <message>
         <location line="+1"/>
         <source>Comma separated file (*.csv)</source>
-        <translation>Fisier csv: valori separate prin virgulă (*.csv)</translation>
+        <translation>Valori separate prin virgulă (*.csv)</translation>
     </message>
     <message>
         <location line="+13"/>
         <source>Error exporting</source>
-        <translation>Eroare la exportare.</translation>
+        <translation>Eroare la exportare</translation>
     </message>
     <message>
         <location line="+0"/>
         <source>Could not write to file %1.</source>
-        <translation>Eroare la scrierea în fişerul %1.</translation>
+        <translation>Nu s-a putut scrie în fișierul %1.</translation>
     </message>
 </context>
 <context>
     <name>AddressTableModel</name>
     <message>
-        <location filename="../addresstablemodel.cpp" line="+144"/>
+        <location filename="../addresstablemodel.cpp" line="+164"/>
         <source>Label</source>
         <translation>Etichetă</translation>
     </message>
@@ -181,27 +183,27 @@ More information can be found on the Peercoin official website: https://peercoin
     <message>
         <location filename="../forms/askpassphrasedialog.ui" line="+26"/>
         <source>Passphrase Dialog</source>
-        <translation type="unfinished"/>
+        <translation>Dialogul pentru fraza de acces</translation>
     </message>
     <message>
         <location line="+21"/>
         <source>Enter passphrase</source>
-        <translation>Introduceți fraza de acces.</translation>
+        <translation>Introdu fraza de acces</translation>
     </message>
     <message>
         <location line="+14"/>
         <source>New passphrase</source>
-        <translation>Frază de acces nouă </translation>
+        <translation>Frază de acces nouă</translation>
     </message>
     <message>
         <location line="+14"/>
         <source>Repeat new passphrase</source>
-        <translation>Repetaţi noua frază de acces</translation>
+        <translation>Repetă noua frază de acces</translation>
     </message>
     <message>
-        <location filename="../askpassphrasedialog.cpp" line="+33"/>
+        <location filename="../askpassphrasedialog.cpp" line="+34"/>
         <source>Enter the new passphrase to the wallet.&lt;br/&gt;Please use a passphrase of &lt;b&gt;10 or more random characters&lt;/b&gt;, or &lt;b&gt;eight or more words&lt;/b&gt;.</source>
-        <translation>Introduceţi noua parolă a portofelului electronic.&lt;br/&gt;Vă rugăm să folosiţi &lt;b&gt;minimum 10 caractere aleatoare&lt;/b&gt;, sau &lt;b&gt;minimum 8 cuvinte&lt;/b&gt;.</translation>
+        <translation>Introdu noua parolă a portofelului electronic.&lt;br/&gt;Te rog folosește &lt;b&gt;minim 10 caractere aleatoare&lt;/b&gt;, sau &lt;b&gt;minim 8 cuvinte&lt;/b&gt;.</translation>
     </message>
     <message>
         <location line="+1"/>
@@ -211,7 +213,7 @@ More information can be found on the Peercoin official website: https://peercoin
     <message>
         <location line="+3"/>
         <source>This operation needs your wallet passphrase to unlock the wallet.</source>
-        <translation>Aceasta operație are nevoie de un portofel deblocat.</translation>
+        <translation>Această acțiune necesită fraza ta de acces pentru deblocarea portofelului.</translation>
     </message>
     <message>
         <location line="+5"/>
@@ -221,7 +223,7 @@ More information can be found on the Peercoin official website: https://peercoin
     <message>
         <location line="+3"/>
         <source>This operation needs your wallet passphrase to decrypt the wallet.</source>
-        <translation>Această operaţiune necesită parola pentru decriptarea portofelului electronic.</translation>
+        <translation>Această acțiune necesită fraza ta de acces pentru decriptarea portofelului.</translation>
     </message>
     <message>
         <location line="+5"/>
@@ -236,17 +238,17 @@ More information can be found on the Peercoin official website: https://peercoin
     <message>
         <location line="+1"/>
         <source>Enter the old and new passphrase to the wallet.</source>
-        <translation>Introduceţi vechea parola a portofelului eletronic şi apoi pe cea nouă.</translation>
+        <translation>Introdu vechea și noua parolă pentru portofel.</translation>
     </message>
     <message>
         <location line="+46"/>
         <source>Confirm wallet encryption</source>
-        <translation>Confirmă criptarea portofelului.</translation>
+        <translation>Confirmă criptarea portofelului</translation>
     </message>
     <message>
         <location line="+1"/>
-        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR PEERCOINS&lt;/b&gt;!</source>
-        <translation>Atenție: Dacă pierdeţi parola portofelului electronic dupa criptare, &lt;b&gt;VEŢI PIERDE ÎNTREAGA SUMĂ DE PEERCOIN ACUMULATĂ&lt;/b&gt;!</translation>
+        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR STONES&lt;/b&gt;!</source>
+        <translation>Atenție: Dacă pierdeţi parola portofelului electronic dupa criptare, &lt;b&gt;VEŢI PIERDE ÎNTREAGA SUMĂ DE BITCOIN ACUMULATĂ&lt;/b&gt;!</translation>
     </message>
     <message>
         <location line="+0"/>
@@ -268,12 +270,12 @@ More information can be found on the Peercoin official website: https://peercoin
         <location line="-130"/>
         <location line="+58"/>
         <source>Wallet encrypted</source>
-        <translation>Portofel criptat </translation>
+        <translation>Portofel criptat</translation>
     </message>
     <message>
         <location line="-56"/>
-        <source>Peercoin will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your peercoins from being stolen by malware infecting your computer.</source>
-        <translation>Peercoin se va închide acum pentru a termina procesul de criptare. Amintiți-vă că criptarea portofelului dumneavoastră nu poate proteja în totalitate peercoins dvs. de a fi furate de intentii rele.</translation>
+        <source>Philosopherstone will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your stones from being stolen by malware infecting your computer.</source>
+        <translation>Philosopherstone se va închide acum pentru a termina procesul de criptare. Ține minte că criptarea portofelului nu te poate proteja în totalitate de furtul monedelor de către programe dăunătoare care îți infectează calculatorul.</translation>
     </message>
     <message>
         <location line="+13"/>
@@ -281,7 +283,7 @@ More information can be found on the Peercoin official website: https://peercoin
         <location line="+42"/>
         <location line="+6"/>
         <source>Wallet encryption failed</source>
-        <translation>Criptarea portofelului a eșuat.</translation>
+        <translation>Criptarea portofelului a eșuat</translation>
     </message>
     <message>
         <location line="-54"/>
@@ -292,24 +294,24 @@ More information can be found on the Peercoin official website: https://peercoin
         <location line="+7"/>
         <location line="+48"/>
         <source>The supplied passphrases do not match.</source>
-        <translation>Fraza de acces introdusă nu se potrivește.</translation>
+        <translation>Frazele de acces introduse nu se potrivesc.</translation>
     </message>
     <message>
         <location line="-37"/>
         <source>Wallet unlock failed</source>
-        <translation>Deblocarea portofelului electronic a eşuat.</translation>
+        <translation>Deblocarea portofelului a eșuat</translation>
     </message>
     <message>
         <location line="+1"/>
         <location line="+11"/>
         <location line="+19"/>
         <source>The passphrase entered for the wallet decryption was incorrect.</source>
-        <translation>Parola introdusă pentru decriptarea portofelului electronic a fost incorectă.</translation>
+        <translation>Fraza de acces introdusă pentru decriptarea portofelului a fost incorectă.</translation>
     </message>
     <message>
         <location line="-20"/>
         <source>Wallet decryption failed</source>
-        <translation>Decriptarea portofelului electronic a eşuat.</translation>
+        <translation>Decriptarea portofelului a eșuat</translation>
     </message>
     <message>
         <location line="+14"/>
@@ -320,69 +322,60 @@ More information can be found on the Peercoin official website: https://peercoin
 <context>
     <name>BitcoinGUI</name>
     <message>
-        <location filename="../bitcoingui.cpp" line="+233"/>
+        <location filename="../bitcoingui.cpp" line="+250"/>
         <source>Sign &amp;message...</source>
-        <translation>Semneaza &amp;mesaj...</translation>
+        <translation>Semnează &amp;mesaj...</translation>
     </message>
     <message>
-        <location line="+280"/>
+        <location line="+254"/>
         <source>Synchronizing with network...</source>
-        <translation>Se sincronizează cu reţeaua...</translation>
+        <translation>Se sincronizează cu rețeaua...</translation>
     </message>
     <message>
-        <location line="-349"/>
+        <location line="-324"/>
         <source>&amp;Overview</source>
-        <translation>&amp;Detalii</translation>
+        <translation>&amp;Imagine de ansamblu</translation>
     </message>
     <message>
         <location line="+1"/>
         <source>Show general overview of wallet</source>
-        <translation>Afişează detalii despre portofelul electronic</translation>
+        <translation>Arată o stare generală de ansamblu a portofelului</translation>
     </message>
     <message>
         <location line="+20"/>
         <source>&amp;Transactions</source>
-        <translation>&amp;Tranzacţii</translation>
+        <translation>&amp;Tranzacții</translation>
     </message>
     <message>
         <location line="+1"/>
         <source>Browse transaction history</source>
-        <translation>Istoricul tranzacţiilor</translation>
+        <translation>Răsfoiește istoricul tranzacțiilor</translation>
     </message>
     <message>
-        <location line="+7"/>
-        <source>Edit the list of stored addresses and labels</source>
-        <translation>Editaţi lista de adrese şi etichete.</translation>
-    </message>
-    <message>
-        <location line="-14"/>
-        <source>Show the list of addresses for receiving payments</source>
-        <translation>Lista de adrese pentru recepţionarea plăţilor</translation>
-    </message>
-    <message>
-        <location line="+31"/>
+        <location line="+15"/>
         <source>E&amp;xit</source>
-        <translation>Ieșire</translation>
+        <translation>&amp;Ieșire</translation>
     </message>
     <message>
         <location line="+1"/>
         <source>Quit application</source>
-        <translation>Părăsiţi aplicaţia</translation>
+        <translation>Închide aplicația</translation>
     </message>
     <message>
-        <location line="+4"/>
-        <source>Show information about Peercoin</source>
-        <translation>Informaţii despre Peercoin</translation>
+        <location line="+7"/>
+        <source>Show information about Philosopherstone</source>
+        <translation>Arată informații despre Philosopherstone</translation>
     </message>
     <message>
+        <location line="+3"/>
         <location line="+2"/>
         <source>About &amp;Qt</source>
         <translation>Despre &amp;Qt</translation>
     </message>
     <message>
-        <location line="+1"/>
+        <location line="+2"/>
         <source>Show information about Qt</source>
-        <translation>Informaţii despre Qt</translation>
+        <translation>Arată informații despre Qt</translation>
     </message>
     <message>
         <location line="+2"/>
@@ -390,166 +383,181 @@ More information can be found on the Peercoin official website: https://peercoin
         <translation>&amp;Setări...</translation>
     </message>
     <message>
-        <location line="+6"/>
+        <location line="+9"/>
         <source>&amp;Encrypt Wallet...</source>
         <translation>Criptează portofelul electronic...</translation>
     </message>
     <message>
         <location line="+3"/>
         <source>&amp;Backup Wallet...</source>
-        <translation>&amp;Backup portofelul electronic...</translation>
+        <translation>&amp;Fă o copie de siguranță a  portofelului...</translation>
     </message>
     <message>
         <location line="+2"/>
         <source>&amp;Change Passphrase...</source>
-        <translation>&amp;Schimbă parola...</translation>
+        <translation>S&amp;chimbă parola...</translation>
     </message>
     <message>
-        <location line="+285"/>
+        <location line="+259"/>
         <source>Importing blocks from disk...</source>
         <translation>Importare blocks de pe disk...</translation>
     </message>
     <message>
         <location line="+3"/>
         <source>Reindexing blocks on disk...</source>
-        <translation type="unfinished"/>
+        <translation>Se reindexează blocurile pe disc...</translation>
     </message>
     <message>
-        <location line="-347"/>
-        <source>Send coins to a Peercoin address</source>
-        <translation>&amp;Trimiteţi Peercoin către o anumită adresă</translation>
+        <location line="-322"/>
+        <source>Send stones to a Philosopherstone address</source>
+        <translation>Trimite monede către o adresă Philosopherstone</translation>
     </message>
     <message>
-        <location line="+49"/>
-        <source>Modify configuration options for Peercoin</source>
-        <translation>Modifică setările pentru Peercoin</translation>
+        <location line="+47"/>
+        <source>Modify configuration options for Philosopherstone</source>
+        <translation>Modifică opțiunile de configurare pentru Philosopherstone</translation>
     </message>
     <message>
-        <location line="+9"/>
+        <location line="+12"/>
         <source>Backup wallet to another location</source>
-        <translation>Creaza copie de rezerva a portofelului intr-o locatie diferita</translation>
+        <translation>Creează o copie de rezervă a portofelului într-o locație diferită</translation>
     </message>
     <message>
         <location line="+2"/>
         <source>Change the passphrase used for wallet encryption</source>
-        <translation>&amp;Schimbă parola folosită pentru criptarea portofelului electronic</translation>
+        <translation>Schimbă fraza de acces folosită pentru criptarea portofelului</translation>
     </message>
     <message>
         <location line="+6"/>
         <source>&amp;Debug window</source>
-        <translation>&amp; Fereastra debug</translation>
+        <translation>Fereastră &amp;debug</translation>
     </message>
     <message>
         <location line="+1"/>
         <source>Open debugging and diagnostic console</source>
-        <translation>Deschide consola de debug si diagnosticare</translation>
+        <translation>Deschide consola de debug și diagnosticare</translation>
     </message>
     <message>
         <location line="-4"/>
         <source>&amp;Verify message...</source>
-        <translation>Verifica mesajul</translation>
+        <translation>&amp;Verifică mesajul...</translation>
     </message>
     <message>
-        <location line="-165"/>
-        <location line="+530"/>
-        <source>Peercoin</source>
-        <translation>Peercoin</translation>
+        <location line="-180"/>
+        <location line="+6"/>
+        <location line="+513"/>
+        <source>Philosopherstone</source>
+        <translation>Philosopherstone</translation>
     </message>
     <message>
-        <location line="-530"/>
+        <location line="-519"/>
+        <location line="+6"/>
         <source>Wallet</source>
         <translation>Portofelul</translation>
     </message>
     <message>
-        <location line="+101"/>
+        <location line="+109"/>
         <source>&amp;Send</source>
-        <translation type="unfinished"/>
+        <translation>&amp;Trimite</translation>
     </message>
     <message>
         <location line="+7"/>
         <source>&amp;Receive</source>
-        <translation type="unfinished"/>
+        <translation>&amp;Primește</translation>
+    </message>
+    <message>
+        <location line="+28"/>
+        <location line="+2"/>
+        <source>&amp;About Philosopherstone</source>
+        <translation>&amp;Despre Philosopherstone</translation>
     </message>
     <message>
         <location line="+14"/>
-        <source>&amp;Addresses</source>
-        <translation type="unfinished"/>
-    </message>
-    <message>
-        <location line="+22"/>
-        <source>&amp;About Peercoin</source>
-        <translation>&amp;Despre Peercoin</translation>
-    </message>
-    <message>
-        <location line="+9"/>
+        <location line="+2"/>
         <source>&amp;Show / Hide</source>
         <translation>Arata/Ascunde</translation>
     </message>
     <message>
         <location line="+1"/>
         <source>Show or hide the main Window</source>
-        <translation type="unfinished"/>
+        <translation>Arată sau ascunde fereastra principală</translation>
     </message>
     <message>
         <location line="+3"/>
         <source>Encrypt the private keys that belong to your wallet</source>
-        <translation type="unfinished"/>
-    </message>
-    <message>
-        <location line="+1"/>
-        <source>Decrypt wallet only for minting. Sending coins will still require the password.</source>
-        <translation type="unfinished"></translation>
+        <translation>Criptează cheile private ale portofelului tău</translation>
     </message>
     <message>
         <location line="+7"/>
-        <source>Sign messages with your Peercoin addresses to prove you own them</source>
-        <translation type="unfinished"/>
+        <source>Sign messages with your Philosopherstone addresses to prove you own them</source>
+        <translation>Semnează mesaje cu adresa ta Philosopherstone pentru a dovedi că îți aparțin</translation>
     </message>
     <message>
         <location line="+2"/>
-        <source>Verify messages to ensure they were signed with specified Peercoin addresses</source>
-        <translation type="unfinished"/>
+        <source>Verify messages to ensure they were signed with specified Philosopherstone addresses</source>
+        <translation>Verifică mesaje pentru a te asigura că au fost semnate cu adresa Philosopherstone specificată</translation>
     </message>
     <message>
-        <location line="+3"/>
-        <source>UI to create multisig addresses</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location line="+28"/>
+        <location line="+35"/>
         <source>&amp;File</source>
-        <translation>&amp;Fişier</translation>
+        <translation>&amp;Fișier</translation>
     </message>
     <message>
-        <location line="+7"/>
+        <location line="+10"/>
         <source>&amp;Settings</source>
         <translation>&amp;Setări</translation>
     </message>
     <message>
         <location line="+6"/>
         <source>&amp;Help</source>
-        <translation>&amp;Ajutor</translation>
+        <translation>A&amp;jutor</translation>
     </message>
     <message>
         <location line="+9"/>
         <source>Tabs toolbar</source>
-        <translation>Bara de ferestre de lucru</translation>
+        <translation>Bara de file</translation>
     </message>
     <message>
-        <location line="+17"/>
-        <location line="+10"/>
+        <location line="-235"/>
+        <location line="+294"/>
         <source>[testnet]</source>
         <translation>[testnet]</translation>
     </message>
     <message>
-        <location line="+47"/>
-        <source>Peercoin client</source>
-        <translation>Client Peercoin</translation>
+        <location line="-177"/>
+        <source>Request payments (generates QR codes and stones: URIs)</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location line="+63"/>
+        <source>&amp;Used sending addresses...</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Show the list of used sending addresses and labels</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Used &amp;receiving addresses...</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Show the list of used receiving addresses and labels</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location line="+106"/>
+        <location line="+5"/>
+        <source>Philosopherstone client</source>
+        <translation>Client Philosopherstone</translation>
     </message>
     <message numerus="yes">
-        <location line="+141"/>
-        <source>%n active connection(s) to Peercoin network</source>
-        <translation><numerusform>%n active connections to Peercoin network</numerusform><numerusform>%n active connections to Peercoin network</numerusform><numerusform>%n active connections to Peercoin network</numerusform></translation>
+        <location line="+120"/>
+        <source>%n active connection(s) to Philosopherstone network</source>
+        <translation><numerusform>%n conexiune activă către rețeaua Philosopherstone</numerusform><numerusform>%n conexiuni active către rețeaua Philosopherstone</numerusform><numerusform>%n de conexiuni active către rețeaua Philosopherstone</numerusform></translation>
     </message>
     <message>
         <location line="+22"/>
@@ -564,32 +572,32 @@ More information can be found on the Peercoin official website: https://peercoin
     <message>
         <location line="+4"/>
         <source>Processed %1 blocks of transaction history.</source>
-        <translation type="unfinished"/>
+        <translation>S-au procesat %1 blocuri din istoricul tranzacțiilor.</translation>
     </message>
     <message numerus="yes">
         <location line="+20"/>
         <source>%n hour(s)</source>
-        <translation type="unfinished"><numerusform></numerusform><numerusform></numerusform><numerusform></numerusform></translation>
+        <translation><numerusform>%n oră</numerusform><numerusform>%n ore</numerusform><numerusform>%n ore</numerusform></translation>
     </message>
     <message numerus="yes">
         <location line="+4"/>
         <source>%n day(s)</source>
-        <translation type="unfinished"><numerusform></numerusform><numerusform></numerusform><numerusform></numerusform></translation>
+        <translation><numerusform>%n zi</numerusform><numerusform>%n zile</numerusform><numerusform>%n zile</numerusform></translation>
     </message>
     <message numerus="yes">
         <location line="+4"/>
         <source>%n week(s)</source>
-        <translation type="unfinished"><numerusform></numerusform><numerusform></numerusform><numerusform></numerusform></translation>
+        <translation><numerusform>%n săptămână</numerusform><numerusform>%n săptămâni</numerusform><numerusform>%n de săptămâni</numerusform></translation>
     </message>
     <message>
         <location line="+4"/>
         <source>%1 behind</source>
-        <translation type="unfinished"/>
+        <translation>%1 în urmă</translation>
     </message>
     <message>
         <location line="+14"/>
         <source>Last received block was generated %1 ago.</source>
-        <translation type="unfinished"/>
+        <translation>Ultimul bloc recepționat a fost generat acum %1.</translation>
     </message>
     <message>
         <location line="+2"/>
@@ -597,27 +605,27 @@ More information can be found on the Peercoin official website: https://peercoin
         <translation type="unfinished"/>
     </message>
     <message>
-        <location line="+22"/>
+        <location line="+27"/>
         <source>Error</source>
-        <translation type="unfinished"/>
+        <translation>Eroare</translation>
     </message>
     <message>
         <location line="+3"/>
         <source>Warning</source>
-        <translation type="unfinished"/>
+        <translation>Avertizare</translation>
     </message>
     <message>
         <location line="+3"/>
         <source>Information</source>
+        <translation>Informație</translation>
+    </message>
+    <message>
+        <location line="+77"/>
+        <source>This transaction is over the size limit. You can still send it for a fee of %1, which goes to the nodes that process your transaction and helps to support the network. Do you want to pay the fee?</source>
         <translation type="unfinished"/>
     </message>
     <message>
-        <location line="+70"/>
-        <source>You can send this transaction for a fee of %1, which is burned and prevents spamming of the network. Do you want to pay the fee?</source>
-        <translation type="unfinished"/>
-    </message>
-    <message>
-        <location line="-140"/>
+        <location line="-152"/>
         <source>Up to date</source>
         <translation>Actualizat</translation>
     </message>
@@ -627,19 +635,19 @@ More information can be found on the Peercoin official website: https://peercoin
         <translation>Se actualizează...</translation>
     </message>
     <message>
-        <location line="+113"/>
+        <location line="+124"/>
         <source>Confirm transaction fee</source>
-        <translation>Confirma taxa tranzactiei</translation>
+        <translation>Confirmă taxa de tranzacție</translation>
     </message>
     <message>
         <location line="+8"/>
         <source>Sent transaction</source>
-        <translation>Tranzacţie expediată</translation>
+        <translation>Tranzacție expediată</translation>
     </message>
     <message>
         <location line="+0"/>
         <source>Incoming transaction</source>
-        <translation>Tranzacţie recepţionată</translation>
+        <translation>Tranzacție recepționată</translation>
     </message>
     <message>
         <location line="+1"/>
@@ -648,42 +656,44 @@ Amount: %2
 Type: %3
 Address: %4
 </source>
-        <translation>Data: %1⏎ Suma: %2⏎ Tipul: %3⏎ Addresa: %4⏎</translation>
+        <translation>Data: %1
+Suma: %2
+Tipul: %3
+Adresa: %4
+</translation>
     </message>
     <message>
-        <location line="+33"/>
-        <location line="+23"/>
+        <location line="+34"/>
         <source>URI handling</source>
+        <translation>Gestionare URI</translation>
+    </message>
+    <message>
+        <location line="+0"/>
+        <source>URI can not be parsed! This can be caused by an invalid Philosopherstone address or malformed URI parameters.</source>
         <translation type="unfinished"/>
     </message>
     <message>
-        <location line="-23"/>
-        <location line="+23"/>
-        <source>URI can not be parsed! This can be caused by an invalid Peercoin address or malformed URI parameters.</source>
-        <translation type="unfinished"/>
-    </message>
-    <message>
-        <location line="+17"/>
+        <location line="+45"/>
         <source>Wallet is &lt;b&gt;encrypted&lt;/b&gt; and currently &lt;b&gt;unlocked&lt;/b&gt;</source>
-        <translation>Portofelul electronic este &lt;b&gt;criptat&lt;/b&gt; iar in momentul de faţă este &lt;b&gt;deblocat&lt;/b&gt;</translation>
+        <translation>Portofelul este &lt;b&gt;criptat&lt;/b&gt; iar în momentul de față este &lt;b&gt;deblocat&lt;/b&gt;</translation>
     </message>
     <message>
         <location line="+8"/>
         <source>Wallet is &lt;b&gt;encrypted&lt;/b&gt; and currently &lt;b&gt;locked&lt;/b&gt;</source>
-        <translation>Portofelul electronic este &lt;b&gt;criptat&lt;/b&gt; iar in momentul de faţă este &lt;b&gt;blocat&lt;/b&gt;</translation>
+        <translation>Portofelul este &lt;b&gt;criptat&lt;/b&gt; iar în momentul de față este &lt;b&gt;blocat&lt;/b&gt;</translation>
     </message>
     <message>
-        <location filename="../bitcoin.cpp" line="+111"/>
-        <source>A fatal error occurred. Peercoin can no longer continue safely and will quit.</source>
+        <location filename="../bitcoin.cpp" line="+110"/>
+        <source>A fatal error occurred. Philosopherstone can no longer continue safely and will quit.</source>
         <translation type="unfinished"/>
     </message>
 </context>
 <context>
     <name>ClientModel</name>
     <message>
-        <location filename="../clientmodel.cpp" line="+104"/>
+        <location filename="../clientmodel.cpp" line="+115"/>
         <source>Network Alert</source>
-        <translation>Alerta retea</translation>
+        <translation>Alertă rețea</translation>
     </message>
 </context>
 <context>
@@ -696,22 +706,22 @@ Address: %4
     <message>
         <location line="+11"/>
         <source>&amp;Label</source>
-        <translation>&amp;Eticheta</translation>
+        <translation>&amp;Etichetă</translation>
     </message>
     <message>
         <location line="+10"/>
-        <source>The label associated with this address book entry</source>
-        <translation>Eticheta asociată cu această înregistrare în Lista de adrese</translation>
+        <source>The label associated with this address list entry</source>
+        <translation type="unfinished"/>
     </message>
     <message>
-        <location line="+7"/>
+        <location line="+17"/>
+        <source>The address associated with this address list entry. This can only be modified for sending addresses.</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location line="-10"/>
         <source>&amp;Address</source>
         <translation>&amp;Adresă</translation>
-    </message>
-    <message>
-        <location line="+10"/>
-        <source>The address associated with this address book entry. This can only be modified for sending addresses.</source>
-        <translation>Adresa asociată cu această înregistrare în Lista de adrese. Aceasta poate fi modificată doar pentru expediere.</translation>
     </message>
     <message>
         <location filename="../editaddressdialog.cpp" line="+21"/>
@@ -736,34 +746,62 @@ Address: %4
     <message>
         <location line="+76"/>
         <source>The entered address &quot;%1&quot; is already in the address book.</source>
-        <translation>Adresa introdusă &quot;%1&quot; se află deja în Lista de adrese.</translation>
+        <translation>Adresa introdusă &quot;%1&quot; se află deja în lista de adrese.</translation>
     </message>
     <message>
         <location line="-5"/>
-        <source>The entered address &quot;%1&quot; is not a valid Peercoin address.</source>
-        <translation>Adresa introdusă &quot;%1&quot; nu este o adresă peercoin valabilă.</translation>
+        <source>The entered address &quot;%1&quot; is not a valid Philosopherstone address.</source>
+        <translation>Adresa introdusă &quot;%1&quot; nu este o adresă bitcoin validă.</translation>
     </message>
     <message>
         <location line="+10"/>
         <source>Could not unlock wallet.</source>
-        <translation>Portofelul electronic nu a putut fi deblocat .</translation>
+        <translation>Portofelul nu a putut fi deblocat.</translation>
     </message>
     <message>
         <location line="+5"/>
         <source>New key generation failed.</source>
-        <translation>New key generation failed.</translation>
+        <translation>Generarea noii chei a eșuat.</translation>
+    </message>
+</context>
+<context>
+    <name>FreespaceChecker</name>
+    <message>
+        <location filename="../intro.cpp" line="+61"/>
+        <source>A new data directory will be created.</source>
+        <translation>Va fi creat un nou dosar de date.</translation>
+    </message>
+    <message>
+        <location line="+22"/>
+        <source>name</source>
+        <translation>nume</translation>
+    </message>
+    <message>
+        <location line="+2"/>
+        <source>Directory already exists. Add %1 if you intend to create a new directory here.</source>
+        <translation>Dosarul deja există. Adaugă %1 dacă intenționezi să creezi un nou dosar aici.</translation>
+    </message>
+    <message>
+        <location line="+3"/>
+        <source>Path already exists, and is not a directory.</source>
+        <translation>Calea deja există și nu este un dosar.</translation>
+    </message>
+    <message>
+        <location line="+7"/>
+        <source>Cannot create data directory here.</source>
+        <translation>Nu se poate crea un dosar de date aici.</translation>
     </message>
 </context>
 <context>
     <name>GUIUtil::HelpMessageBox</name>
     <message>
-        <location filename="../guiutil.cpp" line="+424"/>
-        <location line="+12"/>
-        <source>Peercoin-Qt</source>
-        <translation>Peercoin-Qt</translation>
+        <location filename="../guiutil.cpp" line="+558"/>
+        <location line="+13"/>
+        <source>Philosopherstone-qt</source>
+        <translation>Philosopherstone-qt</translation>
     </message>
     <message>
-        <location line="-12"/>
+        <location line="-13"/>
         <source>version</source>
         <translation>versiunea</translation>
     </message>
@@ -797,6 +835,59 @@ Address: %4
         <source>Show splash screen on startup (default: 1)</source>
         <translation>Afișează pe ecran splash la pornire (implicit: 1)</translation>
     </message>
+    <message>
+        <location line="+1"/>
+        <source>Choose data directory on startup (default: 0)</source>
+        <translation>Alege dosarul de date la pornire (implicit: 0)</translation>
+    </message>
+</context>
+<context>
+    <name>Intro</name>
+    <message>
+        <location filename="../forms/intro.ui" line="+14"/>
+        <source>Welcome</source>
+        <translation>Bun venit</translation>
+    </message>
+    <message>
+        <location line="+9"/>
+        <source>Welcome to Philosopherstone-qt.</source>
+        <translation>Bun venit la Philosopherstone-qt.</translation>
+    </message>
+    <message>
+        <location line="+26"/>
+        <source>As this is the first time the program is launched, you can choose where Philosopherstone-qt will store its data.</source>
+        <translation>Deoarece este prima lansare a programului poți alege unde Philosopherstone-qt va stoca datele sale.</translation>
+    </message>
+    <message>
+        <location line="+10"/>
+        <source>Philosopherstone-qt will download and store a copy of the Philosopherstone block chain. At least %1GB of data will be stored in this directory, and it will grow over time. The wallet will also be stored in this directory.</source>
+        <translation>Philosopherstone-qt va descărca și stoca o copie a lanțului de blocuri Bicoin. Cel puțin %1GB de date vor fi stocate în acest dosar și necesarul va crește în timp. De asemenea și portofelul va fi ținut în acest dosar.</translation>
+    </message>
+    <message>
+        <location line="+10"/>
+        <source>Use the default data directory</source>
+        <translation>Folosește dosarul de date implicit</translation>
+    </message>
+    <message>
+        <location line="+7"/>
+        <source>Use a custom data directory:</source>
+        <translation>Folosește un dosar de date personalizat:</translation>
+    </message>
+    <message>
+        <location filename="../intro.cpp" line="+105"/>
+        <source>Error</source>
+        <translation>Eroare</translation>
+    </message>
+    <message>
+        <location line="+9"/>
+        <source>GB of free space available</source>
+        <translation>GB de spațiu liber disponibil</translation>
+    </message>
+    <message>
+        <location line="+3"/>
+        <source>(of %1GB needed)</source>
+        <translation>(din %1GB necesari)</translation>
+    </message>
 </context>
 <context>
     <name>OptionsDialog</name>
@@ -812,43 +903,33 @@ Address: %4
     </message>
     <message>
         <location line="+6"/>
-        <source>Mandatory network transaction fee per kB transferred. Most transactions are 1 kB and incur a 0.01 PPC fee. Note: transfer size may increase depending on the number of input transactions required to be added together to fund the payment.</source>
+        <source>Optional transaction fee per kB that helps make sure your transactions are processed quickly. Most transactions are 1 kB.</source>
         <translation type="unfinished"/>
     </message>
     <message>
         <location line="+15"/>
-        <source>Additional network &amp;fee</source>
-        <translation type="unfinished"/>
+        <source>Pay transaction &amp;fee</source>
+        <translation>Plăteşte comision pentru tranzacţie &amp;f</translation>
     </message>
     <message>
         <location line="+31"/>
-        <source>Automatically start Peercoin after logging in to the system.</source>
-        <translation>Porneşte automat programul Peercoin la pornirea computerului.</translation>
-    </message>
-    <message>
-        <location line="+46"/>
-        <source>Check this box to follow the centrally issued checkpoints.</source>
-        <translation type="unfinished"/>
+        <source>Automatically start Philosopherstone after logging in to the system.</source>
+        <translation>Porneşte automat programul Philosopherstone la pornirea computerului.</translation>
     </message>
     <message>
         <location line="+3"/>
-        <source>&amp;Start Peercoin on system login</source>
-        <translation>&amp;S Porneşte Peercoin la pornirea sistemului</translation>
-    </message>
-    <message>
-        <location line="+7"/>
-        <source>Enforce checkpoints</source>
-        <translation type="unfinished"></translation>
+        <source>&amp;Start Philosopherstone on system login</source>
+        <translation>&amp;S Porneşte Philosopherstone la pornirea sistemului</translation>
     </message>
     <message>
         <location line="+35"/>
         <source>Reset all client options to default.</source>
-        <translation type="unfinished"/>
+        <translation>Resetează toate setările clientului la valorile implicite.</translation>
     </message>
     <message>
         <location line="+3"/>
         <source>&amp;Reset Options</source>
-        <translation type="unfinished"/>
+        <translation>&amp;Resetează opțiunile</translation>
     </message>
     <message>
         <location line="+13"/>
@@ -857,8 +938,8 @@ Address: %4
     </message>
     <message>
         <location line="+6"/>
-        <source>Automatically open the Peercoin client port on the router. This only works when your router supports UPnP and it is enabled.</source>
-        <translation>Deschide automat în router portul aferent clientului Peercoin. Funcţionează doar în cazul în care routerul e compatibil UPnP şi opţiunea e activată.</translation>
+        <source>Automatically open the Philosopherstone client port on the router. This only works when your router supports UPnP and it is enabled.</source>
+        <translation>Deschide automat în router portul aferent clientului Bitcoin. Funcţionează doar în cazul în care routerul e compatibil UPnP şi opţiunea e activată.</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -867,8 +948,8 @@ Address: %4
     </message>
     <message>
         <location line="+7"/>
-        <source>Connect to the Peercoin network through a SOCKS proxy (e.g. when connecting through Tor).</source>
-        <translation>Conectare la reţeaua Peercoin folosind un proxy SOCKS (de exemplu, când conexiunea se stabileşte prin reţeaua Tor)</translation>
+        <source>Connect to the Philosopherstone network through a SOCKS proxy (e.g. when connecting through Tor).</source>
+        <translation>Conectare la reţeaua Philosopherstone folosind un proxy SOCKS (de exemplu, când conexiunea se stabileşte prin reţeaua Tor)</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -942,8 +1023,8 @@ Address: %4
     </message>
     <message>
         <location line="+13"/>
-        <source>The user interface language can be set here. This setting will take effect after restarting Peercoin.</source>
-        <translation>Limba interfeței utilizatorului poate fi setat aici. Această setare va avea efect după repornirea Peercoin.</translation>
+        <source>The user interface language can be set here. This setting will take effect after restarting Bitcoin.</source>
+        <translation>Limba interfeței utilizatorului poate fi setat aici. Această setare va avea efect după repornirea Bitcoin.</translation>
     </message>
     <message>
         <location line="+11"/>
@@ -953,12 +1034,12 @@ Address: %4
     <message>
         <location line="+13"/>
         <source>Choose the default subdivision unit to show in the interface and when sending coins.</source>
-        <translation>Alege subdiviziunea folosită la afişarea interfeţei şi la trimiterea de peercoin.</translation>
+        <translation>Alege subdiviziunea folosită la afişarea interfeţei şi la trimiterea de bitcoin.</translation>
     </message>
     <message>
         <location line="+9"/>
-        <source>Whether to show Peercoin addresses in the transaction list or not.</source>
-        <translation>Vezi dacă adresele Peercoin sunt în lista de tranzacție sau nu</translation>
+        <source>Whether to show Philosopherstone addresses in the transaction list or not.</source>
+        <translation>Vezi dacă adresele Philosopherstone sunt în lista de tranzacție sau nu</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -981,24 +1062,24 @@ Address: %4
         <translation>Aplica</translation>
     </message>
     <message>
-        <location filename="../optionsdialog.cpp" line="+53"/>
+        <location filename="../optionsdialog.cpp" line="+58"/>
         <source>default</source>
         <translation>Initial</translation>
     </message>
     <message>
         <location line="+130"/>
         <source>Confirm options reset</source>
-        <translation type="unfinished"/>
+        <translation>Confirmă resetarea opțiunilor</translation>
     </message>
     <message>
         <location line="+1"/>
         <source>Some settings may require a client restart to take effect.</source>
-        <translation type="unfinished"/>
+        <translation>Pentru unele setări este necesară repornirea clientului pentru a avea efect.</translation>
     </message>
     <message>
         <location line="+0"/>
         <source>Do you want to proceed?</source>
-        <translation type="unfinished"/>
+        <translation>Vrei să continui?</translation>
     </message>
     <message>
         <location line="+42"/>
@@ -1009,13 +1090,13 @@ Address: %4
     <message>
         <location line="-9"/>
         <location line="+9"/>
-        <source>This setting will take effect after restarting Peercoin.</source>
-        <translation type="unfinished"/>
+        <source>This setting will take effect after restarting Bitcoin.</source>
+        <translation>Această setare va avea efect după repornirea Bitcoin.</translation>
     </message>
     <message>
         <location line="+29"/>
         <source>The supplied proxy address is invalid.</source>
-        <translation>Adresa peercoin pe care a-ti specificat-o este invalida</translation>
+        <translation>Adresa bitcoin pe care a-ti specificat-o este invalida</translation>
     </message>
 </context>
 <context>
@@ -1027,27 +1108,37 @@ Address: %4
     </message>
     <message>
         <location line="+50"/>
-        <location line="+166"/>
-        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the Peercoin network after a connection is established, but this process has not completed yet.</source>
-        <translation>Informațiile afișate pot fi expirate. Portofelul tău se sincronizează automat cu rețeaua Peercoin după ce o conexiune este stabilita, dar acest proces nu a fost finalizat încă.</translation>
+        <location line="+202"/>
+        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the Philosopherstone network after a connection is established, but this process has not completed yet.</source>
+        <translation>Informațiile afișate pot neactualizate. Portofelul tău se sincronizează automat cu rețeaua Philosopherstone după ce o conexiune este stabilită, dar acest proces nu a fost finalizat încă.</translation>
     </message>
     <message>
-        <location line="-124"/>
-        <source>Balance:</source>
-        <translation>Balanţă:</translation>
-    </message>
-    <message>
-        <location line="+29"/>
+        <location line="-131"/>
         <source>Unconfirmed:</source>
         <translation>Neconfirmat:</translation>
     </message>
     <message>
         <location line="-78"/>
         <source>Wallet</source>
-        <translation>Portofelul</translation>
+        <translation>Portofel</translation>
     </message>
     <message>
-        <location line="+107"/>
+        <location line="+49"/>
+        <source>Confirmed:</source>
+        <translation>Confirmat:</translation>
+    </message>
+    <message>
+        <location line="+16"/>
+        <source>Your current spendable balance</source>
+        <translation>Balanța ta curentă de cheltuieli</translation>
+    </message>
+    <message>
+        <location line="+29"/>
+        <source>Total of transactions that have yet to be confirmed, and do not yet count toward the spendable balance</source>
+        <translation>Totalul tranzacțiilor care nu sunt confirmate încă și care nu sunt încă adunate la balanța de cheltuieli</translation>
+    </message>
+    <message>
+        <location line="+13"/>
         <source>Immature:</source>
         <translation>Nematurizat:</translation>
     </message>
@@ -1057,19 +1148,19 @@ Address: %4
         <translation>Balanta minata care nu s-a maturizat inca</translation>
     </message>
     <message>
-        <location line="+46"/>
+        <location line="+13"/>
+        <source>Total:</source>
+        <translation>Total:</translation>
+    </message>
+    <message>
+        <location line="+16"/>
+        <source>Your current total balance</source>
+        <translation>Balanța totală curentă</translation>
+    </message>
+    <message>
+        <location line="+53"/>
         <source>&lt;b&gt;Recent transactions&lt;/b&gt;</source>
-        <translation>&lt;b&gt;Ultimele tranzacţii&lt;/b&gt;</translation>
-    </message>
-    <message>
-        <location line="-101"/>
-        <source>Your current balance</source>
-        <translation>Soldul contul</translation>
-    </message>
-    <message>
-        <location line="+29"/>
-        <source>Total of transactions that have yet to be confirmed, and do not yet count toward the current balance</source>
-        <translation>Totalul tranzacţiilor care aşteaptă să fie confirmate şi care nu sunt încă luate în calcul la afişarea soldului contului.</translation>
+        <translation>&lt;b&gt;Tranzacții recente&lt;/b&gt;</translation>
     </message>
     <message>
         <location filename="../overviewpage.cpp" line="+116"/>
@@ -1081,67 +1172,105 @@ Address: %4
 <context>
     <name>PaymentServer</name>
     <message>
-        <location filename="../paymentserver.cpp" line="+107"/>
-        <source>Cannot start peercoin: click-to-pay handler</source>
+        <location filename="../paymentserver.cpp" line="+392"/>
+        <source>URI handling</source>
+        <translation>Gestionare URI</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>URI can not be parsed! This can be caused by an invalid Philosopherstone address or malformed URI parameters.</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location line="+69"/>
+        <source>Requested payment amount of %1 is too small (considered dust).</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location line="+4"/>
+        <location line="+37"/>
+        <source>Payment request error</source>
+        <translation>Eroare la cererea de plată</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Insecure requests to custom payment scripts unsupported</source>
+        <translation>Cererile nesecurizate către scripturi personalizate de plăți nu sunt suportate</translation>
+    </message>
+    <message>
+        <location line="+38"/>
+        <source>Refund from %1</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location line="+42"/>
+        <source>Error communicating with %1: %2</source>
+        <translation>Eroare la comunicarea cu %1: %2</translation>
+    </message>
+    <message>
+        <location line="+31"/>
+        <source>Bad response from server %1</source>
+        <translation>Răspuns greșit de la server %1</translation>
+    </message>
+    <message>
+        <location line="+32"/>
+        <source>Payment acknowledged</source>
+        <translation>Plată acceptată</translation>
+    </message>
+    <message>
+        <location line="-58"/>
+        <location line="+30"/>
+        <location line="+17"/>
+        <source>Network request error</source>
+        <translation>Eroare în cererea de rețea</translation>
+    </message>
+</context>
+<context>
+    <name>QObject</name>
+    <message>
+        <location filename="../bitcoin.cpp" line="+114"/>
+        <location line="+5"/>
+        <location filename="../intro.cpp" line="-32"/>
+        <source>Philosopherstone</source>
+        <translation>Philosopherstone</translation>
+    </message>
+    <message>
+        <location line="-4"/>
+        <source>Error: Specified data directory &quot;%1&quot; does not exist.</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location line="+4"/>
+        <source>Error: Invalid combination of -regtest and -testnet.</source>
+        <translation>Eroare: combinație nevalidă de -regtest și -testnet.</translation>
+    </message>
+    <message>
+        <location filename="../intro.cpp" line="+1"/>
+        <source>Error: Specified data directory &quot;%1&quot; can not be created.</source>
         <translation type="unfinished"/>
     </message>
 </context>
 <context>
-    <name>QRCodeDialog</name>
+    <name>QRImageWidget</name>
     <message>
-        <location filename="../forms/qrcodedialog.ui" line="+14"/>
-        <source>QR Code Dialog</source>
-        <translation>Dialogul codului QR</translation>
-    </message>
-    <message>
-        <location line="+59"/>
-        <source>Request Payment</source>
-        <translation>Cerere de plata</translation>
-    </message>
-    <message>
-        <location line="+56"/>
-        <source>Amount:</source>
-        <translation>Sumă:</translation>
-    </message>
-    <message>
-        <location line="-44"/>
-        <source>Label:</source>
-        <translation>Etichetă:</translation>
-    </message>
-    <message>
-        <location line="+19"/>
-        <source>Message:</source>
-        <translation>Mesaj:</translation>
-    </message>
-    <message>
-        <location line="+71"/>
-        <source>&amp;Save As...</source>
-        <translation>Salvare ca...</translation>
-    </message>
-    <message>
-        <location filename="../qrcodedialog.cpp" line="+62"/>
-        <source>Error encoding URI into QR Code.</source>
-        <translation>Eroare la incercarea codarii URl-ului in cod QR</translation>
-    </message>
-    <message>
-        <location line="+40"/>
-        <source>The entered amount is invalid, please check.</source>
-        <translation>Suma introdusa nu este valida, verifica suma.</translation>
-    </message>
-    <message>
-        <location line="+23"/>
-        <source>Resulting URI too long, try to reduce the text for label / message.</source>
+        <location filename="../receiverequestdialog.cpp" line="+32"/>
+        <source>&amp;Save Image...</source>
         <translation type="unfinished"/>
     </message>
     <message>
-        <location line="+25"/>
+        <location line="+3"/>
+        <source>&amp;Copy Image</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location line="+28"/>
         <source>Save QR Code</source>
-        <translation>Salveaza codul QR</translation>
+        <translation>Salvează codul QR</translation>
     </message>
     <message>
         <location line="+0"/>
         <source>PNG Images (*.png)</source>
-        <translation>Imagini de tip PNG (*.png)</translation>
+        <translation>Imagini PNG (*.png)</translation>
     </message>
 </context>
 <context>
@@ -1149,7 +1278,7 @@ Address: %4
     <message>
         <location filename="../forms/rpcconsole.ui" line="+46"/>
         <source>Client name</source>
-        <translation>Numaele clientului</translation>
+        <translation>Nume client</translation>
     </message>
     <message>
         <location line="+10"/>
@@ -1161,19 +1290,19 @@ Address: %4
         <location line="+53"/>
         <location line="+23"/>
         <location line="+23"/>
-        <location filename="../rpcconsole.cpp" line="+339"/>
+        <location filename="../rpcconsole.cpp" line="+352"/>
         <source>N/A</source>
         <translation>N/A</translation>
     </message>
     <message>
         <location line="-217"/>
         <source>Client version</source>
-        <translation>Versiunea clientului</translation>
+        <translation>Versiune client</translation>
     </message>
     <message>
         <location line="-45"/>
         <source>&amp;Information</source>
-        <translation>&amp; Informatie</translation>
+        <translation>&amp;Informație</translation>
     </message>
     <message>
         <location line="+68"/>
@@ -1183,17 +1312,17 @@ Address: %4
     <message>
         <location line="+49"/>
         <source>Startup time</source>
-        <translation>Data pornirii</translation>
+        <translation>Durata pornirii</translation>
     </message>
     <message>
         <location line="+29"/>
         <source>Network</source>
-        <translation>Retea</translation>
+        <translation>Rețea</translation>
     </message>
     <message>
         <location line="+7"/>
         <source>Number of connections</source>
-        <translation>Numarul de conexiuni</translation>
+        <translation>Numărul de conexiuni</translation>
     </message>
     <message>
         <location line="+23"/>
@@ -1203,22 +1332,22 @@ Address: %4
     <message>
         <location line="+23"/>
         <source>Block chain</source>
-        <translation>Lant bloc</translation>
+        <translation>Lanț de blocuri</translation>
     </message>
     <message>
         <location line="+7"/>
         <source>Current number of blocks</source>
-        <translation>Numarul curent de blockuri</translation>
+        <translation>Numărul curent de blocuri</translation>
     </message>
     <message>
         <location line="+23"/>
         <source>Estimated total blocks</source>
-        <translation>Estimarea totala a blocks</translation>
+        <translation>Blocurile totale estimate</translation>
     </message>
     <message>
         <location line="+23"/>
         <source>Last block time</source>
-        <translation>Ultimul block a fost gasit la:</translation>
+        <translation>Data ultimului bloc</translation>
     </message>
     <message>
         <location line="+52"/>
@@ -1232,8 +1361,8 @@ Address: %4
     </message>
     <message>
         <location line="+7"/>
-        <source>Show the Peercoin-Qt help message to get a list with possible Peercoin command-line options.</source>
-        <translation>Arata mesajul de ajutor Peercoin-QT pentru a obtine o lista cu posibilele optiuni ale comenzilor Peercoin</translation>
+        <source>Show the Philosopherstone-qt help message to get a list with possible Philosopherstone command-line options.</source>
+        <translation>Arata mesajul de ajutor Philosopherstone-qt pentru a obtine o lista cu posibilele optiuni ale comenzilor Philosopherstone</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -1243,22 +1372,47 @@ Address: %4
     <message>
         <location line="+24"/>
         <source>&amp;Console</source>
-        <translation>&amp;Consola</translation>
+        <translation>&amp;Consolă</translation>
     </message>
     <message>
-        <location line="-260"/>
+        <location line="+72"/>
+        <source>&amp;Network Traffic</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location line="+52"/>
+        <source>&amp;Clear</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location line="+13"/>
+        <source>Totals</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location line="+64"/>
+        <source>In:</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location line="+80"/>
+        <source>Out:</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location line="-541"/>
         <source>Build date</source>
-        <translation>Construit la data:</translation>
+        <translation>Construit la data</translation>
     </message>
     <message>
         <location line="-104"/>
-        <source>Peercoin - Debug window</source>
-        <translation>Peercoin-Fereastra pentru debug</translation>
+        <source>Philosopherstone - Debug window</source>
+        <translation>Bitcoin-Fereastra pentru debug</translation>
     </message>
     <message>
         <location line="+25"/>
-        <source>Peercoin Core</source>
-        <translation>Peercoin Core</translation>
+        <source>Philosopherstone Core</source>
+        <translation>Philosopherstone Core</translation>
     </message>
     <message>
         <location line="+279"/>
@@ -1267,18 +1421,18 @@ Address: %4
     </message>
     <message>
         <location line="+7"/>
-        <source>Open the Peercoin debug log file from the current data directory. This can take a few seconds for large log files.</source>
+        <source>Open the Philosopherstone debug log file from the current data directory. This can take a few seconds for large log files.</source>
         <translation>Deschide logurile debug din directorul curent. Aceasta poate dura cateva secunde pentru fisierele mai mari</translation>
     </message>
     <message>
         <location line="+102"/>
         <source>Clear console</source>
-        <translation>Curata consola</translation>
+        <translation>Curăță consola</translation>
     </message>
     <message>
         <location filename="../rpcconsole.cpp" line="-30"/>
-        <source>Welcome to the Peercoin RPC console.</source>
-        <translation>Bun venit la consola peercoin RPC</translation>
+        <source>Welcome to the Philosopherstone RPC console.</source>
+        <translation>Bun venit la consola bitcoin RPC</translation>
     </message>
     <message>
         <location line="+1"/>
@@ -1290,25 +1444,191 @@ Address: %4
         <source>Type &lt;b&gt;help&lt;/b&gt; for an overview of available commands.</source>
         <translation>Scrie &lt;b&gt;help&lt;/b&gt; pentru a vedea comenzile disponibile</translation>
     </message>
+    <message>
+        <location line="+128"/>
+        <source>%1 B</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location line="+2"/>
+        <source>%1 KB</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location line="+2"/>
+        <source>%1 MB</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location line="+2"/>
+        <source>%1 GB</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location line="+7"/>
+        <source>%1 m</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location line="+5"/>
+        <source>%1 h</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location line="+2"/>
+        <source>%1 h %2 m</source>
+        <translation type="unfinished"/>
+    </message>
+</context>
+<context>
+    <name>ReceiveCoinsDialog</name>
+    <message>
+        <location filename="../forms/receivecoinsdialog.ui" line="+22"/>
+        <source>&amp;Amount:</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location line="+16"/>
+        <source>The amount to request</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location line="+7"/>
+        <source>&amp;Label:</source>
+        <translation>&amp;Etichetă:</translation>
+    </message>
+    <message>
+        <location line="+10"/>
+        <source>The label to associate with the receiving address</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location line="+7"/>
+        <source>&amp;Message:</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location line="+10"/>
+        <source>The message to attach to payment request</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location line="+14"/>
+        <source>Reuse one of the previously used receiving addresses. Reusing addresses has security and privacy issues. Do not use this unless re-generating a payment request made before.</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location line="+3"/>
+        <source>R&amp;euse an existing receiving address (not recommended)</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location line="+7"/>
+        <source>Use this form to request payments. All fields are optional.</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location line="+17"/>
+        <source>Clear all fields of the form.</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location line="+3"/>
+        <source>Clear</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location line="+36"/>
+        <source>&amp;Request payment</source>
+        <translation type="unfinished"/>
+    </message>
+</context>
+<context>
+    <name>ReceiveRequestDialog</name>
+    <message>
+        <location filename="../forms/receiverequestdialog.ui" line="+29"/>
+        <source>QR Code</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location line="+46"/>
+        <source>Copy &amp;URI</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location line="+7"/>
+        <source>Copy &amp;Address</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location line="+7"/>
+        <source>&amp;Copy Image</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location line="+7"/>
+        <source>&amp;Save Image...</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location filename="../receiverequestdialog.cpp" line="+58"/>
+        <source>Request payment to %1</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location line="+6"/>
+        <source>Payment information</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>URI</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location line="+2"/>
+        <source>Address</source>
+        <translation>Adresă</translation>
+    </message>
+    <message>
+        <location line="+2"/>
+        <source>Amount</source>
+        <translation>Sumă</translation>
+    </message>
+    <message>
+        <location line="+2"/>
+        <source>Label</source>
+        <translation>Etichetă</translation>
+    </message>
+    <message>
+        <location line="+2"/>
+        <source>Message</source>
+        <translation>Mesaj</translation>
+    </message>
+    <message>
+        <location line="+10"/>
+        <source>Resulting URI too long, try to reduce the text for label / message.</source>
+        <translation>URI rezultat este prea lung, încearcă să reduci textul pentru etichetă / mesaj.</translation>
+    </message>
+    <message>
+        <location line="+5"/>
+        <source>Error encoding URI into QR Code.</source>
+        <translation>Eroare la codarea URl-ului în cod QR.</translation>
+    </message>
 </context>
 <context>
     <name>SendCoinsDialog</name>
     <message>
         <location filename="../forms/sendcoinsdialog.ui" line="+14"/>
-        <location filename="../sendcoinsdialog.cpp" line="+124"/>
-        <location line="+5"/>
-        <location line="+5"/>
-        <location line="+5"/>
-        <location line="+6"/>
-        <location line="+5"/>
-        <location line="+5"/>
-        <source>Send Coins</source>
-        <translation>Trimite Peercoin</translation>
+        <location filename="../sendcoinsdialog.cpp" line="+140"/>
+        <location line="+213"/>
+        <source>Send stones</source>
+        <translation>Trimite monede</translation>
     </message>
     <message>
         <location line="+50"/>
         <source>Send to multiple recipients at once</source>
-        <translation>Trimite simultan către mai mulţi destinatari</translation>
+        <translation>Trimite simultan către mai mulți destinatari</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -1317,18 +1637,18 @@ Address: %4
     </message>
     <message>
         <location line="+20"/>
-        <source>Remove all transaction fields</source>
-        <translation>Sterge toate spatiile de tranzactie</translation>
+        <source>Clear all fields of the form.</source>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location line="+3"/>
         <source>Clear &amp;All</source>
-        <translation>Şterge &amp;tot</translation>
+        <translation>Șterge &amp;tot</translation>
     </message>
     <message>
         <location line="+22"/>
         <source>Balance:</source>
-        <translation>Balanţă:</translation>
+        <translation>Balanță:</translation>
     </message>
     <message>
         <location line="+10"/>
@@ -1338,7 +1658,7 @@ Address: %4
     <message>
         <location line="+31"/>
         <source>Confirm the send action</source>
-        <translation>Confirmă operaţiunea de trimitere</translation>
+        <translation>Confirmă operațiunea de trimitere</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -1346,98 +1666,111 @@ Address: %4
         <translation>&amp;S Trimite</translation>
     </message>
     <message>
-        <location filename="../sendcoinsdialog.cpp" line="-59"/>
-        <source>&lt;b&gt;%1&lt;/b&gt; to %2 (%3)</source>
-        <translation>&lt;b&gt;%1&lt;/b&gt; la %2 (%3)</translation>
+        <location filename="../sendcoinsdialog.cpp" line="-154"/>
+        <source>Confirm send stones</source>
+        <translation>Confirmă trimiterea de monede</translation>
     </message>
     <message>
+        <location line="-90"/>
         <location line="+5"/>
-        <source>Confirm send coins</source>
-        <translation>Confirmaţi trimiterea de peercoin</translation>
+        <location line="+5"/>
+        <source>%1 to %2</source>
+        <translation type="unfinished"/>
     </message>
     <message>
-        <location line="+1"/>
-        <source>Are you sure you want to send %1?</source>
-        <translation>Sunteţi sigur că doriţi să trimiteţi %1?</translation>
-    </message>
-    <message>
-        <location line="+0"/>
-        <source> and </source>
-        <translation> şi </translation>
-    </message>
-    <message>
-        <location line="+23"/>
+        <location line="+26"/>
         <source>The recipient address is not valid, please recheck.</source>
         <translation>Adresa destinatarului nu este validă, vă rugăm să o verificaţi.</translation>
     </message>
     <message>
-        <location line="+5"/>
+        <location line="+4"/>
         <source>The amount to pay must be larger than 0.</source>
         <translation>Suma de plată trebuie să fie mai mare decât 0.</translation>
     </message>
     <message>
-        <location line="+5"/>
+        <location line="+4"/>
         <source>The amount exceeds your balance.</source>
-        <translation>Suma depăşeşte soldul contului.</translation>
+        <translation>Suma depășește soldul contului.</translation>
+    </message>
+    <message>
+        <location line="+4"/>
+        <source>The total exceeds your balance when the %1 transaction fee is included.</source>
+        <translation>Totalul depășește soldul contului dacă se include și plata comisionului de %1.</translation>
     </message>
     <message>
         <location line="+5"/>
-        <source>The total exceeds your balance when the %1 transaction fee is included.</source>
-        <translation>Total depăşeşte soldul contului in cazul plăţii comisionului de %1.</translation>
+        <source>Duplicate address found, can only send to each address once per send operation.</source>
+        <translation>S-a descoperit o adresă care figurează de două ori. Expedierea se poate realiza către fiecare adresă doar o singură dată pe operațiune.</translation>
+    </message>
+    <message>
+        <location line="+4"/>
+        <source>Error: Transaction creation failed!</source>
+        <translation>Eroare: crearea tranzacției a eșuat! </translation>
+    </message>
+    <message>
+        <location line="+15"/>
+        <source>Are you sure you want to send?</source>
+        <translation>Ești sigur că vrei să trimiți?</translation>
+    </message>
+    <message>
+        <location line="+9"/>
+        <source>added as transaction fee</source>
+        <translation>adăugat ca taxă de tranzacție</translation>
     </message>
     <message>
         <location line="+6"/>
-        <source>Duplicate address found, can only send to each address once per send operation.</source>
-        <translation>S-a descoperit o adresă care figurează de două ori. Expedierea se poate realiza către fiecare adresă doar o singură dată pe operaţiune.</translation>
+        <source>Total Amount %1</source>
+        <translation>Suma totală %1</translation>
     </message>
     <message>
-        <location line="+5"/>
-        <source>Error: Transaction creation failed!</source>
-        <translation type="unfinished"/>
+        <location line="+20"/>
+        <source>Error: The transaction was rejected. This might happen if some of the stones in your wallet were already spent, such as if you used a copy of wallet.dat and stones were spent in the copy but not marked as spent here.</source>
+        <translation>Eroare: Tranzacția a fost respinsă.  Aceasta se poate întâmpla când unele monede din portofelul tău  erau deja cheltuite, ca în cazul folosirii unei copii a fișierului wallet.dat în care s-au efectuat tranzacții neînregistrate în fișierul curent.</translation>
     </message>
     <message>
-        <location line="+5"/>
-        <source>Error: The transaction was rejected. This might happen if some of the coins in your wallet were already spent, such as if you used a copy of wallet.dat and coins were spent in the copy but not marked as spent here.</source>
-        <translation>Eroare: Tranyacţia a fost respinsă.  Acesta poate fi rezultatul cheltuirii prealabile a unei sume de peercoin din portofelul electronic, ca în cazul folosirii unei copii a fisierului wallet.dat, în care s-au efectuat tranzacţii neînregistrate în fisierul curent.</translation>
+        <location line="+144"/>
+        <source>Payment request expired</source>
+        <translation>Cererea de plată a expirat</translation>
+    </message>
+    <message>
+        <location line="+8"/>
+        <source>Invalid payment address %1</source>
+        <translation>Adresă pentru plată nevalidă %1</translation>
     </message>
 </context>
 <context>
     <name>SendCoinsEntry</name>
     <message>
-        <location filename="../forms/sendcoinsentry.ui" line="+14"/>
-        <source>Form</source>
-        <translation>Form</translation>
-    </message>
-    <message>
-        <location line="+15"/>
+        <location filename="../forms/sendcoinsentry.ui" line="+33"/>
+        <location line="+585"/>
         <source>A&amp;mount:</source>
-        <translation>Su&amp;mă :</translation>
+        <translation>Su&amp;mă:</translation>
     </message>
     <message>
-        <location line="+13"/>
+        <location line="-572"/>
+        <location line="+585"/>
         <source>Pay &amp;To:</source>
-        <translation>Plăteşte Că&amp;tre:</translation>
+        <translation>Plătește că&amp;tre:</translation>
     </message>
     <message>
-        <location line="+34"/>
+        <location line="-551"/>
         <source>The address to send the payment to (e.g. 1NS17iag9jJgTHD1VXjvLCEnZuQ3rJDE9L)</source>
-        <translation type="unfinished"/>
+        <translation>Adresa către care se va face plata  (de exemplu: 1NS17iag9jJgTHD1VXjvLCEnZuQ3rJDE9L)</translation>
     </message>
     <message>
-        <location line="+60"/>
-        <location filename="../sendcoinsentry.cpp" line="+26"/>
+        <location filename="../sendcoinsentry.cpp" line="+28"/>
         <source>Enter a label for this address to add it to your address book</source>
-        <translation>Adaugă o etichetă acestei adrese pentru a o trece în Lista de adrese</translation>
+        <translation>Introdu o etichetă pentru această adresă pentru a fi adăugată în lista ta de adrese</translation>
     </message>
     <message>
-        <location line="-78"/>
+        <location filename="../forms/sendcoinsentry.ui" line="-18"/>
         <source>&amp;Label:</source>
-        <translation>&amp;L Etichetă:</translation>
+        <translation>&amp;Etichetă:</translation>
     </message>
     <message>
         <location line="+28"/>
-        <source>Choose address from address book</source>
-        <translation>Alegeţi adresa din Listă</translation>
+        <source>Choose previously used address</source>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location line="+10"/>
@@ -1447,7 +1780,7 @@ Address: %4
     <message>
         <location line="+7"/>
         <source>Paste address from clipboard</source>
-        <translation>Lipiţi adresa copiată in clipboard.</translation>
+        <translation>Lipește adresa din clipboard</translation>
     </message>
     <message>
         <location line="+10"/>
@@ -1457,12 +1790,22 @@ Address: %4
     <message>
         <location line="+7"/>
         <source>Remove this recipient</source>
-        <translation>Şterge destinatarul</translation>
+        <translation>Șterge destinatarul</translation>
+    </message>
+    <message>
+        <location line="+16"/>
+        <source>Enter a label for this address to add it to the list of used addresses</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location line="+465"/>
+        <source>Memo:</source>
+        <translation>Memo:</translation>
     </message>
     <message>
         <location filename="../sendcoinsentry.cpp" line="+1"/>
-        <source>Enter a Peercoin address</source>
-        <translation>Introduceţi o adresă Peercoin (de exemplu: 1NS17iag9jJgTHD1VXjvLCEnZuQ3rJDE9L)</translation>
+        <source>Enter a Philosopherstone address (e.g. 1NS17iag9jJgTHD1VXjvLCEnZuQ3rJDE9L)</source>
+        <translation>Introdu o adresă Philosopherstone (de exemplu: 1NS17iag9jJgTHD1VXjvLCEnZuQ3rJDE9L)</translation>
     </message>
 </context>
 <context>
@@ -1485,13 +1828,13 @@ Address: %4
     <message>
         <location line="+18"/>
         <source>The address to sign the message with (e.g. 1NS17iag9jJgTHD1VXjvLCEnZuQ3rJDE9L)</source>
-        <translation>Introduceţi o adresă Peercoin (de exemplu: 1NS17iag9jJgTHD1VXjvLCEnZuQ3rJDE9L)</translation>
+        <translation>Introduceţi o adresă Philosopherstone (de exemplu: 1NS17iag9jJgTHD1VXjvLCEnZuQ3rJDE9L)</translation>
     </message>
     <message>
         <location line="+10"/>
         <location line="+213"/>
-        <source>Choose an address from the address book</source>
-        <translation>Alegeţi adresa din Listă</translation>
+        <source>Choose previously used address</source>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location line="-203"/>
@@ -1517,7 +1860,7 @@ Address: %4
     <message>
         <location line="+7"/>
         <source>Signature</source>
-        <translation type="unfinished"/>
+        <translation>Semnătură</translation>
     </message>
     <message>
         <location line="+27"/>
@@ -1526,13 +1869,13 @@ Address: %4
     </message>
     <message>
         <location line="+21"/>
-        <source>Sign the message to prove you own this Peercoin address</source>
-        <translation>Semneaza mesajul pentru a dovedi ca detii acesta adresa Peercoin</translation>
+        <source>Sign the message to prove you own this Philosopherstone address</source>
+        <translation>Semneaza mesajul pentru a dovedi ca detii acesta adresa Philosopherstone</translation>
     </message>
     <message>
         <location line="+3"/>
         <source>Sign &amp;Message</source>
-        <translation type="unfinished"/>
+        <translation>Semnează &amp;Message</translation>
     </message>
     <message>
         <location line="+14"/>
@@ -1558,17 +1901,17 @@ Address: %4
     <message>
         <location line="+21"/>
         <source>The address the message was signed with (e.g. 1NS17iag9jJgTHD1VXjvLCEnZuQ3rJDE9L)</source>
-        <translation>Introduceţi o adresă Peercoin (de exemplu: 1NS17iag9jJgTHD1VXjvLCEnZuQ3rJDE9L)</translation>
+        <translation>Introduceţi o adresă Philosopherstone (de exemplu: 1NS17iag9jJgTHD1VXjvLCEnZuQ3rJDE9L)</translation>
     </message>
     <message>
         <location line="+40"/>
-        <source>Verify the message to ensure it was signed with the specified Peercoin address</source>
-        <translation>Verifica mesajul pentru a fi sigur ca a fost semnat cu adresa Peercoin specifica</translation>
+        <source>Verify the message to ensure it was signed with the specified Philosopherstone address</source>
+        <translation>Verifica mesajul pentru a fi sigur ca a fost semnat cu adresa Philosopherstone specifica</translation>
     </message>
     <message>
         <location line="+3"/>
         <source>Verify &amp;Message</source>
-        <translation type="unfinished"/>
+        <translation>Verifică &amp;Message</translation>
     </message>
     <message>
         <location line="+14"/>
@@ -1578,8 +1921,8 @@ Address: %4
     <message>
         <location filename="../signverifymessagedialog.cpp" line="+27"/>
         <location line="+3"/>
-        <source>Enter a Peercoin address</source>
-        <translation>Introduceţi o adresă Peercoin (de exemplu: 1NS17iag9jJgTHD1VXjvLCEnZuQ3rJDE9L)</translation>
+        <source>Enter a Philosopherstone address (e.g. 1NS17iag9jJgTHD1VXjvLCEnZuQ3rJDE9L)</source>
+        <translation>Introduceţi o adresă Philosopherstone (de exemplu: 1NS17iag9jJgTHD1VXjvLCEnZuQ3rJDE9L)</translation>
     </message>
     <message>
         <location line="-2"/>
@@ -1588,11 +1931,11 @@ Address: %4
     </message>
     <message>
         <location line="+3"/>
-        <source>Enter Peercoin signature</source>
+        <source>Enter Philosopherstone signature</source>
         <translation>Introduce semnatura bitocin</translation>
     </message>
     <message>
-        <location line="+82"/>
+        <location line="+85"/>
         <location line="+81"/>
         <source>The entered address is invalid.</source>
         <translation>Adresa introdusa nu este valida</translation>
@@ -1661,9 +2004,9 @@ Address: %4
 <context>
     <name>SplashScreen</name>
     <message>
-        <location filename="../splashscreen.cpp" line="+22"/>
-        <source>The Peercoin developers</source>
-        <translation type="unfinished"/>
+        <location filename="../splashscreen.cpp" line="+23"/>
+        <source>The Philosopherstone developers</source>
+        <translation>Dezvoltatorii Philosopherstone</translation>
     </message>
     <message>
         <location line="+1"/>
@@ -1672,16 +2015,24 @@ Address: %4
     </message>
 </context>
 <context>
+    <name>TrafficGraphWidget</name>
+    <message>
+        <location filename="../trafficgraphwidget.cpp" line="+75"/>
+        <source>KB/s</source>
+        <translation type="unfinished"/>
+    </message>
+</context>
+<context>
     <name>TransactionDesc</name>
     <message>
-        <location filename="../transactiondesc.cpp" line="+20"/>
+        <location filename="../transactiondesc.cpp" line="+22"/>
         <source>Open until %1</source>
         <translation>Deschis până la %1</translation>
     </message>
     <message>
         <location line="+6"/>
         <source>%1/offline</source>
-        <translation type="unfinished"/>
+        <translation>%1/deconectat</translation>
     </message>
     <message>
         <location line="+2"/>
@@ -1701,7 +2052,7 @@ Address: %4
     <message numerus="yes">
         <location line="+7"/>
         <source>, broadcast through %n node(s)</source>
-        <translation type="unfinished"><numerusform></numerusform><numerusform></numerusform><numerusform></numerusform></translation>
+        <translation><numerusform>, distribuit prin %n nod</numerusform><numerusform>, distribuit prin %n noduri</numerusform><numerusform>, distribuit prin %n de noduri</numerusform></translation>
     </message>
     <message>
         <location line="+4"/>
@@ -1747,14 +2098,14 @@ Address: %4
         <location line="+12"/>
         <location line="+45"/>
         <location line="+17"/>
-        <location line="+30"/>
+        <location line="+48"/>
         <source>Credit</source>
         <translation>Credit</translation>
     </message>
     <message numerus="yes">
-        <location line="-102"/>
+        <location line="-120"/>
         <source>matures in %n more block(s)</source>
-        <translation type="unfinished"><numerusform></numerusform><numerusform></numerusform><numerusform></numerusform></translation>
+        <translation><numerusform>se maturizează în încă %n bloc</numerusform><numerusform>se maturizează în încă %n blocuri</numerusform><numerusform>se maturizează în încă %n de blocuri</numerusform></translation>
     </message>
     <message>
         <location line="+2"/>
@@ -1765,12 +2116,12 @@ Address: %4
         <location line="+44"/>
         <location line="+8"/>
         <location line="+15"/>
-        <location line="+30"/>
+        <location line="+48"/>
         <source>Debit</source>
         <translation>Debit</translation>
     </message>
     <message>
-        <location line="-39"/>
+        <location line="-57"/>
         <source>Transaction fee</source>
         <translation>Comisionul tranzacţiei</translation>
     </message>
@@ -1795,12 +2146,17 @@ Address: %4
         <translation>ID-ul tranzactiei</translation>
     </message>
     <message>
-        <location line="+3"/>
-        <source>Generated coins must mature 120 blocks before they can be spent. When you generated this block, it was broadcast to the network to be added to the block chain. If it fails to get into the chain, its state will change to &quot;not accepted&quot; and it won&apos;t be spendable. This may occasionally happen if another node generates a block within a few seconds of yours.</source>
-        <translation>Monedele peercoin generate se pot cheltui dupa parcurgerea a 120 de blocuri.  După ce a fost generat, s-a propagat în reţea, urmând să fie adăugat lanţului de blocuri.  Dacă nu poate fi inclus in lanţ, starea sa va deveni &quot;neacceptat&quot; si nu va putea fi folosit la tranzacţii.  Acest fenomen se întâmplă atunci cand un alt nod a generat un bloc la o diferenţa de câteva secunde.</translation>
+        <location line="+13"/>
+        <source>Merchant</source>
+        <translation>Comerciant</translation>
     </message>
     <message>
         <location line="+7"/>
+        <source>Generated stones must mature %1 blocks before they can be spent. When you generated this block, it was broadcast to the network to be added to the block chain. If it fails to get into the chain, its state will change to &quot;not accepted&quot; and it won&apos;t be spendable. This may occasionally happen if another node generates a block within a few seconds of yours.</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location line="+8"/>
         <source>Debug information</source>
         <translation>Informatii pentru debug</translation>
     </message>
@@ -1830,14 +2186,14 @@ Address: %4
         <translation>Fals!</translation>
     </message>
     <message>
-        <location line="-209"/>
+        <location line="-227"/>
         <source>, has not been successfully broadcast yet</source>
         <translation>, nu s-a propagat încă</translation>
     </message>
     <message numerus="yes">
         <location line="-35"/>
         <source>Open for %n more block(s)</source>
-        <translation type="unfinished"><numerusform></numerusform><numerusform></numerusform><numerusform></numerusform></translation>
+        <translation><numerusform>Deschis pentru încă %1 bloc</numerusform><numerusform>Deschis pentru încă %1 blocuri</numerusform><numerusform>Deschis pentru încă %1 de blocuri</numerusform></translation>
     </message>
     <message>
         <location line="+70"/>
@@ -1850,18 +2206,18 @@ Address: %4
     <message>
         <location filename="../forms/transactiondescdialog.ui" line="+14"/>
         <source>Transaction details</source>
-        <translation>Detaliile tranzacţiei</translation>
+        <translation>Detaliile tranzacției</translation>
     </message>
     <message>
         <location line="+6"/>
         <source>This pane shows a detailed description of the transaction</source>
-        <translation>Afişează detalii despre tranzacţie</translation>
+        <translation>Acest panou afișează o descriere detaliată a tranzacției</translation>
     </message>
 </context>
 <context>
     <name>TransactionTableModel</name>
     <message>
-        <location filename="../transactiontablemodel.cpp" line="+225"/>
+        <location filename="../transactiontablemodel.cpp" line="+227"/>
         <source>Date</source>
         <translation>Data</translation>
     </message>
@@ -1883,7 +2239,7 @@ Address: %4
     <message numerus="yes">
         <location line="+57"/>
         <source>Open for %n more block(s)</source>
-        <translation type="unfinished"><numerusform></numerusform><numerusform></numerusform><numerusform></numerusform></translation>
+        <translation><numerusform>Deschis pentru încă %1 bloc</numerusform><numerusform>Deschis pentru încă %1 blocuri</numerusform><numerusform>Deschis pentru încă %1 de blocuri</numerusform></translation>
     </message>
     <message>
         <location line="+3"/>
@@ -1908,27 +2264,27 @@ Address: %4
     <message numerus="yes">
         <location line="+8"/>
         <source>Mined balance will be available when it matures in %n more block(s)</source>
-        <translation type="unfinished"><numerusform></numerusform><numerusform></numerusform><numerusform></numerusform></translation>
+        <translation><numerusform>Balantă minată va fi disponibilă după ce maturizează în încă %n bloc</numerusform><numerusform>Balantă minată va fi disponibilă după ce maturizează în încă %n blocuri</numerusform><numerusform>Balantă minată va fi disponibilă după ce maturizează în încă %n de blocuri</numerusform></translation>
     </message>
     <message>
         <location line="+5"/>
         <source>This block was not received by any other nodes and will probably not be accepted!</source>
-        <translation>Blocul nu a fost recepţionat de niciun alt nod şi e probabil că nu va fi acceptat.</translation>
+        <translation>Acest bloc nu a fost recepționat de niciun alt nod și probabil nu va fi acceptat!</translation>
     </message>
     <message>
         <location line="+3"/>
         <source>Generated but not accepted</source>
-        <translation>Generat, dar neacceptat</translation>
+        <translation>Generat dar neacceptat</translation>
     </message>
     <message>
         <location line="+43"/>
         <source>Received with</source>
-        <translation>Recepţionat cu</translation>
+        <translation>Recepționat cu</translation>
     </message>
     <message>
         <location line="+2"/>
         <source>Received from</source>
-        <translation>Primit de la:</translation>
+        <translation>Primit de la</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -1938,7 +2294,7 @@ Address: %4
     <message>
         <location line="+2"/>
         <source>Payment to yourself</source>
-        <translation>Plată către un cont propriu</translation>
+        <translation>Plată către tine</translation>
     </message>
     <message>
         <location line="+2"/>
@@ -1953,22 +2309,22 @@ Address: %4
     <message>
         <location line="+199"/>
         <source>Transaction status. Hover over this field to show number of confirmations.</source>
-        <translation>Starea tranzacţiei. Treceţi cu mouse-ul peste acest câmp pentru afişarea numărului de confirmări.</translation>
+        <translation>Starea tranzacției. Treci cu mausul peste acest câmp pentru afișarea numărului de confirmări.</translation>
     </message>
     <message>
         <location line="+2"/>
         <source>Date and time that the transaction was received.</source>
-        <translation>Data şi ora la care a fost recepţionată tranzacţia.</translation>
+        <translation>Data și ora la care a fost recepționată tranzacția.</translation>
     </message>
     <message>
         <location line="+2"/>
         <source>Type of transaction.</source>
-        <translation>Tipul tranzacţiei.</translation>
+        <translation>Tipul tranzacției.</translation>
     </message>
     <message>
         <location line="+2"/>
         <source>Destination address of transaction.</source>
-        <translation>Adresa de destinaţie a tranzacţiei.</translation>
+        <translation>Adresa de destinație a tranzacției.</translation>
     </message>
     <message>
         <location line="+2"/>
@@ -2017,7 +2373,7 @@ Address: %4
     <message>
         <location line="+11"/>
         <source>Received with</source>
-        <translation>Recepţionat cu...</translation>
+        <translation>Recepționat cu</translation>
     </message>
     <message>
         <location line="+2"/>
@@ -2027,7 +2383,7 @@ Address: %4
     <message>
         <location line="+2"/>
         <source>To yourself</source>
-        <translation>Către propriul cont</translation>
+        <translation>Către tine</translation>
     </message>
     <message>
         <location line="+1"/>
@@ -2042,12 +2398,12 @@ Address: %4
     <message>
         <location line="+7"/>
         <source>Enter address or label to search</source>
-        <translation>Introduceţi adresa sau eticheta pentru căutare</translation>
+        <translation>Introdu adresa sau eticheta pentru căutare</translation>
     </message>
     <message>
         <location line="+7"/>
         <source>Min amount</source>
-        <translation>Cantitatea produsă</translation>
+        <translation>Cantitatea minimă</translation>
     </message>
     <message>
         <location line="+34"/>
@@ -2062,12 +2418,12 @@ Address: %4
     <message>
         <location line="+1"/>
         <source>Copy amount</source>
-        <translation>Copiază sumă</translation>
+        <translation>Copiază suma</translation>
     </message>
     <message>
         <location line="+1"/>
         <source>Copy transaction ID</source>
-        <translation type="unfinished"/>
+        <translation>Copiază ID tranzacție</translation>
     </message>
     <message>
         <location line="+1"/>
@@ -2077,17 +2433,17 @@ Address: %4
     <message>
         <location line="+1"/>
         <source>Show transaction details</source>
-        <translation>Arata detaliile tranzactiei</translation>
+        <translation>Arată detaliile tranzacției</translation>
     </message>
     <message>
-        <location line="+139"/>
+        <location line="+143"/>
         <source>Export Transaction Data</source>
-        <translation>Exportă tranzacţiile</translation>
+        <translation>Exportă tranzacțiile</translation>
     </message>
     <message>
         <location line="+1"/>
         <source>Comma separated file (*.csv)</source>
-        <translation>Fişier text cu valori separate prin virgulă (*.csv)</translation>
+        <translation>Fișier text cu valori separate prin virgulă (*.csv)</translation>
     </message>
     <message>
         <location line="+8"/>
@@ -2132,7 +2488,7 @@ Address: %4
     <message>
         <location line="+0"/>
         <source>Could not write to file %1.</source>
-        <translation>Fisierul %1 nu a putut fi accesat pentru scriere.</translation>
+        <translation>Nu s-a putut scrie în fișierul %1.</translation>
     </message>
     <message>
         <location line="+100"/>
@@ -2148,17 +2504,17 @@ Address: %4
 <context>
     <name>WalletModel</name>
     <message>
-        <location filename="../walletmodel.cpp" line="+193"/>
-        <source>Send Coins</source>
-        <translation>Trimite Peercoin</translation>
+        <location filename="../walletmodel.cpp" line="+218"/>
+        <source>Send stones</source>
+        <translation>Trimite Philosopherstone</translation>
     </message>
 </context>
 <context>
     <name>WalletView</name>
     <message>
-        <location filename="../walletview.cpp" line="+42"/>
+        <location filename="../walletview.cpp" line="+46"/>
         <source>&amp;Export</source>
-        <translation type="unfinished"/>
+        <translation>&amp;Exportă</translation>
     </message>
     <message>
         <location line="+1"/>
@@ -2166,9 +2522,9 @@ Address: %4
         <translation type="unfinished"/>
     </message>
     <message>
-        <location line="+193"/>
+        <location line="+183"/>
         <source>Backup Wallet</source>
-        <translation type="unfinished"/>
+        <translation>Fă o copie de siguranță a portofelului</translation>
     </message>
     <message>
         <location line="+0"/>
@@ -2188,7 +2544,7 @@ Address: %4
     <message>
         <location line="+4"/>
         <source>Backup Successful</source>
-        <translation type="unfinished"/>
+        <translation>Copia de siguranță efectuată cu succes</translation>
     </message>
     <message>
         <location line="+0"/>
@@ -2199,133 +2555,132 @@ Address: %4
 <context>
     <name>bitcoin-core</name>
     <message>
-        <location filename="../bitcoinstrings.cpp" line="+94"/>
-        <source>Peercoin version</source>
-        <translation>versiunea Peercoin</translation>
+        <location filename="../bitcoinstrings.cpp" line="+102"/>
+        <source>Philosopherstone version</source>
+        <translation>Versiune Philosopherstone</translation>
     </message>
     <message>
-        <location line="+102"/>
+        <location line="+107"/>
         <source>Usage:</source>
         <translation>Uz:</translation>
     </message>
     <message>
-        <location line="-29"/>
-        <source>Send command to -server or peercoind</source>
-        <translation>Trimite comanda la -server sau peercoind</translation>
-    </message>
-    <message>
-        <location line="-23"/>
+        <location line="-55"/>
         <source>List commands</source>
         <translation>Listă de comenzi</translation>
     </message>
     <message>
-        <location line="-12"/>
+        <location line="-13"/>
         <source>Get help for a command</source>
         <translation>Ajutor pentru o comandă</translation>
     </message>
     <message>
-        <location line="+24"/>
+        <location line="+25"/>
         <source>Options:</source>
         <translation>Setări:</translation>
     </message>
     <message>
         <location line="+24"/>
-        <source>Specify configuration file (default: peercoin.conf)</source>
-        <translation>Specifica-ți configurația fisierului (in mod normal: peercoin.conf)</translation>
+        <source>Specify configuration file (default: philosopherstone.conf)</source>
+        <translation>Specifică fișierul de configurare (implicit: philosopherstone.conf)</translation>
     </message>
     <message>
         <location line="+3"/>
-        <source>Specify pid file (default: peercoind.pid)</source>
-        <translation type="unfinished"/>
+        <source>Specify pid file (default: stoned.pid)</source>
+        <translation>Specifică fișierul pid (implicit stoned.pid)</translation>
     </message>
     <message>
         <location line="-1"/>
         <source>Specify data directory</source>
-        <translation>Specifica datele directorului</translation>
+        <translation>Specifică dosarul de date</translation>
     </message>
     <message>
         <location line="-9"/>
         <source>Set database cache size in megabytes (default: 25)</source>
-        <translation>Seteaza marimea cache a bazei de date in MB (initial: 25)</translation>
+        <translation>Setează mărimea cache a bazei de date în megabiți (implicit: 25)</translation>
     </message>
     <message>
         <location line="-28"/>
         <source>Listen for connections on &lt;port&gt; (default: 8333 or testnet: 18333)</source>
-        <translation>Lista a conectiunile in &lt;port&gt; (initial:  8333 sau testnet: 18333)</translation>
+        <translation>Ascultă pentru conectări pe &lt;port&gt; (implicit:  8333 sau testnet: 18333)</translation>
     </message>
     <message>
         <location line="+5"/>
         <source>Maintain at most &lt;n&gt; connections to peers (default: 125)</source>
-        <translation>Se menține la cele mai multe conexiuni &lt;n&gt; cu colegii (implicit: 125)</translation>
+        <translation>Menține cel mult &lt;n&gt; conexiuni cu partenerii (implicit: 125)</translation>
     </message>
     <message>
-        <location line="-48"/>
+        <location line="-49"/>
         <source>Connect to a node to retrieve peer addresses, and disconnect</source>
-        <translation>Conecteaza-te la nod pentru a optine adresa peer, si deconecteaza-te</translation>
+        <translation>Conectează-te la nod pentru a obține adresele partenerilor, și apoi deconectează-te</translation>
     </message>
     <message>
-        <location line="+82"/>
+        <location line="+84"/>
         <source>Specify your own public address</source>
-        <translation>Specifica adresa ta publica</translation>
+        <translation>Specifică adresa ta publică</translation>
     </message>
     <message>
-        <location line="+3"/>
+        <location line="+4"/>
         <source>Threshold for disconnecting misbehaving peers (default: 100)</source>
-        <translation>Prag pentru deconectarea colegii funcționează corect (implicit: 100)</translation>
+        <translation>Prag pentru deconectarea partenerilor care nu funcționează corect (implicit: 100)</translation>
     </message>
     <message>
-        <location line="-134"/>
+        <location line="-142"/>
         <source>Number of seconds to keep misbehaving peers from reconnecting (default: 86400)</source>
-        <translation>Numărul de secunde pentru a păstra colegii funcționează corect la reconectare (implicit: 86400)</translation>
+        <translation>Numărul de secunde pentru a preveni reconectarea partenerilor care nu funcționează corect (implicit: 86400)</translation>
     </message>
     <message>
-        <location line="-29"/>
+        <location line="-33"/>
         <source>An error occurred while setting up the RPC port %u for listening on IPv4: %s</source>
         <translation type="unfinished"/>
     </message>
     <message>
-        <location line="+27"/>
+        <location line="+31"/>
         <source>Listen for JSON-RPC connections on &lt;port&gt; (default: 8332 or testnet: 18332)</source>
-        <translation type="unfinished"/>
+        <translation>Ascultă pentru conexiuni JSON-RPC pe &lt;port&gt; (implicit:8332 sau testnet: 18332)</translation>
     </message>
     <message>
-        <location line="+37"/>
+        <location line="+40"/>
         <source>Accept command line and JSON-RPC commands</source>
-        <translation>Se accepta command line si comenzi JSON-RPC</translation>
+        <translation>Se acceptă comenzi din linia de comandă și comenzi JSON-RPC</translation>
     </message>
     <message>
-        <location line="+76"/>
+        <location line="+79"/>
         <source>Run in the background as a daemon and accept commands</source>
-        <translation>Ruleaza în background ca un demon și accepta comenzi.</translation>
+        <translation>Rulează în fundal ca un demon și acceptă comenzi</translation>
     </message>
     <message>
-        <location line="+37"/>
+        <location line="+40"/>
         <source>Use the test network</source>
-        <translation>Utilizeaza test de retea</translation>
+        <translation>Utilizează rețeaua de test</translation>
     </message>
     <message>
-        <location line="-112"/>
+        <location line="-118"/>
         <source>Accept connections from outside (default: 1 if no -proxy or -connect)</source>
-        <translation>Accepta conexiuni de la straini (initial: 1  if no -proxy or -connect)
-</translation>
+        <translation>Acceptă conexiuni din afară (implicit: 1  dacă nu se folosește -proxy sau -connect)</translation>
     </message>
     <message>
-        <location line="-80"/>
+        <location line="-87"/>
         <source>%s, you must set a rpcpassword in the configuration file:
 %s
 It is recommended you use the following random password:
-rpcuser=peercoinrpc
+rpcuser=stonerpc
 rpcpassword=%s
 (you do not need to remember this password)
 The username and password MUST NOT be the same.
 If the file does not exist, create it with owner-readable-only file permissions.
 It is also recommended to set alertnotify so you are notified of problems;
-for example: alertnotify=echo %%s | mail -s &quot;Peercoin Alert&quot; admin@foo.com
+for example: alertnotify=echo %%s | mail -s &quot;Philosopherstone Alert&quot; admin@foo.com
 </source>
         <translation type="unfinished"/>
     </message>
     <message>
-        <location line="+17"/>
+        <location line="+12"/>
+        <source>Acceptable ciphers (default: TLSv1.2+HIGH:TLSv1+HIGH:!SSLv2:!aNULL:!eNULL:!3DES:@STRENGTH)</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location line="+5"/>
         <source>An error occurred while setting up the RPC port %u for listening on IPv6, falling back to IPv4: %s</source>
         <translation type="unfinished"/>
     </message>
@@ -2336,12 +2691,17 @@ for example: alertnotify=echo %%s | mail -s &quot;Peercoin Alert&quot; admin@foo
     </message>
     <message>
         <location line="+3"/>
-        <source>Cannot obtain a lock on data directory %s. Peercoin is probably already running.</source>
-        <translation type="unfinished"/>
+        <source>Cannot obtain a lock on data directory %s. Philosopherstone is probably already running.</source>
+        <translation>Nu se poate obține o blocare a directorului de date %s. Philosopherstone probabil rulează deja.</translation>
     </message>
     <message>
         <location line="+3"/>
-        <source>Error: The transaction was rejected! This might happen if some of the coins in your wallet were already spent, such as if you used a copy of wallet.dat and coins were spent in the copy but not marked as spent here.</source>
+        <source>Enter regression test mode, which uses a special chain in which blocks can be solved instantly. This is intended for regression testing tools and app development.</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location line="+4"/>
+        <source>Error: The transaction was rejected! This might happen if some of the stones in your wallet were already spent, such as if you used a copy of wallet.dat and stones were spent in the copy but not marked as spent here.</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -2350,12 +2710,7 @@ for example: alertnotify=echo %%s | mail -s &quot;Peercoin Alert&quot; admin@foo
         <translation type="unfinished"/>
     </message>
     <message>
-        <location line="+3"/>
-        <source>Execute command when a relevant alert is received (%s in cmd is replaced by message)</source>
-        <translation type="unfinished"/>
-    </message>
-    <message>
-        <location line="+3"/>
+        <location line="+6"/>
         <source>Execute command when a wallet transaction changes (%s in cmd is replaced by TxID)</source>
         <translation type="unfinished"/>
     </message>
@@ -2376,12 +2731,17 @@ for example: alertnotify=echo %%s | mail -s &quot;Peercoin Alert&quot; admin@foo
     </message>
     <message>
         <location line="+3"/>
-        <source>Warning: Displayed transactions may not be correct! You may need to upgrade, or other nodes may need to upgrade.</source>
+        <source>Warning: Please check that your computer&apos;s date and time are correct! If your clock is wrong Philosopherstone will not work properly.</source>
         <translation type="unfinished"/>
     </message>
     <message>
         <location line="+3"/>
-        <source>Warning: Please check that your computer&apos;s date and time are correct! If your clock is wrong Peercoin will not work properly.</source>
+        <source>Warning: The network does not appear to fully agree! Some miners appear to be experiencing issues.</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location line="+3"/>
+        <source>Warning: We do not appear to fully agree with our peers! You may need to upgrade, or other nodes may need to upgrade.</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -2397,6 +2757,11 @@ for example: alertnotify=echo %%s | mail -s &quot;Peercoin Alert&quot; admin@foo
     <message>
         <location line="+14"/>
         <source>Attempt to recover private keys from a corrupt wallet.dat</source>
+        <translation>Încearcă recuperarea cheilor private dintr-un wallet.dat corupt</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Philosopherstone RPC client version</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -2410,7 +2775,12 @@ for example: alertnotify=echo %%s | mail -s &quot;Peercoin Alert&quot; admin@foo
         <translation>Conecteaza-te doar la nod(urile) specifice</translation>
     </message>
     <message>
-        <location line="+3"/>
+        <location line="+2"/>
+        <source>Connect to JSON-RPC on &lt;port&gt; (default: 8332 or testnet: 18332)</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location line="+2"/>
         <source>Corrupted block database detected</source>
         <translation type="unfinished"/>
     </message>
@@ -2427,7 +2797,7 @@ for example: alertnotify=echo %%s | mail -s &quot;Peercoin Alert&quot; admin@foo
     <message>
         <location line="+2"/>
         <source>Error initializing block database</source>
-        <translation type="unfinished"/>
+        <translation>Eroare la inițializarea bazei de date de blocuri</translation>
     </message>
     <message>
         <location line="+1"/>
@@ -2437,27 +2807,27 @@ for example: alertnotify=echo %%s | mail -s &quot;Peercoin Alert&quot; admin@foo
     <message>
         <location line="+1"/>
         <source>Error loading block database</source>
-        <translation type="unfinished"/>
+        <translation>Eroare la încărcarea bazei de date de blocuri</translation>
     </message>
     <message>
         <location line="+4"/>
         <source>Error opening block database</source>
-        <translation type="unfinished"/>
+        <translation>Eroare la deschiderea bazei de date de blocuri</translation>
     </message>
     <message>
         <location line="+2"/>
         <source>Error: Disk space is low!</source>
-        <translation type="unfinished"/>
+        <translation>Eroare: Spațiu pe disc redus!</translation>
     </message>
     <message>
         <location line="+1"/>
         <source>Error: Wallet locked, unable to create transaction!</source>
-        <translation type="unfinished"/>
+        <translation>Eroare: Portofel blocat, nu se poate crea o tranzacție!</translation>
     </message>
     <message>
         <location line="+1"/>
         <source>Error: system error: </source>
-        <translation type="unfinished"/>
+        <translation>Eroare: eroare de sistem:</translation>
     </message>
     <message>
         <location line="+1"/>
@@ -2467,32 +2837,32 @@ for example: alertnotify=echo %%s | mail -s &quot;Peercoin Alert&quot; admin@foo
     <message>
         <location line="+1"/>
         <source>Failed to read block info</source>
-        <translation type="unfinished"/>
+        <translation>Citirea informațiilor despre bloc a eșuat</translation>
     </message>
     <message>
         <location line="+1"/>
         <source>Failed to read block</source>
-        <translation type="unfinished"/>
+        <translation>Citirea blocului a eșuat</translation>
     </message>
     <message>
         <location line="+1"/>
         <source>Failed to sync block index</source>
-        <translation type="unfinished"/>
+        <translation>A eșuat sincronizarea indexului de blocuri</translation>
     </message>
     <message>
         <location line="+1"/>
         <source>Failed to write block index</source>
-        <translation type="unfinished"/>
+        <translation>A eșuat scrierea indexului de blocuri</translation>
     </message>
     <message>
         <location line="+1"/>
         <source>Failed to write block info</source>
-        <translation type="unfinished"/>
+        <translation>Scrierea informațiilor despre bloc a eșuat</translation>
     </message>
     <message>
         <location line="+1"/>
         <source>Failed to write block</source>
-        <translation type="unfinished"/>
+        <translation>Scrierea blocului a eșuat</translation>
     </message>
     <message>
         <location line="+1"/>
@@ -2517,12 +2887,12 @@ for example: alertnotify=echo %%s | mail -s &quot;Peercoin Alert&quot; admin@foo
     <message>
         <location line="+2"/>
         <source>Find peers using DNS lookup (default: 1 unless -connect)</source>
-        <translation type="unfinished"/>
+        <translation>Găsește parteneri folosind căutarea DNS (implicit: 1 doar dacă nu s-a folosit -connect)</translation>
     </message>
     <message>
         <location line="+1"/>
-        <source>Generate coins (default: 0)</source>
-        <translation type="unfinished"/>
+        <source>Generate stones (default: 0)</source>
+        <translation>Generează monede (implicit: 0)</translation>
     </message>
     <message>
         <location line="+2"/>
@@ -2532,10 +2902,20 @@ for example: alertnotify=echo %%s | mail -s &quot;Peercoin Alert&quot; admin@foo
     <message>
         <location line="+1"/>
         <source>How thorough the block verification is (0-4, default: 3)</source>
+        <translation>Cât de </translation>
+    </message>
+    <message>
+        <location line="+2"/>
+        <source>Incorrect or no genesis block found. Wrong datadir for network?</source>
         <translation type="unfinished"/>
     </message>
     <message>
-        <location line="+19"/>
+        <location line="+3"/>
+        <source>Invalid -onion address: &apos;%s&apos;</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location line="+15"/>
         <source>Not enough file descriptors available.</source>
         <translation type="unfinished"/>
     </message>
@@ -2545,42 +2925,72 @@ for example: alertnotify=echo %%s | mail -s &quot;Peercoin Alert&quot; admin@foo
         <translation type="unfinished"/>
     </message>
     <message>
-        <location line="+16"/>
+        <location line="+6"/>
+        <source>Send command to Philosopherstone server</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location line="+10"/>
         <source>Set the number of threads to service RPC calls (default: 4)</source>
         <translation type="unfinished"/>
     </message>
     <message>
-        <location line="+26"/>
-        <source>Verifying blocks...</source>
+        <location line="+7"/>
+        <source>Specify wallet file (within data directory)</source>
+        <translation>Specifică fișierul wallet (în dosarul de date)</translation>
+    </message>
+    <message>
+        <location line="+2"/>
+        <source>Start Philosopherstone server</source>
         <translation type="unfinished"/>
+    </message>
+    <message>
+        <location line="+12"/>
+        <source>Usage (deprecated, use bitcoin-cli):</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location line="+8"/>
+        <source>Verifying blocks...</source>
+        <translation>Se verifică blocurile...</translation>
     </message>
     <message>
         <location line="+1"/>
         <source>Verifying wallet...</source>
-        <translation type="unfinished"/>
+        <translation>Se verifică portofelul...</translation>
     </message>
     <message>
-        <location line="-69"/>
+        <location line="+1"/>
+        <source>Wallet %s resides outside data directory %s</source>
+        <translation>Portofelul %s se află în afara dosarului de date %s</translation>
+    </message>
+    <message>
+        <location line="+4"/>
+        <source>You need to rebuild the database using -reindex to change -txindex</source>
+        <translation>Trebuie să reconstruiești baza de date folosind -reindex pentru a schimba -txindex</translation>
+    </message>
+    <message>
+        <location line="-78"/>
         <source>Imports blocks from external blk000??.dat file</source>
+        <translation>Importă blocuri dintr-un fișier extern blk000??.dat</translation>
+    </message>
+    <message>
+        <location line="-98"/>
+        <source>Execute command when a relevant alert is received or we see a really long fork (%s in cmd is replaced by message)</source>
         <translation type="unfinished"/>
     </message>
     <message>
-        <location line="-76"/>
+        <location line="+17"/>
         <source>Set the number of script verification threads (up to 16, 0 = auto, &lt;0 = leave that many cores free, default: 0)</source>
         <translation type="unfinished"/>
     </message>
     <message>
-        <location line="+77"/>
+        <location line="+83"/>
         <source>Information</source>
-        <translation type="unfinished"/>
+        <translation>Informație</translation>
     </message>
     <message>
-        <location line="+3"/>
-        <source>Invalid -tor address: &apos;%s&apos;</source>
-        <translation type="unfinished"/>
-    </message>
-    <message>
-        <location line="+1"/>
+        <location line="+4"/>
         <source>Invalid amount for -minrelaytxfee=&lt;amount&gt;: &apos;%s&apos;</source>
         <translation type="unfinished"/>
     </message>
@@ -2592,17 +3002,17 @@ for example: alertnotify=echo %%s | mail -s &quot;Peercoin Alert&quot; admin@foo
     <message>
         <location line="+8"/>
         <source>Maintain a full transaction index (default: 0)</source>
-        <translation type="unfinished"/>
+        <translation>Păstrează un index complet al tranzacțiilor (implicit: 0)</translation>
     </message>
     <message>
         <location line="+2"/>
         <source>Maximum per-connection receive buffer, &lt;n&gt;*1000 bytes (default: 5000)</source>
-        <translation type="unfinished"/>
+        <translation>Tampon maxim pentru recepție per conexiune, &lt;n&gt;*1000 baiți (implicit: 5000)</translation>
     </message>
     <message>
         <location line="+1"/>
         <source>Maximum per-connection send buffer, &lt;n&gt;*1000 bytes (default: 1000)</source>
-        <translation type="unfinished"/>
+        <translation>Tampon maxim pentru transmitere per conexiune, &lt;n&gt;*1000 baiți (implicit: 1000)</translation>
     </message>
     <message>
         <location line="+2"/>
@@ -2612,7 +3022,7 @@ for example: alertnotify=echo %%s | mail -s &quot;Peercoin Alert&quot; admin@foo
     <message>
         <location line="+1"/>
         <source>Only connect to nodes in network &lt;net&gt; (IPv4, IPv6 or Tor)</source>
-        <translation type="unfinished"/>
+        <translation>Efectuează conexiuni doar către nodurile din rețeaua &lt;net&gt; (IPv4, IPv6 sau Tor)</translation>
     </message>
     <message>
         <location line="+2"/>
@@ -2627,12 +3037,12 @@ for example: alertnotify=echo %%s | mail -s &quot;Peercoin Alert&quot; admin@foo
     <message>
         <location line="+2"/>
         <source>Prepend debug output with timestamp</source>
-        <translation>Copie de ieșire de depanare cu timestamp</translation>
+        <translation>Prefixează ieșirea de depanare cu marcaje de timp</translation>
     </message>
     <message>
         <location line="+5"/>
-        <source>SSL options: (see the Bitcoin Wiki for SSL setup instructions)</source>
-        <translation>Optiuni SSl (vezi Peercoin wiki pentru intructiunile de instalare)</translation>
+        <source>SSL options: (see the Philosopherstone Wiki for SSL setup instructions)</source>
+        <translation>Optiuni SSl (vezi Philosopherstone wiki pentru intructiunile de instalare)</translation>
     </message>
     <message>
         <location line="+1"/>
@@ -2642,12 +3052,12 @@ for example: alertnotify=echo %%s | mail -s &quot;Peercoin Alert&quot; admin@foo
     <message>
         <location line="+3"/>
         <source>Send trace/debug info to console instead of debug.log file</source>
-        <translation>Trimite urmări / debug info la consola loc de debug.log fișier</translation>
+        <translation>Trimite informațiile trace/debug la consolă în locul fișierului debug.log</translation>
     </message>
     <message>
         <location line="+1"/>
         <source>Send trace/debug info to debugger</source>
-        <translation>Trimite urmări / debug info la depanatorul</translation>
+        <translation>Trimite informațiile trace/debug la depanator</translation>
     </message>
     <message>
         <location line="+5"/>
@@ -2657,7 +3067,7 @@ for example: alertnotify=echo %%s | mail -s &quot;Peercoin Alert&quot; admin@foo
     <message>
         <location line="+1"/>
         <source>Set minimum block size in bytes (default: 0)</source>
-        <translation type="unfinished"/>
+        <translation>Setează mărimea minimă a blocului în baiți (implicit: 0)</translation>
     </message>
     <message>
         <location line="+2"/>
@@ -2667,35 +3077,35 @@ for example: alertnotify=echo %%s | mail -s &quot;Peercoin Alert&quot; admin@foo
     <message>
         <location line="+1"/>
         <source>Signing transaction failed</source>
-        <translation type="unfinished"/>
+        <translation>Semnarea tranzacției a eșuat</translation>
     </message>
     <message>
         <location line="+2"/>
         <source>Specify connection timeout in milliseconds (default: 5000)</source>
-        <translation type="unfinished"/>
+        <translation>Specifică intervalul maxim de conectare în milisecunde (implicit: 5000)</translation>
     </message>
     <message>
-        <location line="+4"/>
+        <location line="+6"/>
         <source>System error: </source>
-        <translation type="unfinished"/>
+        <translation>Eroare de sistem:</translation>
     </message>
     <message>
         <location line="+4"/>
         <source>Transaction amount too small</source>
-        <translation type="unfinished"/>
+        <translation>Suma tranzacționată este prea mică</translation>
     </message>
     <message>
         <location line="+1"/>
         <source>Transaction amounts must be positive</source>
-        <translation type="unfinished"/>
+        <translation>Sumele tranzacționate trebuie să fie pozitive</translation>
     </message>
     <message>
         <location line="+1"/>
         <source>Transaction too large</source>
-        <translation type="unfinished"/>
+        <translation>Tranzacția este prea mare</translation>
     </message>
     <message>
-        <location line="+7"/>
+        <location line="+8"/>
         <source>Use UPnP to map the listening port (default: 0)</source>
         <translation>Foloseste UPnP pentru a vedea porturile (initial: 0)</translation>
     </message>
@@ -2712,164 +3122,152 @@ for example: alertnotify=echo %%s | mail -s &quot;Peercoin Alert&quot; admin@foo
     <message>
         <location line="+2"/>
         <source>Username for JSON-RPC connections</source>
-        <translation>Username pentru conectiunile JSON-RPC</translation>
+        <translation>Utilizator pentru conexiunile JSON-RPC</translation>
     </message>
     <message>
-        <location line="+4"/>
+        <location line="+5"/>
         <source>Warning</source>
-        <translation type="unfinished"/>
+        <translation>Avertizare</translation>
     </message>
     <message>
         <location line="+1"/>
         <source>Warning: This version is obsolete, upgrade required!</source>
-        <translation type="unfinished"/>
+        <translation>Atenție: această versiune este depășită, este necesară actualizarea!</translation>
     </message>
     <message>
-        <location line="+1"/>
-        <source>You need to rebuild the databases using -reindex to change -txindex</source>
-        <translation type="unfinished"/>
-    </message>
-    <message>
-        <location line="+1"/>
+        <location line="+2"/>
         <source>wallet.dat corrupt, salvage failed</source>
-        <translation type="unfinished"/>
+        <translation>wallet.dat corupt, recuperare eșuată</translation>
     </message>
     <message>
-        <location line="-50"/>
+        <location line="-54"/>
         <source>Password for JSON-RPC connections</source>
-        <translation>Parola pentru conectiunile JSON-RPC</translation>
+        <translation>Parola pentru conexiunile JSON-RPC</translation>
     </message>
     <message>
-        <location line="-67"/>
+        <location line="-70"/>
         <source>Allow JSON-RPC connections from specified IP address</source>
-        <translation>Permiteti conectiunile JSON-RPC de la o adresa IP specifica.</translation>
+        <translation>Permite conexiuni JSON-RPC de la adresa IP specificată</translation>
     </message>
     <message>
-        <location line="+76"/>
+        <location line="+79"/>
         <source>Send commands to node running on &lt;ip&gt; (default: 127.0.0.1)</source>
-        <translation>Trimite comenzi la nod, ruland pe ip-ul (initial: 127.0.0.1)</translation>
+        <translation>Trimite comenzi la nodul care rulează la &lt;ip&gt; (implicit: 127.0.0.1)</translation>
     </message>
     <message>
-        <location line="-120"/>
+        <location line="-126"/>
         <source>Execute command when the best block changes (%s in cmd is replaced by block hash)</source>
-        <translation>Executa comanda cand cel mai bun block se schimba (%s in cmd se inlocuieste cu block hash)</translation>
+        <translation>Execută comanda când cel mai bun bloc se modifică (%s în cmd este înlocuit cu hash-ul blocului)</translation>
     </message>
     <message>
-        <location line="+147"/>
+        <location line="+155"/>
         <source>Upgrade wallet to latest format</source>
-        <translation>Actualizeaza portofelul la ultimul format</translation>
+        <translation>Actualizează portofelul la ultimul format</translation>
     </message>
     <message>
-        <location line="-21"/>
+        <location line="-23"/>
         <source>Set key pool size to &lt;n&gt; (default: 100)</source>
-        <translation>Setarea marimii cheii bezinului la &lt;n&gt;(initial 100)</translation>
+        <translation>Setează mărimea bazinului de chei la &lt;n&gt; (implicit: 100)</translation>
     </message>
     <message>
         <location line="-12"/>
         <source>Rescan the block chain for missing wallet transactions</source>
-        <translation>Rescanare lanțul de bloc pentru tranzacțiile portofel lipsă</translation>
+        <translation>Rescanează lanțul de bloc pentru tranzacțiile portofel lipsă</translation>
     </message>
     <message>
-        <location line="+35"/>
+        <location line="+38"/>
         <source>Use OpenSSL (https) for JSON-RPC connections</source>
-        <translation>Foloseste Open SSL(https) pentru coneciunile JSON-RPC</translation>
+        <translation>Folosește OpenSSL (https) pentru conexiunile JSON-RPC</translation>
     </message>
     <message>
-        <location line="-26"/>
+        <location line="-29"/>
         <source>Server certificate file (default: server.cert)</source>
-        <translation>Certificatul serverulu (initial: server.cert)</translation>
+        <translation>Certificatul serverului (implicit: server.cert)</translation>
     </message>
     <message>
         <location line="+1"/>
         <source>Server private key (default: server.pem)</source>
-        <translation>Cheia privata a serverului ( initial: server.pem)</translation>
+        <translation>Cheia privată a serverului (implicit: server.pem)</translation>
     </message>
     <message>
-        <location line="-151"/>
-        <source>Acceptable ciphers (default: TLSv1+HIGH:!SSLv2:!aNULL:!eNULL:!AH:!3DES:@STRENGTH)</source>
-        <translation>Accepta cifruri (initial: TLSv1+HIGH:!SSLv2:!aNULL:!eNULL:!AH:!3DES:@STRENGTH)</translation>
-    </message>
-    <message>
-        <location line="+165"/>
+        <location line="+16"/>
         <source>This help message</source>
-        <translation>Acest mesaj de ajutor.</translation>
+        <translation>Acest mesaj de ajutor</translation>
     </message>
     <message>
         <location line="+6"/>
         <source>Unable to bind to %s on this computer (bind returned error %d, %s)</source>
-        <translation>Nu se poate lega %s cu acest calculator (retunare eroare legatura %d, %s)
-
-</translation>
+        <translation>Nu se poate folosi %s pe acest calculator (eroarea returnată este %d, %s)</translation>
     </message>
     <message>
-        <location line="-91"/>
+        <location line="-95"/>
         <source>Connect through socks proxy</source>
         <translation>Conectează prin proxy SOCKS</translation>
     </message>
     <message>
-        <location line="-10"/>
+        <location line="-11"/>
         <source>Allow DNS lookups for -addnode, -seednode and -connect</source>
-        <translation>Permite DNS-ului sa se uite dupa -addnode, -seednode si -connect</translation>
+        <translation>Permite căutări DNS pentru -addnode, -seednode și -connect</translation>
     </message>
     <message>
-        <location line="+55"/>
+        <location line="+58"/>
         <source>Loading addresses...</source>
         <translation>Încarc adrese...</translation>
     </message>
     <message>
-        <location line="-35"/>
+        <location line="-36"/>
         <source>Error loading wallet.dat: Wallet corrupted</source>
-        <translation>Eroare incarcand wallet.dat: Portofel corupt</translation>
+        <translation>Eroare la încărcarea wallet.dat: Portofel corupt</translation>
     </message>
     <message>
         <location line="+1"/>
-        <source>Error loading wallet.dat: Wallet requires newer version of Peercoin</source>
-        <translation>Eroare incarcare wallet.dat: Portofelul are nevoie de o versiune Peercoin mai noua</translation>
+        <source>Error loading wallet.dat: Wallet requires newer version of Philosopherstone</source>
+        <translation>Eroare la încărcarea wallet.dat: Portofelul are nevoie de o versiune Philosopherstone mai nouă</translation>
     </message>
     <message>
-        <location line="+93"/>
-        <source>Wallet needed to be rewritten: restart Peercoin to complete</source>
-        <translation>Portofelul trebuie rescris: restarteaza aplicatia peercoin pentru a face asta.</translation>
+        <location line="+98"/>
+        <source>Wallet needed to be rewritten: restart Philosopherstone to complete</source>
+        <translation>Portofelul trebuie rescris: repornește Philosopherstone pentru finalizare</translation>
     </message>
     <message>
-        <location line="-95"/>
+        <location line="-100"/>
         <source>Error loading wallet.dat</source>
-        <translation>Eroare incarcand wallet.dat</translation>
+        <translation>Eroare la încărcarea wallet.dat</translation>
     </message>
     <message>
-        <location line="+28"/>
+        <location line="+30"/>
         <source>Invalid -proxy address: &apos;%s&apos;</source>
-        <translation>Adresa proxy invalida: &apos;%s&apos;</translation>
+        <translation>Adresa -proxy nevalidă: &apos;%s&apos;</translation>
     </message>
     <message>
-        <location line="+56"/>
+        <location line="+57"/>
         <source>Unknown network specified in -onlynet: &apos;%s&apos;</source>
-        <translation>Retea specificata necunoscuta -onlynet: &apos;%s&apos;</translation>
+        <translation>Rețeaua specificată în -onlynet este necunoscută: &apos;%s&apos;</translation>
     </message>
     <message>
         <location line="-1"/>
         <source>Unknown -socks proxy version requested: %i</source>
-        <translation>Necunoscut -socks proxy version requested: %i</translation>
+        <translation>S-a cerut o versiune necunoscută de proxy -socks: %i</translation>
     </message>
     <message>
-        <location line="-96"/>
+        <location line="-100"/>
         <source>Cannot resolve -bind address: &apos;%s&apos;</source>
-        <translation>Nu se poate rezolca -bind address: &apos;%s&apos;</translation>
+        <translation>Nu se poate rezolva adresa -bind: &apos;%s&apos;</translation>
     </message>
     <message>
         <location line="+1"/>
         <source>Cannot resolve -externalip address: &apos;%s&apos;</source>
-        <translation>Nu se poate rezolva -externalip address: &apos;%s&apos;</translation>
+        <translation>Nu se poate rezolva adresa -externalip: &apos;%s&apos;</translation>
     </message>
     <message>
-        <location line="+44"/>
+        <location line="+46"/>
         <source>Invalid amount for -paytxfee=&lt;amount&gt;: &apos;%s&apos;</source>
-        <translation>Suma invalida pentru -paytxfee=&lt;amount&gt;: &apos;%s&apos;</translation>
+        <translation>Suma nevalidă pentru -paytxfee=&lt;amount&gt;: &apos;%s&apos;</translation>
     </message>
     <message>
         <location line="+1"/>
         <source>Invalid amount</source>
-        <translation>Suma invalida</translation>
+        <translation>Sumă nevalidă</translation>
     </message>
     <message>
         <location line="-6"/>
@@ -2882,63 +3280,63 @@ for example: alertnotify=echo %%s | mail -s &quot;Peercoin Alert&quot; admin@foo
         <translation>Încarc indice bloc...</translation>
     </message>
     <message>
-        <location line="-57"/>
+        <location line="-60"/>
         <source>Add a node to connect to and attempt to keep the connection open</source>
-        <translation>Add a node to connect to and attempt to keep the connection open
-details suggestions history
-</translation>
+        <translation>Adaugă un nod la care te poți conecta pentru a menține conexiunea deschisă</translation>
     </message>
     <message>
-        <location line="-25"/>
-        <source>Unable to bind to %s on this computer. Peercoin is probably already running.</source>
-        <translation>Imposibilitatea de a lega la% s pe acest computer. Peercoin este, probabil, deja în execuție.</translation>
+        <location line="-28"/>
+        <source>Unable to bind to %s on this computer. Philosopherstone is probably already running.</source>
+        <translation>Imposibilitatea de a lega la% s pe acest computer. Philosopherstone este, probabil, deja în execuție.</translation>
     </message>
     <message>
-        <location line="+64"/>
+        <location line="+69"/>
         <source>Fee per KB to add to transactions you send</source>
-        <translation>Taxa pe kb pentru a adauga tranzactii trimise</translation>
+        <translation>Taxa per KB care se adaugă la tranzacțiile trimise de tine</translation>
     </message>
     <message>
-        <location line="+19"/>
+        <location line="+20"/>
         <source>Loading wallet...</source>
         <translation>Încarc portofel...</translation>
     </message>
     <message>
-        <location line="-52"/>
+        <location line="-54"/>
         <source>Cannot downgrade wallet</source>
-        <translation>Nu se poate face downgrade la portofel</translation>
+        <translation>Nu se poate retrograda portofelul</translation>
     </message>
     <message>
         <location line="+3"/>
         <source>Cannot write default address</source>
-        <translation>Nu se poate scrie adresa initiala</translation>
+        <translation>Nu se poate scrie adresa implicită</translation>
     </message>
     <message>
-        <location line="+64"/>
+        <location line="+66"/>
         <source>Rescanning...</source>
         <translation>Rescanez...</translation>
     </message>
     <message>
-        <location line="-57"/>
+        <location line="-58"/>
         <source>Done loading</source>
         <translation>Încărcare terminată</translation>
     </message>
     <message>
-        <location line="+82"/>
+        <location line="+85"/>
         <source>To use the %s option</source>
-        <translation>Pentru a folosii optiunea %s</translation>
+        <translation>Pentru a folosi opțiunea %s</translation>
     </message>
     <message>
-        <location line="-74"/>
+        <location line="-77"/>
         <source>Error</source>
         <translation>Eroare</translation>
     </message>
     <message>
-        <location line="-31"/>
+        <location line="-33"/>
         <source>You must set rpcpassword=&lt;password&gt; in the configuration file:
 %s
 If the file does not exist, create it with owner-readable-only file permissions.</source>
-        <translation type="unfinished"/>
+        <translation>Trebuie sa setezi rpcpassword=&lt;password&gt; în fișierul de configurare:⏎
+%s⏎
+Dacă fișierul nu există, creează-l cu permisiuni de citire doar de către proprietar.</translation>
     </message>
 </context>
 </TS>

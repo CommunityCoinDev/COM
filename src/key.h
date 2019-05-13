@@ -1,6 +1,5 @@
 // Copyright (c) 2009-2010 Satoshi Nakamoto
 // Copyright (c) 2009-2012 The Bitcoin developers
-// Copyright (c) 2011-2019 The Peercoin developers
 // Distributed under the MIT/X11 software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 #ifndef BITCOIN_KEY_H
@@ -12,7 +11,7 @@
 #include "allocators.h"
 #include "serialize.h"
 #include "uint256.h"
-#include "hash.h"
+#include "util.h"
 
 #include <openssl/ec.h> // for EC_KEY definition
 
@@ -114,8 +113,9 @@ protected:
     bool fSet;
     bool fCompressedPubKey;
 
+    void SetCompressedPubKey();
+
 public:
-    void SetCompressedPubKey(bool fCompressed = true);
 
     void Reset();
 
@@ -153,10 +153,10 @@ public:
 
     bool Verify(uint256 hash, const std::vector<unsigned char>& vchSig);
 
-    // Verify a compact signature
-    bool VerifyCompact(uint256 hash, const std::vector<unsigned char>& vchSig);
-
     bool IsValid();
 };
+
+/** Check that required EC support is available at runtime */
+bool ECC_InitSanityCheck(void);
 
 #endif

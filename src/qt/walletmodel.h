@@ -6,11 +6,11 @@
 #include <map>
 
 #include "allocators.h" /* for SecureString */
+#include "util.h" /* for int64 */
 
 class OptionsModel;
 class AddressTableModel;
 class TransactionTableModel;
-class MintingTableModel;
 class CWallet;
 class CKeyID;
 class CPubKey;
@@ -62,7 +62,6 @@ public:
 
     OptionsModel *getOptionsModel();
     AddressTableModel *getAddressTableModel();
-    MintingTableModel *getMintingTableModel();
     TransactionTableModel *getTransactionTableModel();
 
     qint64 getBalance() const;
@@ -70,6 +69,7 @@ public:
     qint64 getUnconfirmedBalance() const;
     qint64 getImmatureBalance() const;
     int getNumTransactions() const;
+    int getWalletVersion() const;
     EncryptionStatus getEncryptionStatus() const;
 
     // Check address for validity
@@ -88,7 +88,7 @@ public:
     };
 
     // Send coins to a list of recipients
-    SendCoinsReturn sendCoins(const QList<SendCoinsRecipient> &recipients, const CCoinControl *coinControl=NULL);
+    SendCoinsReturn sendCoins(const QString &txcomment, const QList<SendCoinsRecipient> &recipients, const CCoinControl *coinControl=NULL);
 
     // Wallet encryption
     bool setWalletEncrypted(bool encrypted, const SecureString &passphrase);
@@ -97,6 +97,17 @@ public:
     bool changePassphrase(const SecureString &oldPass, const SecureString &newPass);
     // Wallet backup
     bool backupWallet(const QString &filename);
+    // Wallet Repair
+    void checkWallet(int& nMismatchSpent, int64& nBalanceInQuestion, int& nOrphansFound);
+    void repairWallet(int& nMismatchSpent, int64& nBalanceInQuestion, int& nOrphansFound);
+    //Wallet Inport/Export
+    bool dumpWallet(const QString &filename);
+    bool importWallet(const QString &filename);
+
+    //PoS Information about value and time
+    void getStakeWeightFromValue(const qint64& nTime, const qint64& nValue, quint64& nWeight);
+    //PoS Information
+    void getStakeWeight(quint64& nMinWeight, quint64& nMaxWeight, quint64& nWeight);
 
     // RAI object for unlocking wallet, returned by requestUnlock()
     class UnlockContext
@@ -119,16 +130,14 @@ public:
     };
 
     UnlockContext requestUnlock();
-
+	
     bool getPubKey(const CKeyID &address, CPubKey& vchPubKeyOut) const;
     void getOutputs(const std::vector<COutPoint>& vOutpoints, std::vector<COutput>& vOutputs);
     void listCoins(std::map<QString, std::vector<COutput> >& mapCoins) const;
-
     bool isLockedCoin(uint256 hash, unsigned int n) const;
     void lockCoin(COutPoint& output);
     void unlockCoin(COutPoint& output);
     void listLockedCoins(std::vector<COutPoint>& vOutpts);
-    void clearOrphans();
 
 private:
     CWallet *wallet;
@@ -138,7 +147,6 @@ private:
     OptionsModel *optionsModel;
 
     AddressTableModel *addressTableModel;
-    MintingTableModel *mintingTableModel;
     TransactionTableModel *transactionTableModel;
 
     // Cache some values to be able to detect changes
@@ -156,6 +164,17 @@ private:
     void unsubscribeFromCoreSignals();
     void checkBalanceChanged();
 
+
+public slots:
+    /* Wallet status might have changed */
+    void updateStatus();
+    /* New transaction, or transaction changed status */
+    void updateTransaction(const QString &hash, int status);
+    /* New, updated or removed address book entry */
+    void updateAddressBook(const QString &address, const QString &label, bool isMine, int status);
+    /* Current, immature or unconfirmed balance might have changed - emit 'balanceChanged' if so */
+    void pollBalanceChanged();
+
 signals:
     // Signal that balance in wallet changed
     void balanceChanged(qint64 balance, qint64 stake, qint64 unconfirmedBalance, qint64 immatureBalance);
@@ -172,17 +191,8 @@ signals:
     void requireUnlock();
 
     // Asynchronous message notification
-    void message(const QString &title, const QString &message, unsigned int style);
-
-public slots:
-    /* Wallet status might have changed */
-    void updateStatus();
-    /* New transaction, or transaction changed status */
-    void updateTransaction(const QString &hash, int status);
-    /* New, updated or removed address book entry */
-    void updateAddressBook(const QString &address, const QString &label, bool isMine, int status);
-    /* Current, immature or unconfirmed balance might have changed - emit 'balanceChanged' if so */
-    void pollBalanceChanged();
+    void message(const QString &title, const QString &message,  unsigned int style);
 };
+
 
 #endif // WALLETMODEL_H

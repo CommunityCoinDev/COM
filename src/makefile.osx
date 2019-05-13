@@ -1,10 +1,9 @@
 # -*- mode: Makefile; -*-
-# Copyright (c) 2009-2010 Satoshi Nakamoto
-# Copyright (c) 2011-2019 The Peercoin developers
+# Copyright (c) 2011 Bitcoin Developers
 # Distributed under the MIT/X11 software license, see the accompanying
 # file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-# Mac OS X makefile for peercoin
+# Mac OS X makefile for bitcoin
 # Originally by Laszlo Hanyecz (solar@heliacal.net)
 
 CXX=llvm-g++
@@ -21,7 +20,7 @@ LIBPATHS= \
  -L"$(DEPSDIR)/lib/db48"
 
 USE_UPNP:=1
-USE_IPV6:=1
+USE_LEVELDB:=1
 
 LIBS= -dead_strip
 
@@ -37,7 +36,6 @@ LIBS += \
  $(DEPSDIR)/lib/libboost_filesystem-mt.a \
  $(DEPSDIR)/lib/libboost_program_options-mt.a \
  $(DEPSDIR)/lib/libboost_thread-mt.a \
- $(DEPSDIR)/lib/libboost_chrono-mt.a \
  $(DEPSDIR)/lib/libssl.a \
  $(DEPSDIR)/lib/libcrypto.a \
  -lz
@@ -50,27 +48,21 @@ LIBS += \
  -lboost_filesystem-mt \
  -lboost_program_options-mt \
  -lboost_thread-mt \
- -lboost_chrono-mt \
  -lssl \
  -lcrypto \
  -lz
 TESTDEFS += -DBOOST_TEST_DYN_LINK
 endif
 
-DEFS=-DMAC_OSX -DMSG_NOSIGNAL=0 -DBOOST_SPIRIT_THREADSAFE -DHAVE_WORKING_BOOST_SLEEP_FOR -DBOOST_NO_CXX11_SCOPED_ENUMS
+DEFS=-DMAC_OSX -DMSG_NOSIGNAL=0 -DBOOST_SPIRIT_THREADSAFE
 
 ifdef RELEASE
-CFLAGS = -mmacosx-version-min=10.5 -O3
 # Compile for maximum compatibility and smallest size.
 # This requires that dependencies are compiled
 # the same way.
-ifdef 64BIT
-CFLAGS += -arch x86_64
+CFLAGS = -mmacosx-version-min=10.5 -arch x86_64 -O3 -msse2
 else
-CFLAGS += -arch i386
-endif
-else
-DEBUGFLAGS = -g
+CFLAGS = -g -msse2
 endif
 
 # ppc doesn't work because we don't support big-endian
@@ -78,9 +70,7 @@ CFLAGS += -Wall -Wextra -Wformat -Wformat-security -Wno-unused-parameter \
     $(DEBUGFLAGS) $(DEFS) $(INCLUDEPATHS)
 
 OBJS= \
-    leveldb/libleveldb.a \
     obj/alert.o \
-    obj/bitcoind.o \
     obj/version.o \
     obj/checkpoints.o \
     obj/netbase.o \
@@ -89,18 +79,16 @@ OBJS= \
     obj/key.o \
     obj/db.o \
     obj/init.o \
+    obj/irc.o \
     obj/keystore.o \
     obj/main.o \
+    obj/miner.o \
     obj/net.o \
     obj/protocol.o \
-    obj/kernelrecord.o \
-    obj/rpcserver.o \
-    obj/rpcclient.o \
-    obj/rpcprotocol.o \
+    obj/bitcoinrpc.o \
     obj/rpcdump.o \
     obj/rpcnet.o \
     obj/rpcmining.o \
-    obj/rpcminting.o \
     obj/rpcwallet.o \
     obj/rpcblockchain.o \
     obj/rpcrawtransaction.o \
@@ -109,13 +97,12 @@ OBJS= \
     obj/util.o \
     obj/wallet.o \
     obj/walletdb.o \
-    obj/kernel.o \
-    obj/checkpointsync.o \
-    obj/hash.o \
-    obj/bloom.o \
     obj/noui.o \
-    obj/leveldbwrapper.o \
-    obj/txdb.o
+    obj/pbkdf2.o \
+    obj/kernel.o \
+    obj/scrypt_mine.o \
+    obj/scrypt-x86.o \
+    obj/scrypt-x86_64.o
 
 ifndef USE_UPNP
 	override USE_UPNP = -
@@ -129,24 +116,26 @@ else
 endif
 endif
 
-ifneq (${USE_IPV6}, -)
-	DEFS += -DUSE_IPV6=$(USE_IPV6)
-endif
 
-all: peercoind
-
-test check: test_bitcoin FORCE
-	./test_bitcoin
+all: stoned
 
 #
 # LevelDB support
 #
+ifdef USE_LEVELDB
 LIBS += $(CURDIR)/leveldb/libleveldb.a $(CURDIR)/leveldb/libmemenv.a
-DEFS += $(addprefix -I,$(CURDIR)/leveldb/include)
+DEFS += $(addprefix -I,$(CURDIR)/leveldb/include) -DUSE_LEVELDB
 DEFS += $(addprefix -I,$(CURDIR)/leveldb/helpers)
-DEFS += $(addprefix -I,$(CURDIR)/leveldb/helpers/memenv)
+OBJS += obj/txdb-leveldb.o
 leveldb/libleveldb.a:
-	@echo "Building LevelDB ..." && cd leveldb && $(MAKE) CC=$(CC) CXX=$(CXX) OPT="$(CFLAGS)" libleveldb.a libmemenv.a && cd ..
+  @echo "Building LevelDB ..."; cd leveldb; make libleveldb.a libmemenv.a; cd ..
+obj/txdb-leveldb.o: leveldb/libleveldb.a
+else
+OBJS += obj/txdb-bdb.o
+endif
+
+test check: test_philosopherstone FORCE
+	./test_philosopherstone
 
 # auto-generated dependencies:
 -include obj/*.P
@@ -164,9 +153,14 @@ obj/%.o: %.cpp
 	      -e '/^$$/ d' -e 's/$$/ :/' < $(@:%.o=%.d) >> $(@:%.o=%.P); \
 	  rm -f $(@:%.o=%.d)
 
-peercoind: $(OBJS:obj/%=obj/%)
+obj/scrypt-x86.o: scrypt-x86.S
+	$(CXX) -c $(xCXXFLAGS) -MMD -o $@ $<
+
+obj/scrypt-x86_64.o: scrypt-x86_64.S
+	$(CXX) -c $(xCXXFLAGS) -MMD -o $@ $<
+
+stoned: $(OBJS:obj/%=obj/%)
 	$(CXX) $(CFLAGS) -o $@ $(LIBPATHS) $^ $(LIBS)
-	@cp $@ ppcoind
 
 TESTOBJS := $(patsubst test/%.cpp,obj-test/%.o,$(wildcard test/*.cpp))
 
@@ -177,17 +171,15 @@ obj-test/%.o: test/%.cpp
 	      -e '/^$$/ d' -e 's/$$/ :/' < $(@:%.o=%.d) >> $(@:%.o=%.P); \
 	  rm -f $(@:%.o=%.d)
 
-test_peercoin: $(TESTOBJS) $(filter-out obj/init.o,$(OBJS:obj/%=obj/%))
+test_philosopherstone: $(TESTOBJS) $(filter-out obj/init.o,$(OBJS:obj/%=obj/%))
 	$(CXX) $(CFLAGS) -o $@ $(LIBPATHS) $^ $(LIBS) $(TESTLIBS)
 
 clean:
-	-rm -f peercoind test_peercoin
-	-rm -f ppcoind
+	-rm -f stoned test_philosopherstone
 	-rm -f obj/*.o
 	-rm -f obj-test/*.o
 	-rm -f obj/*.P
 	-rm -f obj-test/*.P
 	-rm -f obj/build.h
-	-cd leveldb && $(MAKE) clean || true
 
 FORCE:

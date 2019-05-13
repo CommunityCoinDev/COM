@@ -22,7 +22,6 @@ QT_END_NAMESPACE
 class TransactionView : public QWidget
 {
     Q_OBJECT
-
 public:
     explicit TransactionView(QWidget *parent = 0);
 
@@ -67,7 +66,6 @@ private slots:
     void copyLabel();
     void copyAmount();
     void copyTxID();
-    void clearOrphans();
 
 signals:
     void doubleClicked(const QModelIndex&);

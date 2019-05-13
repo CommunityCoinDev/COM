@@ -5,6 +5,7 @@ bin
 *.includes
 .deps
 *.user
+.vscode
 
 *.tar.gz
 
@@ -17,6 +18,7 @@ src/peercoind
 src/test_peercoin
 src/test/test_peercoin
 src/qt/test/test_peercoin-qt
+communitycoin-qt
 
 # autoreconf
 Makefile.in
