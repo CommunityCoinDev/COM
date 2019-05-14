@@ -38,7 +38,6 @@ index bef0ef3..07ef8d3 100644
   $(DEPSDIR)/lib/libboost_filesystem-mt.a \
   $(DEPSDIR)/lib/libboost_program_options-mt.a \
   $(DEPSDIR)/lib/libboost_thread-mt.a \
-  $(DEPSDIR)/lib/libboost_chrono-mt.a \
 - $(DEPSDIR)/lib/libssl.a \
 - $(DEPSDIR)/lib/libcrypto.a \
 + $(OPENSSLDIR)/lib/libssl.a \
