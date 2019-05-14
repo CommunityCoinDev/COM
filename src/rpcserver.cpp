@@ -49,7 +49,7 @@ static boost::thread_group* rpc_worker_group = NULL;
 
 static inline unsigned short GetDefaultRPCPort()
 {
-    return GetBoolArg("-testnet", false) ? TESTNET_RPC_PORT : RPC_PORT;
+    return GetBoolArg("-testnet", false) ? TESTNET_RPC_PORT : MAINNET_RPC_PORT;
 }
 
 void RPCTypeCheck(const Array& params,

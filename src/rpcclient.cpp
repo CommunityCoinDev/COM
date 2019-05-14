@@ -48,7 +48,7 @@ Object CallRPC(const string& strMethod, const Array& params)
 
     bool fWait = GetBoolArg("-rpcwait", false); // -rpcwait means try until server has started
     do {
-        bool fConnected = d.connect(GetArg("-rpcconnect", "127.0.0.1"), GetArg("-rpcport", itostr(GetBoolArg("-testnet", false) ? TESTNET_RPC_PORT : RPC_PORT)));
+        bool fConnected = d.connect(GetArg("-rpcconnect", "127.0.0.1"), GetArg("-rpcport", itostr(GetBoolArg("-testnet", false) ? TESTNET_RPC_PORT : MAINNET_RPC_PORT)));
         if (fConnected) break;
         if (fWait)
             MilliSleep(1000);
