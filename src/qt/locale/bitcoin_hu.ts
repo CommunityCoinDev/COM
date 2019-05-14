@@ -3,7 +3,7 @@
     <name>AboutDialog</name>
     <message>
         <location filename="../forms/aboutdialog.ui" line="+14"/>
-        <source>About Philosopherstone</source>
+        <source>About CommunityCoin</source>
         <translation>A Bitcoinról</translation>
     </message>
     <message>
@@ -32,8 +32,8 @@ Ez a termék az OpenSSL Project által lett kifejlesztve az OpenSSL Toolkit (htt
     </message>
     <message>
         <location line="+0"/>
-        <source>The Philosopherstone developers</source>
-        <translation>A Philosopherstone fejlesztői</translation>
+        <source>The CommunityCoin developers</source>
+        <translation>A CommunityCoin fejlesztői</translation>
     </message>
 </context>
 <context>
@@ -120,12 +120,12 @@ Ez a termék az OpenSSL Project által lett kifejlesztve az OpenSSL Toolkit (htt
     </message>
     <message>
         <location line="+7"/>
-        <source>These are your Philosopherstone addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
+        <source>These are your CommunityCoin addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
         <translation type="unfinished"/>
     </message>
     <message>
         <location line="+4"/>
-        <source>These are your Philosopherstone addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
+        <source>These are your CommunityCoin addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -273,8 +273,8 @@ Ez a termék az OpenSSL Project által lett kifejlesztve az OpenSSL Toolkit (htt
     </message>
     <message>
         <location line="-56"/>
-        <source>Philosopherstone will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your stones from being stolen by malware infecting your computer.</source>
-        <translation>Philosopherstone will close now to finish the encryption process. Ne feledd, hogy a tárca titkosítása sem nyújt teljes védelmet az adathalász programok fertőzésével szemben.</translation>
+        <source>CommunityCoin will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your stones from being stolen by malware infecting your computer.</source>
+        <translation>CommunityCoin will close now to finish the encryption process. Ne feledd, hogy a tárca titkosítása sem nyújt teljes védelmet az adathalász programok fertőzésével szemben.</translation>
     </message>
     <message>
         <location line="+13"/>
@@ -362,7 +362,7 @@ Ez a termék az OpenSSL Project által lett kifejlesztve az OpenSSL Toolkit (htt
     </message>
     <message>
         <location line="+7"/>
-        <source>Show information about Philosopherstone</source>
+        <source>Show information about CommunityCoin</source>
         <translation>Információk a Bitcoinról</translation>
     </message>
     <message>
@@ -408,13 +408,13 @@ Ez a termék az OpenSSL Project által lett kifejlesztve az OpenSSL Toolkit (htt
     </message>
     <message>
         <location line="-322"/>
-        <source>Send stones to a Philosopherstone address</source>
+        <source>Send stones to a CommunityCoin address</source>
         <translation>Érmék küldése megadott címre</translation>
     </message>
     <message>
         <location line="+47"/>
-        <source>Modify configuration options for Philosopherstone</source>
-        <translation>Philosopherstone konfigurációs opciók</translation>
+        <source>Modify configuration options for CommunityCoin</source>
+        <translation>CommunityCoin konfigurációs opciók</translation>
     </message>
     <message>
         <location line="+12"/>
@@ -445,8 +445,8 @@ Ez a termék az OpenSSL Project által lett kifejlesztve az OpenSSL Toolkit (htt
         <location line="-180"/>
         <location line="+6"/>
         <location line="+513"/>
-        <source>Philosopherstone</source>
-        <translation>Philosopherstone</translation>
+        <source>CommunityCoin</source>
+        <translation>CommunityCoin</translation>
     </message>
     <message>
         <location line="-519"/>
@@ -467,7 +467,7 @@ Ez a termék az OpenSSL Project által lett kifejlesztve az OpenSSL Toolkit (htt
     <message>
         <location line="+28"/>
         <location line="+2"/>
-        <source>&amp;About Philosopherstone</source>
+        <source>&amp;About CommunityCoin</source>
         <translation>&amp;A Bitcoinról</translation>
     </message>
     <message>
@@ -488,13 +488,13 @@ Ez a termék az OpenSSL Project által lett kifejlesztve az OpenSSL Toolkit (htt
     </message>
     <message>
         <location line="+7"/>
-        <source>Sign messages with your Philosopherstone addresses to prove you own them</source>
-        <translation>Üzenet aláírása a Philosopherstone címmel, amivel bizonyítja, hogy a cím az ön tulajdona.</translation>
+        <source>Sign messages with your CommunityCoin addresses to prove you own them</source>
+        <translation>Üzenet aláírása a CommunityCoin címmel, amivel bizonyítja, hogy a cím az ön tulajdona.</translation>
     </message>
     <message>
         <location line="+2"/>
-        <source>Verify messages to ensure they were signed with specified Philosopherstone addresses</source>
-        <translation>Annak ellenőrzése, hogy az üzenetek valóban a megjelölt Philosopherstone címekkel vannak-e alaírva</translation>
+        <source>Verify messages to ensure they were signed with specified CommunityCoin addresses</source>
+        <translation>Annak ellenőrzése, hogy az üzenetek valóban a megjelölt CommunityCoin címekkel vannak-e alaírva</translation>
     </message>
     <message>
         <location line="+35"/>
@@ -550,12 +550,12 @@ Ez a termék az OpenSSL Project által lett kifejlesztve az OpenSSL Toolkit (htt
     <message>
         <location line="+106"/>
         <location line="+5"/>
-        <source>Philosopherstone client</source>
-        <translation>Philosopherstone kliens</translation>
+        <source>CommunityCoin client</source>
+        <translation>CommunityCoin kliens</translation>
     </message>
     <message numerus="yes">
         <location line="+120"/>
-        <source>%n active connection(s) to Philosopherstone network</source>
+        <source>%n active connection(s) to CommunityCoin network</source>
         <translation><numerusform>%n aktív kapcsolat a Bitcoin-hálózattal</numerusform><numerusform>%n aktív kapcsolat a Bitcoin-hálózattal</numerusform></translation>
     </message>
     <message>
@@ -668,7 +668,7 @@ Cím: %4
     </message>
     <message>
         <location line="+0"/>
-        <source>URI can not be parsed! This can be caused by an invalid Philosopherstone address or malformed URI parameters.</source>
+        <source>URI can not be parsed! This can be caused by an invalid CommunityCoin address or malformed URI parameters.</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -683,7 +683,7 @@ Cím: %4
     </message>
     <message>
         <location filename="../bitcoin.cpp" line="+110"/>
-        <source>A fatal error occurred. Philosopherstone can no longer continue safely and will quit.</source>
+        <source>A fatal error occurred. CommunityCoin can no longer continue safely and will quit.</source>
         <translation type="unfinished"/>
     </message>
 </context>
@@ -749,7 +749,7 @@ Cím: %4
     </message>
     <message>
         <location line="-5"/>
-        <source>The entered address &quot;%1&quot; is not a valid Philosopherstone address.</source>
+        <source>The entered address &quot;%1&quot; is not a valid CommunityCoin address.</source>
         <translation>A megadott &quot;%1&quot; cím nem egy érvényes Bitcoin-cím.</translation>
     </message>
     <message>
@@ -796,8 +796,8 @@ Cím: %4
     <message>
         <location filename="../guiutil.cpp" line="+558"/>
         <location line="+13"/>
-        <source>Philosopherstone-qt</source>
-        <translation>Philosopherstone-qt</translation>
+        <source>CommunityCoin-qt</source>
+        <translation>CommunityCoin-qt</translation>
     </message>
     <message>
         <location line="-13"/>
@@ -850,17 +850,17 @@ Cím: %4
     </message>
     <message>
         <location line="+9"/>
-        <source>Welcome to Philosopherstone-qt.</source>
+        <source>Welcome to CommunityCoin-qt.</source>
         <translation type="unfinished"/>
     </message>
     <message>
         <location line="+26"/>
-        <source>As this is the first time the program is launched, you can choose where Philosopherstone-qt will store its data.</source>
+        <source>As this is the first time the program is launched, you can choose where CommunityCoin-qt will store its data.</source>
         <translation type="unfinished"/>
     </message>
     <message>
         <location line="+10"/>
-        <source>Philosopherstone-qt will download and store a copy of the Philosopherstone block chain. At least %1GB of data will be stored in this directory, and it will grow over time. The wallet will also be stored in this directory.</source>
+        <source>CommunityCoin-qt will download and store a copy of the CommunityCoin block chain. At least %1GB of data will be stored in this directory, and it will grow over time. The wallet will also be stored in this directory.</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -913,12 +913,12 @@ Cím: %4
     </message>
     <message>
         <location line="+31"/>
-        <source>Automatically start Philosopherstone after logging in to the system.</source>
-        <translation>Induljon el a Philosopherstone a számítógép bekapcsolásakor</translation>
+        <source>Automatically start CommunityCoin after logging in to the system.</source>
+        <translation>Induljon el a CommunityCoin a számítógép bekapcsolásakor</translation>
     </message>
     <message>
         <location line="+3"/>
-        <source>&amp;Start Philosopherstone on system login</source>
+        <source>&amp;Start CommunityCoin on system login</source>
         <translation>&amp;Induljon el a számítógép bekapcsolásakor</translation>
     </message>
     <message>
@@ -938,7 +938,7 @@ Cím: %4
     </message>
     <message>
         <location line="+6"/>
-        <source>Automatically open the Philosopherstone client port on the router. This only works when your router supports UPnP and it is enabled.</source>
+        <source>Automatically open the CommunityCoin client port on the router. This only works when your router supports UPnP and it is enabled.</source>
         <translation>A Bitcoin-kliens portjának automatikus megnyitása a routeren. Ez csak akkor működik, ha a routered támogatja az UPnP-t és az engedélyezve is van rajta.</translation>
     </message>
     <message>
@@ -948,8 +948,8 @@ Cím: %4
     </message>
     <message>
         <location line="+7"/>
-        <source>Connect to the Philosopherstone network through a SOCKS proxy (e.g. when connecting through Tor).</source>
-        <translation>SOCKS proxyn keresztüli csatlakozás a Philosopherstone hálózatához (pl. Tor-on keresztüli csatlakozás esetén)</translation>
+        <source>Connect to the CommunityCoin network through a SOCKS proxy (e.g. when connecting through Tor).</source>
+        <translation>SOCKS proxyn keresztüli csatlakozás a CommunityCoin hálózatához (pl. Tor-on keresztüli csatlakozás esetén)</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -1024,7 +1024,7 @@ Cím: %4
     <message>
         <location line="+13"/>
         <source>The user interface language can be set here. This setting will take effect after restarting Bitcoin.</source>
-        <translation>Itt beállíthatod a felhasználófelület nyelvét. Ez a beállítás a Philosopherstone ujraindítása után lép érvénybe.</translation>
+        <translation>Itt beállíthatod a felhasználófelület nyelvét. Ez a beállítás a CommunityCoin ujraindítása után lép érvénybe.</translation>
     </message>
     <message>
         <location line="+11"/>
@@ -1038,8 +1038,8 @@ Cím: %4
     </message>
     <message>
         <location line="+9"/>
-        <source>Whether to show Philosopherstone addresses in the transaction list or not.</source>
-        <translation>Mutassa-e a Philosopherstone címeket a tranzakciólistában.</translation>
+        <source>Whether to show CommunityCoin addresses in the transaction list or not.</source>
+        <translation>Mutassa-e a CommunityCoin címeket a tranzakciólistában.</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -1091,7 +1091,7 @@ Cím: %4
         <location line="-9"/>
         <location line="+9"/>
         <source>This setting will take effect after restarting Bitcoin.</source>
-        <translation>Ez a beállítás a Philosopherstone ujraindítása után lép érvénybe.</translation>
+        <translation>Ez a beállítás a CommunityCoin ujraindítása után lép érvénybe.</translation>
     </message>
     <message>
         <location line="+29"/>
@@ -1109,8 +1109,8 @@ Cím: %4
     <message>
         <location line="+50"/>
         <location line="+202"/>
-        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the Philosopherstone network after a connection is established, but this process has not completed yet.</source>
-        <translation>A kijelzett információ lehet, hogy elavult. A pénztárcája automatikusan szinkronizálja magát a Philosopherstone hálózattal miután a kapcsolat létrejön, de ez e folyamat még nem fejeződött be.</translation>
+        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the CommunityCoin network after a connection is established, but this process has not completed yet.</source>
+        <translation>A kijelzett információ lehet, hogy elavult. A pénztárcája automatikusan szinkronizálja magát a CommunityCoin hálózattal miután a kapcsolat létrejön, de ez e folyamat még nem fejeződött be.</translation>
     </message>
     <message>
         <location line="-131"/>
@@ -1178,7 +1178,7 @@ Cím: %4
     </message>
     <message>
         <location line="+1"/>
-        <source>URI can not be parsed! This can be caused by an invalid Philosopherstone address or malformed URI parameters.</source>
+        <source>URI can not be parsed! This can be caused by an invalid CommunityCoin address or malformed URI parameters.</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -1231,8 +1231,8 @@ Cím: %4
         <location filename="../bitcoin.cpp" line="+114"/>
         <location line="+5"/>
         <location filename="../intro.cpp" line="-32"/>
-        <source>Philosopherstone</source>
-        <translation>Philosopherstone</translation>
+        <source>CommunityCoin</source>
+        <translation>CommunityCoin</translation>
     </message>
     <message>
         <location line="-4"/>
@@ -1361,7 +1361,7 @@ Cím: %4
     </message>
     <message>
         <location line="+7"/>
-        <source>Show the Philosopherstone-qt help message to get a list with possible Philosopherstone command-line options.</source>
+        <source>Show the CommunityCoin-qt help message to get a list with possible CommunityCoin command-line options.</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -1406,13 +1406,13 @@ Cím: %4
     </message>
     <message>
         <location line="-104"/>
-        <source>Philosopherstone - Debug window</source>
-        <translation>Philosopherstone - Debug ablak</translation>
+        <source>CommunityCoin - Debug window</source>
+        <translation>CommunityCoin - Debug ablak</translation>
     </message>
     <message>
         <location line="+25"/>
-        <source>Philosopherstone Core</source>
-        <translation>Philosopherstone Core</translation>
+        <source>CommunityCoin Core</source>
+        <translation>CommunityCoin Core</translation>
     </message>
     <message>
         <location line="+279"/>
@@ -1421,7 +1421,7 @@ Cím: %4
     </message>
     <message>
         <location line="+7"/>
-        <source>Open the Philosopherstone debug log file from the current data directory. This can take a few seconds for large log files.</source>
+        <source>Open the CommunityCoin debug log file from the current data directory. This can take a few seconds for large log files.</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -1431,8 +1431,8 @@ Cím: %4
     </message>
     <message>
         <location filename="../rpcconsole.cpp" line="-30"/>
-        <source>Welcome to the Philosopherstone RPC console.</source>
-        <translation>Üdv a Philosopherstone RPC konzoljában!</translation>
+        <source>Welcome to the CommunityCoin RPC console.</source>
+        <translation>Üdv a CommunityCoin RPC konzoljában!</translation>
     </message>
     <message>
         <location line="+1"/>
@@ -1805,7 +1805,7 @@ Cím: %4
     </message>
     <message>
         <location filename="../sendcoinsentry.cpp" line="+1"/>
-        <source>Enter a Philosopherstone address (e.g. 1NS17iag9jJgTHD1VXjvLCEnZuQ3rJDE9L)</source>
+        <source>Enter a CommunityCoin address (e.g. 1NS17iag9jJgTHD1VXjvLCEnZuQ3rJDE9L)</source>
         <translation>Adj meg egy Bitcoin-címet (pl.: 1NS17iag9jJgTHD1VXjvLCEnZuQ3rJDE9L )</translation>
     </message>
 </context>
@@ -1870,7 +1870,7 @@ Cím: %4
     </message>
     <message>
         <location line="+21"/>
-        <source>Sign the message to prove you own this Philosopherstone address</source>
+        <source>Sign the message to prove you own this CommunityCoin address</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -1906,7 +1906,7 @@ Cím: %4
     </message>
     <message>
         <location line="+40"/>
-        <source>Verify the message to ensure it was signed with the specified Philosopherstone address</source>
+        <source>Verify the message to ensure it was signed with the specified CommunityCoin address</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -1922,7 +1922,7 @@ Cím: %4
     <message>
         <location filename="../signverifymessagedialog.cpp" line="+27"/>
         <location line="+3"/>
-        <source>Enter a Philosopherstone address (e.g. 1NS17iag9jJgTHD1VXjvLCEnZuQ3rJDE9L)</source>
+        <source>Enter a CommunityCoin address (e.g. 1NS17iag9jJgTHD1VXjvLCEnZuQ3rJDE9L)</source>
         <translation>Adj meg egy Bitcoin-címet (pl.: 1NS17iag9jJgTHD1VXjvLCEnZuQ3rJDE9L )</translation>
     </message>
     <message>
@@ -1932,8 +1932,8 @@ Cím: %4
     </message>
     <message>
         <location line="+3"/>
-        <source>Enter Philosopherstone signature</source>
-        <translation>Adja meg a Philosopherstone aláírást</translation>
+        <source>Enter CommunityCoin signature</source>
+        <translation>Adja meg a CommunityCoin aláírást</translation>
     </message>
     <message>
         <location line="+85"/>
@@ -2006,8 +2006,8 @@ Cím: %4
     <name>SplashScreen</name>
     <message>
         <location filename="../splashscreen.cpp" line="+23"/>
-        <source>The Philosopherstone developers</source>
-        <translation>A Philosopherstone fejlesztői</translation>
+        <source>The CommunityCoin developers</source>
+        <translation>A CommunityCoin fejlesztői</translation>
     </message>
     <message>
         <location line="+1"/>
@@ -2557,8 +2557,8 @@ Cím: %4
     <name>bitcoin-core</name>
     <message>
         <location filename="../bitcoinstrings.cpp" line="+102"/>
-        <source>Philosopherstone version</source>
-        <translation>Philosopherstone verzió</translation>
+        <source>CommunityCoin version</source>
+        <translation>CommunityCoin verzió</translation>
     </message>
     <message>
         <location line="+107"/>
@@ -2585,8 +2585,8 @@ Cím: %4
     </message>
     <message>
         <location line="+24"/>
-        <source>Specify configuration file (default: philosopherstone.conf)</source>
-        <translation>Konfigurációs fájl (alapértelmezett: philosopherstone.conf)
+        <source>Specify configuration file (default: communitycoin.conf)</source>
+        <translation>Konfigurációs fájl (alapértelmezett: communitycoin.conf)
 </translation>
     </message>
     <message>
@@ -2680,7 +2680,7 @@ rpcpassword=%s
 The username and password MUST NOT be the same.
 If the file does not exist, create it with owner-readable-only file permissions.
 It is also recommended to set alertnotify so you are notified of problems;
-for example: alertnotify=echo %%s | mail -s &quot;Philosopherstone Alert&quot; admin@foo.com
+for example: alertnotify=echo %%s | mail -s &quot;CommunityCoin Alert&quot; admin@foo.com
 </source>
         <translation type="unfinished"/>
     </message>
@@ -2701,8 +2701,8 @@ for example: alertnotify=echo %%s | mail -s &quot;Philosopherstone Alert&quot; a
     </message>
     <message>
         <location line="+3"/>
-        <source>Cannot obtain a lock on data directory %s. Philosopherstone is probably already running.</source>
-        <translation>Az %s adatkönyvtár nem zárható.  A Philosopherstone valószínűleg fut már.</translation>
+        <source>Cannot obtain a lock on data directory %s. CommunityCoin is probably already running.</source>
+        <translation>Az %s adatkönyvtár nem zárható.  A CommunityCoin valószínűleg fut már.</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -2741,8 +2741,8 @@ for example: alertnotify=echo %%s | mail -s &quot;Philosopherstone Alert&quot; a
     </message>
     <message>
         <location line="+3"/>
-        <source>Warning: Please check that your computer&apos;s date and time are correct! If your clock is wrong Philosopherstone will not work properly.</source>
-        <translation>Figyelem: Ellenőrizd, hogy helyesen van-e beállítva a gépeden a dátum és az idő.  A Philosopherstone nem fog megfelelően működni, ha rosszul van beállítvaaz órád.</translation>
+        <source>Warning: Please check that your computer&apos;s date and time are correct! If your clock is wrong CommunityCoin will not work properly.</source>
+        <translation>Figyelem: Ellenőrizd, hogy helyesen van-e beállítva a gépeden a dátum és az idő.  A CommunityCoin nem fog megfelelően működni, ha rosszul van beállítvaaz órád.</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -2771,7 +2771,7 @@ for example: alertnotify=echo %%s | mail -s &quot;Philosopherstone Alert&quot; a
     </message>
     <message>
         <location line="+1"/>
-        <source>Philosopherstone RPC client version</source>
+        <source>CommunityCoin RPC client version</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -2936,7 +2936,7 @@ for example: alertnotify=echo %%s | mail -s &quot;Philosopherstone Alert&quot; a
     </message>
     <message>
         <location line="+6"/>
-        <source>Send command to Philosopherstone server</source>
+        <source>Send command to CommunityCoin server</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -2951,7 +2951,7 @@ for example: alertnotify=echo %%s | mail -s &quot;Philosopherstone Alert&quot; a
     </message>
     <message>
         <location line="+2"/>
-        <source>Start Philosopherstone server</source>
+        <source>Start CommunityCoin server</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -3051,8 +3051,8 @@ for example: alertnotify=echo %%s | mail -s &quot;Philosopherstone Alert&quot; a
     </message>
     <message>
         <location line="+5"/>
-        <source>SSL options: (see the Philosopherstone Wiki for SSL setup instructions)</source>
-        <translation>SSL-opciók: (lásd a Philosopherstone Wiki SSL-beállítási instrukcióit)</translation>
+        <source>SSL options: (see the CommunityCoin Wiki for SSL setup instructions)</source>
+        <translation>SSL-opciók: (lásd a CommunityCoin Wiki SSL-beállítási instrukcióit)</translation>
     </message>
     <message>
         <location line="+1"/>
@@ -3241,12 +3241,12 @@ for example: alertnotify=echo %%s | mail -s &quot;Philosopherstone Alert&quot; a
     </message>
     <message>
         <location line="+1"/>
-        <source>Error loading wallet.dat: Wallet requires newer version of Philosopherstone</source>
+        <source>Error loading wallet.dat: Wallet requires newer version of CommunityCoin</source>
         <translation>Hiba a wallet.dat betöltése közben: ehhez a tárcához újabb verziójú Bitcoin-kliens szükséges</translation>
     </message>
     <message>
         <location line="+98"/>
-        <source>Wallet needed to be rewritten: restart Philosopherstone to complete</source>
+        <source>Wallet needed to be rewritten: restart CommunityCoin to complete</source>
         <translation>A Tárca újraírása szükséges: Indítsa újra a teljesen a Bitcoin-t</translation>
     </message>
     <message>
@@ -3306,8 +3306,8 @@ for example: alertnotify=echo %%s | mail -s &quot;Philosopherstone Alert&quot; a
     </message>
     <message>
         <location line="-28"/>
-        <source>Unable to bind to %s on this computer. Philosopherstone is probably already running.</source>
-        <translation>A %s nem elérhető ezen a gépen. A Philosopherstone valószínűleg fut már.</translation>
+        <source>Unable to bind to %s on this computer. CommunityCoin is probably already running.</source>
+        <translation>A %s nem elérhető ezen a gépen. A CommunityCoin valószínűleg fut már.</translation>
     </message>
     <message>
         <location line="+69"/>

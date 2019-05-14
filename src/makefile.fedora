@@ -145,8 +145,8 @@ ifneq (${USE_LEVELDB}, 1)
 OBJS += obj/txdb-bdb.o
 endif
 
-test check: test_philosopherstone FORCE
-	./test_philosopherstone
+test check: test_comd FORCE
+	./test_comd
 
 # auto-generated dependencies:
 -include obj/*.P
@@ -185,11 +185,11 @@ obj-test/%.o: test/%.cpp
 	      -e '/^$$/ d' -e 's/$$/ :/' < $(@:%.o=%.d) >> $(@:%.o=%.P); \
 	  rm -f $(@:%.o=%.d)
 
-test_philosopherstone: $(TESTOBJS) $(filter-out obj/init.o,$(OBJS:obj/%=obj/%))
+test_comd: $(TESTOBJS) $(filter-out obj/init.o,$(OBJS:obj/%=obj/%))
 	$(LINK) $(xCXXFLAGS) -o $@ $(LIBPATHS) $^ -Wl,-B$(LMODE) -lboost_unit_test_framework $(xLDFLAGS) $(LIBS)
 
 clean:
-	-rm -f stoned test_philosopherstone
+	-rm -f stoned test_comd
 	-rm -f obj/*.o
 	-rm -f obj-test/*.o
 	-rm -f obj/*.P

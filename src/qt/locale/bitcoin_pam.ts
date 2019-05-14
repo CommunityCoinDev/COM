@@ -3,12 +3,12 @@
     <name>AboutDialog</name>
     <message>
         <location filename="../forms/aboutdialog.ui" line="+14"/>
-        <source>About Philosopherstone Core</source>
+        <source>About CommunityCoin Core</source>
         <translation type="unfinished"/>
     </message>
     <message>
         <location line="+39"/>
-        <source>&lt;b&gt;Philosopherstone Core&lt;/b&gt; version</source>
+        <source>&lt;b&gt;CommunityCoin Core&lt;/b&gt; version</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -31,7 +31,7 @@ Ing produktung ini atin yang makayabeng software a gewa dareng OpenSSL Project p
     </message>
     <message>
         <location line="+0"/>
-        <source>The Philosopherstone developers</source>
+        <source>The CommunityCoin developers</source>
         <translation>Reng ginawa keng Bitcoins</translation>
     </message>
 </context>
@@ -119,12 +119,12 @@ Ing produktung ini atin yang makayabeng software a gewa dareng OpenSSL Project p
     </message>
     <message>
         <location line="+7"/>
-        <source>These are your Philosopherstone addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
-        <translation>Reni reng kekang Philosopherstone address king pamagpadalang kabayaran. Lawan mulang masalese reng alaga ampo ing address na ning tumanggap bayu ka magpadalang barya.</translation>
+        <source>These are your CommunityCoin addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
+        <translation>Reni reng kekang CommunityCoin address king pamagpadalang kabayaran. Lawan mulang masalese reng alaga ampo ing address na ning tumanggap bayu ka magpadalang barya.</translation>
     </message>
     <message>
         <location line="+4"/>
-        <source>These are your Philosopherstone addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
+        <source>These are your CommunityCoin addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -272,8 +272,8 @@ Ing produktung ini atin yang makayabeng software a gewa dareng OpenSSL Project p
     </message>
     <message>
         <location line="-56"/>
-        <source>Philosopherstone will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your stones from being stolen by malware infecting your computer.</source>
-        <translation>Ing Philosopherstone ngeni magsara ya ban ayari ing proseso ning pamag-encrypt. Tandanan yu king pamag-encrypt wallet, ali nala aprotektan king kabuuan reng stones yu kareng malware a kasalunsungan atiu kareng computer yu.</translation>
+        <source>CommunityCoin will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your stones from being stolen by malware infecting your computer.</source>
+        <translation>Ing CommunityCoin ngeni magsara ya ban ayari ing proseso ning pamag-encrypt. Tandanan yu king pamag-encrypt wallet, ali nala aprotektan king kabuuan reng stones yu kareng malware a kasalunsungan atiu kareng computer yu.</translation>
     </message>
     <message>
         <location line="+13"/>
@@ -361,8 +361,8 @@ Ing produktung ini atin yang makayabeng software a gewa dareng OpenSSL Project p
     </message>
     <message>
         <location line="+7"/>
-        <source>Show information about Philosopherstone</source>
-        <translation>Ipakit ing impormasyun tungkul king Philosopherstone</translation>
+        <source>Show information about CommunityCoin</source>
+        <translation>Ipakit ing impormasyun tungkul king CommunityCoin</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -407,12 +407,12 @@ Ing produktung ini atin yang makayabeng software a gewa dareng OpenSSL Project p
     </message>
     <message>
         <location line="-358"/>
-        <source>Send stones to a Philosopherstone address</source>
-        <translation>Magpadalang barya king Philosopherstone address</translation>
+        <source>Send stones to a CommunityCoin address</source>
+        <translation>Magpadalang barya king CommunityCoin address</translation>
     </message>
     <message>
         <location line="+47"/>
-        <source>Modify configuration options for Philosopherstone</source>
+        <source>Modify configuration options for CommunityCoin</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -442,8 +442,8 @@ Ing produktung ini atin yang makayabeng software a gewa dareng OpenSSL Project p
     </message>
     <message>
         <location line="+375"/>
-        <source>Philosopherstone</source>
-        <translation>Philosopherstone</translation>
+        <source>CommunityCoin</source>
+        <translation>CommunityCoin</translation>
     </message>
     <message>
         <location line="-563"/>
@@ -479,12 +479,12 @@ Ing produktung ini atin yang makayabeng software a gewa dareng OpenSSL Project p
     </message>
     <message>
         <location line="+7"/>
-        <source>Sign messages with your Philosopherstone addresses to prove you own them</source>
+        <source>Sign messages with your CommunityCoin addresses to prove you own them</source>
         <translation type="unfinished"/>
     </message>
     <message>
         <location line="+2"/>
-        <source>Verify messages to ensure they were signed with specified Philosopherstone addresses</source>
+        <source>Verify messages to ensure they were signed with specified CommunityCoin addresses</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -516,8 +516,8 @@ Ing produktung ini atin yang makayabeng software a gewa dareng OpenSSL Project p
     <message>
         <location line="-331"/>
         <location line="+10"/>
-        <source>Philosopherstone Core</source>
-        <translation>Kapilubluban ning Philosopherstone</translation>
+        <source>CommunityCoin Core</source>
+        <translation>Kapilubluban ning CommunityCoin</translation>
     </message>
     <message>
         <location line="+121"/>
@@ -527,7 +527,7 @@ Ing produktung ini atin yang makayabeng software a gewa dareng OpenSSL Project p
     <message>
         <location line="+27"/>
         <location line="+2"/>
-        <source>&amp;About Philosopherstone Core</source>
+        <source>&amp;About CommunityCoin Core</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -563,13 +563,13 @@ Ing produktung ini atin yang makayabeng software a gewa dareng OpenSSL Project p
     <message>
         <location line="+126"/>
         <location line="+5"/>
-        <source>Philosopherstone client</source>
-        <translation>Philosopherstone client</translation>
+        <source>CommunityCoin client</source>
+        <translation>CommunityCoin client</translation>
     </message>
     <message numerus="yes">
         <location line="+133"/>
-        <source>%n active connection(s) to Philosopherstone network</source>
-        <translation><numerusform>%n ya ing aktibong koneksion keng Philosopherstone network</numerusform><numerusform>%n lareng aktibong koneksion keng Philosopherstone network</numerusform></translation>
+        <source>%n active connection(s) to CommunityCoin network</source>
+        <translation><numerusform>%n ya ing aktibong koneksion keng CommunityCoin network</numerusform><numerusform>%n lareng aktibong koneksion keng CommunityCoin network</numerusform></translation>
     </message>
     <message>
         <location line="+22"/>
@@ -686,8 +686,8 @@ Address: %4
     </message>
     <message>
         <location filename="../bitcoin.cpp" line="+116"/>
-        <source>A fatal error occurred. Philosopherstone can no longer continue safely and will quit.</source>
-        <translation>Atin kamalian a milyari. Ali ne magsilbing sumulung pa ing Philosopherstone at kailangan na ng tuknang.</translation>
+        <source>A fatal error occurred. CommunityCoin can no longer continue safely and will quit.</source>
+        <translation>Atin kamalian a milyari. Ali ne magsilbing sumulung pa ing CommunityCoin at kailangan na ng tuknang.</translation>
     </message>
 </context>
 <context>
@@ -1039,8 +1039,8 @@ Address: %4
     </message>
     <message>
         <location line="-5"/>
-        <source>The entered address &quot;%1&quot; is not a valid Philosopherstone address.</source>
-        <translation>Ing pepalub yung address &quot;%1&quot; ali ya katanggap-tanggap a Philosopherstone address.</translation>
+        <source>The entered address &quot;%1&quot; is not a valid CommunityCoin address.</source>
+        <translation>Ing pepalub yung address &quot;%1&quot; ali ya katanggap-tanggap a CommunityCoin address.</translation>
     </message>
     <message>
         <location line="+10"/>
@@ -1091,8 +1091,8 @@ Address: %4
     <message>
         <location line="+0"/>
         <location line="+13"/>
-        <source>Philosopherstone Core</source>
-        <translation>Kapilubluban ning Philosopherstone</translation>
+        <source>CommunityCoin Core</source>
+        <translation>Kapilubluban ning CommunityCoin</translation>
     </message>
     <message>
         <location line="-11"/>
@@ -1139,17 +1139,17 @@ Address: %4
     </message>
     <message>
         <location line="+9"/>
-        <source>Welcome to Philosopherstone Core.</source>
+        <source>Welcome to CommunityCoin Core.</source>
         <translation type="unfinished"/>
     </message>
     <message>
         <location line="+26"/>
-        <source>As this is the first time the program is launched, you can choose where Philosopherstone Core will store its data.</source>
+        <source>As this is the first time the program is launched, you can choose where CommunityCoin Core will store its data.</source>
         <translation type="unfinished"/>
     </message>
     <message>
         <location line="+10"/>
-        <source>Philosopherstone Core will download and store a copy of the Philosopherstone block chain. At least %1GB of data will be stored in this directory, and it will grow over time. The wallet will also be stored in this directory.</source>
+        <source>CommunityCoin Core will download and store a copy of the CommunityCoin block chain. At least %1GB of data will be stored in this directory, and it will grow over time. The wallet will also be stored in this directory.</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -1164,8 +1164,8 @@ Address: %4
     </message>
     <message>
         <location filename="../intro.cpp" line="+85"/>
-        <source>Philosopherstone</source>
-        <translation>Philosopherstone</translation>
+        <source>CommunityCoin</source>
+        <translation>CommunityCoin</translation>
     </message>
     <message>
         <location line="+1"/>
@@ -1240,13 +1240,13 @@ Address: %4
     </message>
     <message>
         <location line="+31"/>
-        <source>Automatically start Philosopherstone after logging in to the system.</source>
-        <translation>Umpisan yang antimu ing Philosopherstone kaibat mekapag-log in king sistema.</translation>
+        <source>Automatically start CommunityCoin after logging in to the system.</source>
+        <translation>Umpisan yang antimu ing CommunityCoin kaibat mekapag-log in king sistema.</translation>
     </message>
     <message>
         <location line="+3"/>
-        <source>&amp;Start Philosopherstone on system login</source>
-        <translation>&amp;Umpisan ya ing Philosopherstone king pamag-log-in na ning sistema.</translation>
+        <source>&amp;Start CommunityCoin on system login</source>
+        <translation>&amp;Umpisan ya ing CommunityCoin king pamag-log-in na ning sistema.</translation>
     </message>
     <message>
         <location line="+35"/>
@@ -1265,8 +1265,8 @@ Address: %4
     </message>
     <message>
         <location line="+6"/>
-        <source>Automatically open the Philosopherstone client port on the router. This only works when your router supports UPnP and it is enabled.</source>
-        <translation>Ibuklat yang antimanu ing Philosopherstone client port king router. Gagana yamu ini istung ing router mu susuporta yang UPnP at magsilbi ya.</translation>
+        <source>Automatically open the CommunityCoin client port on the router. This only works when your router supports UPnP and it is enabled.</source>
+        <translation>Ibuklat yang antimanu ing CommunityCoin client port king router. Gagana yamu ini istung ing router mu susuporta yang UPnP at magsilbi ya.</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -1275,7 +1275,7 @@ Address: %4
     </message>
     <message>
         <location line="+7"/>
-        <source>Connect to the Philosopherstone network through a SOCKS proxy (e.g. when connecting through Tor).</source>
+        <source>Connect to the CommunityCoin network through a SOCKS proxy (e.g. when connecting through Tor).</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -1365,8 +1365,8 @@ Address: %4
     </message>
     <message>
         <location line="+9"/>
-        <source>Whether to show Philosopherstone addresses in the transaction list or not.</source>
-        <translation>Ipakit man ing Philosopherstone address king listahan naning transaksion o ali.</translation>
+        <source>Whether to show CommunityCoin addresses in the transaction list or not.</source>
+        <translation>Ipakit man ing CommunityCoin address king listahan naning transaksion o ali.</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -1446,8 +1446,8 @@ Address: %4
     <message>
         <location line="+50"/>
         <location line="+214"/>
-        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the Philosopherstone network after a connection is established, but this process has not completed yet.</source>
-        <translation>Ing makaltong impormasion mapalyaring luma ne. Ing kekang wallet otomatiku yang mag-synchronize keng Philosopherstone network istung mekakonekta ne king network, oneng ing prosesung ini ali ya pa kumpletu.</translation>
+        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the CommunityCoin network after a connection is established, but this process has not completed yet.</source>
+        <translation>Ing makaltong impormasion mapalyaring luma ne. Ing kekang wallet otomatiku yang mag-synchronize keng CommunityCoin network istung mekakonekta ne king network, oneng ing prosesung ini ali ya pa kumpletu.</translation>
     </message>
     <message>
         <location line="-140"/>
@@ -1515,7 +1515,7 @@ Address: %4
     </message>
     <message>
         <location line="+1"/>
-        <source>URI can not be parsed! This can be caused by an invalid Philosopherstone address or malformed URI parameters.</source>
+        <source>URI can not be parsed! This can be caused by an invalid CommunityCoin address or malformed URI parameters.</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -1573,8 +1573,8 @@ Address: %4
     <message>
         <location filename="../bitcoin.cpp" line="+119"/>
         <location line="+5"/>
-        <source>Philosopherstone</source>
-        <translation>Philosopherstone</translation>
+        <source>CommunityCoin</source>
+        <translation>CommunityCoin</translation>
     </message>
     <message>
         <location line="-4"/>
@@ -1743,8 +1743,8 @@ Address: %4
     </message>
     <message>
         <location line="-79"/>
-        <source>Philosopherstone Core</source>
-        <translation>Kapilubluban ning Philosopherstone</translation>
+        <source>CommunityCoin Core</source>
+        <translation>Kapilubluban ning CommunityCoin</translation>
     </message>
     <message>
         <location line="+279"/>
@@ -1753,12 +1753,12 @@ Address: %4
     </message>
     <message>
         <location line="+7"/>
-        <source>Open the Philosopherstone debug log file from the current data directory. This can take a few seconds for large log files.</source>
-        <translation>Ibuklat ing Philosopherstone debug log file menibat king kasalungsungan data directory. Magluat ya ining pilan segundu para kareng mamaragul a log files.</translation>
+        <source>Open the CommunityCoin debug log file from the current data directory. This can take a few seconds for large log files.</source>
+        <translation>Ibuklat ing CommunityCoin debug log file menibat king kasalungsungan data directory. Magluat ya ining pilan segundu para kareng mamaragul a log files.</translation>
     </message>
     <message>
         <location line="+26"/>
-        <source>Show the Bitcoin-Core help message to get a list with possible Philosopherstone command-line options.</source>
+        <source>Show the Bitcoin-Core help message to get a list with possible CommunityCoin command-line options.</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -1768,8 +1768,8 @@ Address: %4
     </message>
     <message>
         <location filename="../rpcconsole.cpp" line="-30"/>
-        <source>Welcome to the Philosopherstone RPC console.</source>
-        <translation>Malaus kayu king Philosopherstone RPC console.</translation>
+        <source>Welcome to the CommunityCoin RPC console.</source>
+        <translation>Malaus kayu king CommunityCoin RPC console.</translation>
     </message>
     <message>
         <location line="+1"/>
@@ -2135,8 +2135,8 @@ Address: %4
     </message>
     <message>
         <location line="-136"/>
-        <source>Enter a Philosopherstone address (e.g. 1NS17iag9jJgTHD1VXjvLCEnZuQ3rJDE9L)</source>
-        <translation>Magpalub kang Philosopherstone address(e.g. 1NS17iag9jJgTHD1VXjvLCEnZuQ3rJDE9L)</translation>
+        <source>Enter a CommunityCoin address (e.g. 1NS17iag9jJgTHD1VXjvLCEnZuQ3rJDE9L)</source>
+        <translation>Magpalub kang CommunityCoin address(e.g. 1NS17iag9jJgTHD1VXjvLCEnZuQ3rJDE9L)</translation>
     </message>
     <message>
         <location line="+15"/>
@@ -2225,7 +2225,7 @@ Address: %4
     </message>
     <message>
         <location line="+113"/>
-        <source>Warning: Invalid Philosopherstone address</source>
+        <source>Warning: Invalid CommunityCoin address</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -2349,8 +2349,8 @@ Address: %4
     </message>
     <message>
         <location filename="../sendcoinsentry.cpp" line="+1"/>
-        <source>Enter a Philosopherstone address (e.g. 1NS17iag9jJgTHD1VXjvLCEnZuQ3rJDE9L)</source>
-        <translation>Magpalub kang Philosopherstone address(e.g. 1NS17iag9jJgTHD1VXjvLCEnZuQ3rJDE9L)</translation>
+        <source>Enter a CommunityCoin address (e.g. 1NS17iag9jJgTHD1VXjvLCEnZuQ3rJDE9L)</source>
+        <translation>Magpalub kang CommunityCoin address(e.g. 1NS17iag9jJgTHD1VXjvLCEnZuQ3rJDE9L)</translation>
     </message>
 </context>
 <context>
@@ -2414,8 +2414,8 @@ Address: %4
     </message>
     <message>
         <location line="+21"/>
-        <source>Sign the message to prove you own this Philosopherstone address</source>
-        <translation>Pirman ing mensayi ban patune na keka ya ining Philosopherstone address</translation>
+        <source>Sign the message to prove you own this CommunityCoin address</source>
+        <translation>Pirman ing mensayi ban patune na keka ya ining CommunityCoin address</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -2450,8 +2450,8 @@ Address: %4
     </message>
     <message>
         <location line="+40"/>
-        <source>Verify the message to ensure it was signed with the specified Philosopherstone address</source>
-        <translation>Beripikan ing mensayi ban asiguradu a me pirma ya ini gamit ing mepiling Philosopherstone address</translation>
+        <source>Verify the message to ensure it was signed with the specified CommunityCoin address</source>
+        <translation>Beripikan ing mensayi ban asiguradu a me pirma ya ini gamit ing mepiling CommunityCoin address</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -2466,8 +2466,8 @@ Address: %4
     <message>
         <location filename="../signverifymessagedialog.cpp" line="+29"/>
         <location line="+3"/>
-        <source>Enter a Philosopherstone address (e.g. 1NS17iag9jJgTHD1VXjvLCEnZuQ3rJDE9L)</source>
-        <translation>Magpalub kang Philosopherstone address(e.g. 1NS17iag9jJgTHD1VXjvLCEnZuQ3rJDE9L)</translation>
+        <source>Enter a CommunityCoin address (e.g. 1NS17iag9jJgTHD1VXjvLCEnZuQ3rJDE9L)</source>
+        <translation>Magpalub kang CommunityCoin address(e.g. 1NS17iag9jJgTHD1VXjvLCEnZuQ3rJDE9L)</translation>
     </message>
     <message>
         <location line="-2"/>
@@ -2476,8 +2476,8 @@ Address: %4
     </message>
     <message>
         <location line="+3"/>
-        <source>Enter Philosopherstone signature</source>
-        <translation>Ipalub ing pirma na ning Philosopherstone</translation>
+        <source>Enter CommunityCoin signature</source>
+        <translation>Ipalub ing pirma na ning CommunityCoin</translation>
     </message>
     <message>
         <location line="+84"/>
@@ -2550,12 +2550,12 @@ Address: %4
     <name>SplashScreen</name>
     <message>
         <location filename="../splashscreen.cpp" line="+26"/>
-        <source>Philosopherstone Core</source>
-        <translation>Kapilubluban ning Philosopherstone</translation>
+        <source>CommunityCoin Core</source>
+        <translation>Kapilubluban ning CommunityCoin</translation>
     </message>
     <message>
         <location line="+2"/>
-        <source>The Philosopherstone Core developers</source>
+        <source>The CommunityCoin Core developers</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -3144,8 +3144,8 @@ Address: %4
     </message>
     <message>
         <location line="+23"/>
-        <source>Specify configuration file (default: philosopherstone.conf)</source>
-        <translation>Pilinan ing configuration file(default: philosopherstone.conf)</translation>
+        <source>Specify configuration file (default: communitycoin.conf)</source>
+        <translation>Pilinan ing configuration file(default: communitycoin.conf)</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -3233,7 +3233,7 @@ rpcpassword=%s
 The username and password MUST NOT be the same.
 If the file does not exist, create it with owner-readable-only file permissions.
 It is also recommended to set alertnotify so you are notified of problems;
-for example: alertnotify=echo %%s | mail -s &quot;Philosopherstone Alert&quot; admin@foo.com
+for example: alertnotify=echo %%s | mail -s &quot;CommunityCoin Alert&quot; admin@foo.com
 </source>
         <translation type="unfinished"/>
     </message>
@@ -3254,7 +3254,7 @@ for example: alertnotify=echo %%s | mail -s &quot;Philosopherstone Alert&quot; a
     </message>
     <message>
         <location line="+3"/>
-        <source>Cannot obtain a lock on data directory %s. Philosopherstone is probably already running.</source>
+        <source>Cannot obtain a lock on data directory %s. CommunityCoin is probably already running.</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -3294,7 +3294,7 @@ for example: alertnotify=echo %%s | mail -s &quot;Philosopherstone Alert&quot; a
     </message>
     <message>
         <location line="+3"/>
-        <source>Warning: Please check that your computer&apos;s date and time are correct! If your clock is wrong Philosopherstone will not work properly.</source>
+        <source>Warning: Please check that your computer&apos;s date and time are correct! If your clock is wrong CommunityCoin will not work properly.</source>
         <translation>Kapabaluan: Maliaring pakilawe ing oras at aldo a makalage king kekayung kompyuter nung istu la! Istung ing oras yu mali ya ali ya gumanang masalese ing Bitcoin.</translation>
     </message>
     <message>
@@ -3329,12 +3329,12 @@ for example: alertnotify=echo %%s | mail -s &quot;Philosopherstone Alert&quot; a
     </message>
     <message>
         <location line="+1"/>
-        <source>Philosopherstone Core Daemon</source>
+        <source>CommunityCoin Core Daemon</source>
         <translation type="unfinished"/>
     </message>
     <message>
         <location line="+1"/>
-        <source>Philosopherstone RPC client version</source>
+        <source>CommunityCoin RPC client version</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -3529,7 +3529,7 @@ for example: alertnotify=echo %%s | mail -s &quot;Philosopherstone Alert&quot; a
     </message>
     <message>
         <location line="+1"/>
-        <source>Send command to Philosopherstone server</source>
+        <source>Send command to CommunityCoin server</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -3549,7 +3549,7 @@ for example: alertnotify=echo %%s | mail -s &quot;Philosopherstone Alert&quot; a
     </message>
     <message>
         <location line="+2"/>
-        <source>Start Philosopherstone server</source>
+        <source>Start CommunityCoin server</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -3654,8 +3654,8 @@ for example: alertnotify=echo %%s | mail -s &quot;Philosopherstone Alert&quot; a
     </message>
     <message>
         <location line="+9"/>
-        <source>SSL options: (see the Philosopherstone Wiki for SSL setup instructions)</source>
-        <translation>Pipamilian ning SSL: (lawen ye ing Philosopherstone Wiki para king SSL setup instructions)</translation>
+        <source>SSL options: (see the CommunityCoin Wiki for SSL setup instructions)</source>
+        <translation>Pipamilian ning SSL: (lawen ye ing CommunityCoin Wiki para king SSL setup instructions)</translation>
     </message>
     <message>
         <location line="+4"/>
@@ -3819,13 +3819,13 @@ for example: alertnotify=echo %%s | mail -s &quot;Philosopherstone Alert&quot; a
     </message>
     <message>
         <location line="+1"/>
-        <source>Error loading wallet.dat: Wallet requires newer version of Philosopherstone</source>
-        <translation>Me-mali ya ing pamag-load na ning wallet.dat: Ing wallet mangailangan yang bayung bersion na ning Philosopherstone</translation>
+        <source>Error loading wallet.dat: Wallet requires newer version of CommunityCoin</source>
+        <translation>Me-mali ya ing pamag-load na ning wallet.dat: Ing wallet mangailangan yang bayung bersion na ning CommunityCoin</translation>
     </message>
     <message>
         <location line="+98"/>
-        <source>Wallet needed to be rewritten: restart Philosopherstone to complete</source>
-        <translation>Ing wallet mangailangan yang misulat pasibayu: Umpisan yang pasibayu ing Philosopherstone ban ma-kumpleto ya</translation>
+        <source>Wallet needed to be rewritten: restart CommunityCoin to complete</source>
+        <translation>Ing wallet mangailangan yang misulat pasibayu: Umpisan yang pasibayu ing CommunityCoin ban ma-kumpleto ya</translation>
     </message>
     <message>
         <location line="-100"/>
@@ -3884,7 +3884,7 @@ for example: alertnotify=echo %%s | mail -s &quot;Philosopherstone Alert&quot; a
     </message>
     <message>
         <location line="-32"/>
-        <source>Unable to bind to %s on this computer. Philosopherstone is probably already running.</source>
+        <source>Unable to bind to %s on this computer. CommunityCoin is probably already running.</source>
         <translation>Eya megsilbing idikit king %s na ning kompyuter a ini. Mapaliaring mamandar ne ing Bitcoin.</translation>
     </message>
     <message>

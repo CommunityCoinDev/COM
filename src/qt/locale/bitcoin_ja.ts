@@ -3,8 +3,8 @@
     <name>AboutDialog</name>
     <message>
         <location filename="../forms/aboutdialog.ui" line="+14"/>
-        <source>About Philosopherstone</source>
-        <translation>Philosopherstone について</translation>
+        <source>About CommunityCoin</source>
+        <translation>CommunityCoin について</translation>
     </message>
     <message>
         <location line="+39"/>
@@ -33,8 +33,8 @@ MIT/X11 ソフトウェア ライセンスの下で配布されています。�
     </message>
     <message>
         <location line="+0"/>
-        <source>The Philosopherstone developers</source>
-        <translation>The Philosopherstone developers</translation>
+        <source>The CommunityCoin developers</source>
+        <translation>The CommunityCoin developers</translation>
     </message>
 </context>
 <context>
@@ -121,12 +121,12 @@ MIT/X11 ソフトウェア ライセンスの下で配布されています。�
     </message>
     <message>
         <location line="+7"/>
-        <source>These are your Philosopherstone addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
-        <translation>これらは支払いを送信するためのあなたの Philosopherstone アドレスです。コインを送信する前に、常に額と受信アドレスを確認してください。</translation>
+        <source>These are your CommunityCoin addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
+        <translation>これらは支払いを送信するためのあなたの CommunityCoin アドレスです。コインを送信する前に、常に額と受信アドレスを確認してください。</translation>
     </message>
     <message>
         <location line="+4"/>
-        <source>These are your Philosopherstone addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
+        <source>These are your CommunityCoin addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -248,7 +248,7 @@ MIT/X11 ソフトウェア ライセンスの下で配布されています。�
     <message>
         <location line="+1"/>
         <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR STONES&lt;/b&gt;!</source>
-        <translation>警告: もしもあなたのウォレットを暗号化してパスフレーズを失ってしまったなら、&lt;b&gt;あなたの Philosopherstone はすべて失われます&lt;/b&gt;!</translation>
+        <translation>警告: もしもあなたのウォレットを暗号化してパスフレーズを失ってしまったなら、&lt;b&gt;あなたの CommunityCoin はすべて失われます&lt;/b&gt;!</translation>
     </message>
     <message>
         <location line="+0"/>
@@ -274,8 +274,8 @@ MIT/X11 ソフトウェア ライセンスの下で配布されています。�
     </message>
     <message>
         <location line="-56"/>
-        <source>Philosopherstone will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your stones from being stolen by malware infecting your computer.</source>
-        <translation>Philosopherstone は暗号化プロセスを終了するために今すぐ終了します。あなたのコンピュータがマルウェアに感染してコインを盗まれることもあるので、暗号化してもあなたのウォレットを完全に保護できないことを覚えていてください。</translation>
+        <source>CommunityCoin will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your stones from being stolen by malware infecting your computer.</source>
+        <translation>CommunityCoin は暗号化プロセスを終了するために今すぐ終了します。あなたのコンピュータがマルウェアに感染してコインを盗まれることもあるので、暗号化してもあなたのウォレットを完全に保護できないことを覚えていてください。</translation>
     </message>
     <message>
         <location line="+13"/>
@@ -363,7 +363,7 @@ MIT/X11 ソフトウェア ライセンスの下で配布されています。�
     </message>
     <message>
         <location line="+7"/>
-        <source>Show information about Philosopherstone</source>
+        <source>Show information about CommunityCoin</source>
         <translation>Bitcoinに関する情報を見る</translation>
     </message>
     <message>
@@ -409,13 +409,13 @@ MIT/X11 ソフトウェア ライセンスの下で配布されています。�
     </message>
     <message>
         <location line="-322"/>
-        <source>Send stones to a Philosopherstone address</source>
-        <translation>Philosopherstone アドレスにコインを送る</translation>
+        <source>Send stones to a CommunityCoin address</source>
+        <translation>CommunityCoin アドレスにコインを送る</translation>
     </message>
     <message>
         <location line="+47"/>
-        <source>Modify configuration options for Philosopherstone</source>
-        <translation>Philosopherstone の設定を変更する</translation>
+        <source>Modify configuration options for CommunityCoin</source>
+        <translation>CommunityCoin の設定を変更する</translation>
     </message>
     <message>
         <location line="+12"/>
@@ -446,8 +446,8 @@ MIT/X11 ソフトウェア ライセンスの下で配布されています。�
         <location line="-180"/>
         <location line="+6"/>
         <location line="+513"/>
-        <source>Philosopherstone</source>
-        <translation>Philosopherstone</translation>
+        <source>CommunityCoin</source>
+        <translation>CommunityCoin</translation>
     </message>
     <message>
         <location line="-519"/>
@@ -468,8 +468,8 @@ MIT/X11 ソフトウェア ライセンスの下で配布されています。�
     <message>
         <location line="+28"/>
         <location line="+2"/>
-        <source>&amp;About Philosopherstone</source>
-        <translation>Philosopherstone について (&amp;A)</translation>
+        <source>&amp;About CommunityCoin</source>
+        <translation>CommunityCoin について (&amp;A)</translation>
     </message>
     <message>
         <location line="+14"/>
@@ -489,13 +489,13 @@ MIT/X11 ソフトウェア ライセンスの下で配布されています。�
     </message>
     <message>
         <location line="+7"/>
-        <source>Sign messages with your Philosopherstone addresses to prove you own them</source>
-        <translation>あなたが所有していることを証明するために、あなたの Philosopherstone アドレスでメッセージに署名してください</translation>
+        <source>Sign messages with your CommunityCoin addresses to prove you own them</source>
+        <translation>あなたが所有していることを証明するために、あなたの CommunityCoin アドレスでメッセージに署名してください</translation>
     </message>
     <message>
         <location line="+2"/>
-        <source>Verify messages to ensure they were signed with specified Philosopherstone addresses</source>
-        <translation>指定された Philosopherstone アドレスで署名されたことを確認するためにメッセージを検証します</translation>
+        <source>Verify messages to ensure they were signed with specified CommunityCoin addresses</source>
+        <translation>指定された CommunityCoin アドレスで署名されたことを確認するためにメッセージを検証します</translation>
     </message>
     <message>
         <location line="+35"/>
@@ -551,13 +551,13 @@ MIT/X11 ソフトウェア ライセンスの下で配布されています。�
     <message>
         <location line="+106"/>
         <location line="+5"/>
-        <source>Philosopherstone client</source>
-        <translation>Philosopherstone クライアント</translation>
+        <source>CommunityCoin client</source>
+        <translation>CommunityCoin クライアント</translation>
     </message>
     <message numerus="yes">
         <location line="+120"/>
-        <source>%n active connection(s) to Philosopherstone network</source>
-        <translation><numerusform>%n の Philosopherstone ネットワークへのアクティブな接続</numerusform></translation>
+        <source>%n active connection(s) to CommunityCoin network</source>
+        <translation><numerusform>%n の CommunityCoin ネットワークへのアクティブな接続</numerusform></translation>
     </message>
     <message>
         <location line="+22"/>
@@ -668,8 +668,8 @@ Address: %4
     </message>
     <message>
         <location line="+0"/>
-        <source>URI can not be parsed! This can be caused by an invalid Philosopherstone address or malformed URI parameters.</source>
-        <translation>URI を解析できません! これは無効な Philosopherstone アドレスあるいや不正な形式の URI パラメーターによって引き起こされる場合があります。
+        <source>URI can not be parsed! This can be caused by an invalid CommunityCoin address or malformed URI parameters.</source>
+        <translation>URI を解析できません! これは無効な CommunityCoin アドレスあるいや不正な形式の URI パラメーターによって引き起こされる場合があります。
 </translation>
     </message>
     <message>
@@ -684,8 +684,8 @@ Address: %4
     </message>
     <message>
         <location filename="../bitcoin.cpp" line="+110"/>
-        <source>A fatal error occurred. Philosopherstone can no longer continue safely and will quit.</source>
-        <translation>致命的なエラーが発生しました。Philosopherstone は安全に継続することができず終了するでしょう。
+        <source>A fatal error occurred. CommunityCoin can no longer continue safely and will quit.</source>
+        <translation>致命的なエラーが発生しました。CommunityCoin は安全に継続することができず終了するでしょう。
 </translation>
     </message>
 </context>
@@ -751,8 +751,8 @@ Address: %4
     </message>
     <message>
         <location line="-5"/>
-        <source>The entered address &quot;%1&quot; is not a valid Philosopherstone address.</source>
-        <translation>入力されたアドレス &quot;%1&quot; は無効な Philosopherstone アドレスです。</translation>
+        <source>The entered address &quot;%1&quot; is not a valid CommunityCoin address.</source>
+        <translation>入力されたアドレス &quot;%1&quot; は無効な CommunityCoin アドレスです。</translation>
     </message>
     <message>
         <location line="+10"/>
@@ -798,8 +798,8 @@ Address: %4
     <message>
         <location filename="../guiutil.cpp" line="+558"/>
         <location line="+13"/>
-        <source>Philosopherstone-qt</source>
-        <translation>Philosopherstone-qt</translation>
+        <source>CommunityCoin-qt</source>
+        <translation>CommunityCoin-qt</translation>
     </message>
     <message>
         <location line="-13"/>
@@ -851,18 +851,18 @@ Address: %4
     </message>
     <message>
         <location line="+9"/>
-        <source>Welcome to Philosopherstone-qt.</source>
-        <translation>Philosopherstone-qt へようこそ。</translation>
+        <source>Welcome to CommunityCoin-qt.</source>
+        <translation>CommunityCoin-qt へようこそ。</translation>
     </message>
     <message>
         <location line="+26"/>
-        <source>As this is the first time the program is launched, you can choose where Philosopherstone-qt will store its data.</source>
-        <translation>プログラムが初めて起動されるので Philosopherstone-qt がデータを保存する場所を選ぶことができます。</translation>
+        <source>As this is the first time the program is launched, you can choose where CommunityCoin-qt will store its data.</source>
+        <translation>プログラムが初めて起動されるので CommunityCoin-qt がデータを保存する場所を選ぶことができます。</translation>
     </message>
     <message>
         <location line="+10"/>
-        <source>Philosopherstone-qt will download and store a copy of the Philosopherstone block chain. At least %1GB of data will be stored in this directory, and it will grow over time. The wallet will also be stored in this directory.</source>
-        <translation>Philosopherstone-qt はブロック チェーンのコピーをダウンロードして保存します。少なくとも %1GB のデータがこのディレクトリに保存され、時間とともに増えていきます。ウォレットもこのディレクトリに保存されます。</translation>
+        <source>CommunityCoin-qt will download and store a copy of the CommunityCoin block chain. At least %1GB of data will be stored in this directory, and it will grow over time. The wallet will also be stored in this directory.</source>
+        <translation>CommunityCoin-qt はブロック チェーンのコピーをダウンロードして保存します。少なくとも %1GB のデータがこのディレクトリに保存され、時間とともに増えていきます。ウォレットもこのディレクトリに保存されます。</translation>
     </message>
     <message>
         <location line="+10"/>
@@ -914,13 +914,13 @@ Address: %4
     </message>
     <message>
         <location line="+31"/>
-        <source>Automatically start Philosopherstone after logging in to the system.</source>
-        <translation>システムにログインした時に自動的に Philosopherstone を起動します。</translation>
+        <source>Automatically start CommunityCoin after logging in to the system.</source>
+        <translation>システムにログインした時に自動的に CommunityCoin を起動します。</translation>
     </message>
     <message>
         <location line="+3"/>
-        <source>&amp;Start Philosopherstone on system login</source>
-        <translation>システムにログインした時に Philosopherstone を起動 (&amp;S)</translation>
+        <source>&amp;Start CommunityCoin on system login</source>
+        <translation>システムにログインした時に CommunityCoin を起動 (&amp;S)</translation>
     </message>
     <message>
         <location line="+35"/>
@@ -939,8 +939,8 @@ Address: %4
     </message>
     <message>
         <location line="+6"/>
-        <source>Automatically open the Philosopherstone client port on the router. This only works when your router supports UPnP and it is enabled.</source>
-        <translation>自動的にルーター上の Philosopherstone クライアントのポートを開きます。あなたのルーターが UPnP に対応していて、それが有効になっている場合に作動します。</translation>
+        <source>Automatically open the CommunityCoin client port on the router. This only works when your router supports UPnP and it is enabled.</source>
+        <translation>自動的にルーター上の CommunityCoin クライアントのポートを開きます。あなたのルーターが UPnP に対応していて、それが有効になっている場合に作動します。</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -949,8 +949,8 @@ Address: %4
     </message>
     <message>
         <location line="+7"/>
-        <source>Connect to the Philosopherstone network through a SOCKS proxy (e.g. when connecting through Tor).</source>
-        <translation>Philosopherstone ネットワークに SOCKS プロキシで接続します (例えば Tor で接続している時)。</translation>
+        <source>Connect to the CommunityCoin network through a SOCKS proxy (e.g. when connecting through Tor).</source>
+        <translation>CommunityCoin ネットワークに SOCKS プロキシで接続します (例えば Tor で接続している時)。</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -1025,7 +1025,7 @@ Address: %4
     <message>
         <location line="+13"/>
         <source>The user interface language can be set here. This setting will take effect after restarting Bitcoin.</source>
-        <translation>ここでユーザインターフェースの言語を設定できます。設定を反映するには Philosopherstone を再起動します。</translation>
+        <translation>ここでユーザインターフェースの言語を設定できます。設定を反映するには CommunityCoin を再起動します。</translation>
     </message>
     <message>
         <location line="+11"/>
@@ -1039,8 +1039,8 @@ Address: %4
     </message>
     <message>
         <location line="+9"/>
-        <source>Whether to show Philosopherstone addresses in the transaction list or not.</source>
-        <translation>最近の取引履歴で Philosopherstone アドレスを表示するかしないか。</translation>
+        <source>Whether to show CommunityCoin addresses in the transaction list or not.</source>
+        <translation>最近の取引履歴で CommunityCoin アドレスを表示するかしないか。</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -1092,7 +1092,7 @@ Address: %4
         <location line="-9"/>
         <location line="+9"/>
         <source>This setting will take effect after restarting Bitcoin.</source>
-        <translation>この設定を反映するには Philosopherstone を再起動します。</translation>
+        <translation>この設定を反映するには CommunityCoin を再起動します。</translation>
     </message>
     <message>
         <location line="+29"/>
@@ -1110,8 +1110,8 @@ Address: %4
     <message>
         <location line="+50"/>
         <location line="+202"/>
-        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the Philosopherstone network after a connection is established, but this process has not completed yet.</source>
-        <translation>表示された情報は古いかもしれません。接続が確立されると、あなたのウォレットは Philosopherstone ネットワークと自動的に同期しますが、このプロセスはまだ完了していません。</translation>
+        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the CommunityCoin network after a connection is established, but this process has not completed yet.</source>
+        <translation>表示された情報は古いかもしれません。接続が確立されると、あなたのウォレットは CommunityCoin ネットワークと自動的に同期しますが、このプロセスはまだ完了していません。</translation>
     </message>
     <message>
         <location line="-131"/>
@@ -1179,8 +1179,8 @@ Address: %4
     </message>
     <message>
         <location line="+1"/>
-        <source>URI can not be parsed! This can be caused by an invalid Philosopherstone address or malformed URI parameters.</source>
-        <translation>URI を解析できません! これは無効な Philosopherstone アドレスあるいや不正な形式の URI パラメーターによって引き起こされる場合があります。
+        <source>URI can not be parsed! This can be caused by an invalid CommunityCoin address or malformed URI parameters.</source>
+        <translation>URI を解析できません! これは無効な CommunityCoin アドレスあるいや不正な形式の URI パラメーターによって引き起こされる場合があります。
 </translation>
     </message>
     <message>
@@ -1233,8 +1233,8 @@ Address: %4
         <location filename="../bitcoin.cpp" line="+114"/>
         <location line="+5"/>
         <location filename="../intro.cpp" line="-32"/>
-        <source>Philosopherstone</source>
-        <translation>Philosopherstone</translation>
+        <source>CommunityCoin</source>
+        <translation>CommunityCoin</translation>
     </message>
     <message>
         <location line="-4"/>
@@ -1363,8 +1363,8 @@ Address: %4
     </message>
     <message>
         <location line="+7"/>
-        <source>Show the Philosopherstone-qt help message to get a list with possible Philosopherstone command-line options.</source>
-        <translation>有効な Philosopherstone のコマンドライン オプションを見るために Philosopherstone-qt のヘルプメッセージを表示します。</translation>
+        <source>Show the CommunityCoin-qt help message to get a list with possible CommunityCoin command-line options.</source>
+        <translation>有効な CommunityCoin のコマンドライン オプションを見るために CommunityCoin-qt のヘルプメッセージを表示します。</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -1408,13 +1408,13 @@ Address: %4
     </message>
     <message>
         <location line="-104"/>
-        <source>Philosopherstone - Debug window</source>
-        <translation>Philosopherstone - デバッグ ウインドウ</translation>
+        <source>CommunityCoin - Debug window</source>
+        <translation>CommunityCoin - デバッグ ウインドウ</translation>
     </message>
     <message>
         <location line="+25"/>
-        <source>Philosopherstone Core</source>
-        <translation>Philosopherstone のコア</translation>
+        <source>CommunityCoin Core</source>
+        <translation>CommunityCoin のコア</translation>
     </message>
     <message>
         <location line="+279"/>
@@ -1423,8 +1423,8 @@ Address: %4
     </message>
     <message>
         <location line="+7"/>
-        <source>Open the Philosopherstone debug log file from the current data directory. This can take a few seconds for large log files.</source>
-        <translation>現在のデータ ディレクトリから Philosopherstone のデバッグ用ログファイルを開きます。ログファイルが大規模な場合には数秒かかることがあります。</translation>
+        <source>Open the CommunityCoin debug log file from the current data directory. This can take a few seconds for large log files.</source>
+        <translation>現在のデータ ディレクトリから CommunityCoin のデバッグ用ログファイルを開きます。ログファイルが大規模な場合には数秒かかることがあります。</translation>
     </message>
     <message>
         <location line="+102"/>
@@ -1433,8 +1433,8 @@ Address: %4
     </message>
     <message>
         <location filename="../rpcconsole.cpp" line="-30"/>
-        <source>Welcome to the Philosopherstone RPC console.</source>
-        <translation>Philosopherstone RPC コンソールへようこそ。</translation>
+        <source>Welcome to the CommunityCoin RPC console.</source>
+        <translation>CommunityCoin RPC コンソールへようこそ。</translation>
     </message>
     <message>
         <location line="+1"/>
@@ -1806,8 +1806,8 @@ Address: %4
     </message>
     <message>
         <location filename="../sendcoinsentry.cpp" line="+1"/>
-        <source>Enter a Philosopherstone address (e.g. 1NS17iag9jJgTHD1VXjvLCEnZuQ3rJDE9L)</source>
-        <translation>Philosopherstone アドレスを入力します (e.g. 1NS17iag9jJgTHD1VXjvLCEnZuQ3rJDE9L)</translation>
+        <source>Enter a CommunityCoin address (e.g. 1NS17iag9jJgTHD1VXjvLCEnZuQ3rJDE9L)</source>
+        <translation>CommunityCoin アドレスを入力します (e.g. 1NS17iag9jJgTHD1VXjvLCEnZuQ3rJDE9L)</translation>
     </message>
 </context>
 <context>
@@ -1871,8 +1871,8 @@ Address: %4
     </message>
     <message>
         <location line="+21"/>
-        <source>Sign the message to prove you own this Philosopherstone address</source>
-        <translation>この Philosopherstone アドレスを所有していることを証明するためにメッセージに署名</translation>
+        <source>Sign the message to prove you own this CommunityCoin address</source>
+        <translation>この CommunityCoin アドレスを所有していることを証明するためにメッセージに署名</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -1907,8 +1907,8 @@ Address: %4
     </message>
     <message>
         <location line="+40"/>
-        <source>Verify the message to ensure it was signed with the specified Philosopherstone address</source>
-        <translation>指定された Philosopherstone アドレスで署名されたことを保証するメッセージを検証</translation>
+        <source>Verify the message to ensure it was signed with the specified CommunityCoin address</source>
+        <translation>指定された CommunityCoin アドレスで署名されたことを保証するメッセージを検証</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -1923,8 +1923,8 @@ Address: %4
     <message>
         <location filename="../signverifymessagedialog.cpp" line="+27"/>
         <location line="+3"/>
-        <source>Enter a Philosopherstone address (e.g. 1NS17iag9jJgTHD1VXjvLCEnZuQ3rJDE9L)</source>
-        <translation>Philosopherstone アドレスを入力します (e.g. 1NS17iag9jJgTHD1VXjvLCEnZuQ3rJDE9L)</translation>
+        <source>Enter a CommunityCoin address (e.g. 1NS17iag9jJgTHD1VXjvLCEnZuQ3rJDE9L)</source>
+        <translation>CommunityCoin アドレスを入力します (e.g. 1NS17iag9jJgTHD1VXjvLCEnZuQ3rJDE9L)</translation>
     </message>
     <message>
         <location line="-2"/>
@@ -1933,8 +1933,8 @@ Address: %4
     </message>
     <message>
         <location line="+3"/>
-        <source>Enter Philosopherstone signature</source>
-        <translation>Philosopherstone 署名を入力</translation>
+        <source>Enter CommunityCoin signature</source>
+        <translation>CommunityCoin 署名を入力</translation>
     </message>
     <message>
         <location line="+85"/>
@@ -2007,8 +2007,8 @@ Address: %4
     <name>SplashScreen</name>
     <message>
         <location filename="../splashscreen.cpp" line="+23"/>
-        <source>The Philosopherstone developers</source>
-        <translation>The Philosopherstone developers</translation>
+        <source>The CommunityCoin developers</source>
+        <translation>The CommunityCoin developers</translation>
     </message>
     <message>
         <location line="+1"/>
@@ -2558,8 +2558,8 @@ Address: %4
     <name>bitcoin-core</name>
     <message>
         <location filename="../bitcoinstrings.cpp" line="+102"/>
-        <source>Philosopherstone version</source>
-        <translation>Philosopherstone Bertsio</translation>
+        <source>CommunityCoin version</source>
+        <translation>CommunityCoin Bertsio</translation>
     </message>
     <message>
         <location line="+107"/>
@@ -2583,8 +2583,8 @@ Address: %4
     </message>
     <message>
         <location line="+24"/>
-        <source>Specify configuration file (default: philosopherstone.conf)</source>
-        <translation>設定ファイルの指定 (初期値: philosopherstone.conf)</translation>
+        <source>Specify configuration file (default: communitycoin.conf)</source>
+        <translation>設定ファイルの指定 (初期値: communitycoin.conf)</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -2672,7 +2672,7 @@ rpcpassword=%s
 The username and password MUST NOT be the same.
 If the file does not exist, create it with owner-readable-only file permissions.
 It is also recommended to set alertnotify so you are notified of problems;
-for example: alertnotify=echo %%s | mail -s &quot;Philosopherstone Alert&quot; admin@foo.com
+for example: alertnotify=echo %%s | mail -s &quot;CommunityCoin Alert&quot; admin@foo.com
 </source>
         <translation>%s, rpcpassword を設定ファイルで設定してください:
 %s
@@ -2683,7 +2683,7 @@ rpcpassword=%s
 ユーザー名とパスワードが同じであってはいけません。
 もしもファイルが存在しないなら、所有者だけが読み取れる権限で作成してください。
 また、問題が通知されるように alertnotify を設定することをお勧めします;
-例えば: alertnotify=echo %%s | mail -s &quot;Philosopherstone Alert&quot; admin@foo.com</translation>
+例えば: alertnotify=echo %%s | mail -s &quot;CommunityCoin Alert&quot; admin@foo.com</translation>
     </message>
     <message>
         <location line="+12"/>
@@ -2702,8 +2702,8 @@ rpcpassword=%s
     </message>
     <message>
         <location line="+3"/>
-        <source>Cannot obtain a lock on data directory %s. Philosopherstone is probably already running.</source>
-        <translation>データ ディレクトリ %s のロックを取得することができません。おそらく Philosopherstone は実行中です。</translation>
+        <source>Cannot obtain a lock on data directory %s. CommunityCoin is probably already running.</source>
+        <translation>データ ディレクトリ %s のロックを取得することができません。おそらく CommunityCoin は実行中です。</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -2742,8 +2742,8 @@ rpcpassword=%s
     </message>
     <message>
         <location line="+3"/>
-        <source>Warning: Please check that your computer&apos;s date and time are correct! If your clock is wrong Philosopherstone will not work properly.</source>
-        <translation>警告: あなたのコンピュータの日時が正しいことを確認してください! 時計が間違っていると Philosopherstone は正常に動作しません。</translation>
+        <source>Warning: Please check that your computer&apos;s date and time are correct! If your clock is wrong CommunityCoin will not work properly.</source>
+        <translation>警告: あなたのコンピュータの日時が正しいことを確認してください! 時計が間違っていると CommunityCoin は正常に動作しません。</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -2772,7 +2772,7 @@ rpcpassword=%s
     </message>
     <message>
         <location line="+1"/>
-        <source>Philosopherstone RPC client version</source>
+        <source>CommunityCoin RPC client version</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -2938,7 +2938,7 @@ rpcpassword=%s
     </message>
     <message>
         <location line="+6"/>
-        <source>Send command to Philosopherstone server</source>
+        <source>Send command to CommunityCoin server</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -2953,7 +2953,7 @@ rpcpassword=%s
     </message>
     <message>
         <location line="+2"/>
-        <source>Start Philosopherstone server</source>
+        <source>Start CommunityCoin server</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -3053,8 +3053,8 @@ rpcpassword=%s
     </message>
     <message>
         <location line="+5"/>
-        <source>SSL options: (see the Philosopherstone Wiki for SSL setup instructions)</source>
-        <translation>SSL オプション: (SSLのセットアップ手順は Philosopherstone Wiki をご覧下さい)</translation>
+        <source>SSL options: (see the CommunityCoin Wiki for SSL setup instructions)</source>
+        <translation>SSL オプション: (SSLのセットアップ手順は CommunityCoin Wiki をご覧下さい)</translation>
     </message>
     <message>
         <location line="+1"/>
@@ -3233,13 +3233,13 @@ rpcpassword=%s
     </message>
     <message>
         <location line="+1"/>
-        <source>Error loading wallet.dat: Wallet requires newer version of Philosopherstone</source>
-        <translation>wallet.dat 読み込みエラー: ウォレットは Philosopherstone の最新バージョンを必要とします</translation>
+        <source>Error loading wallet.dat: Wallet requires newer version of CommunityCoin</source>
+        <translation>wallet.dat 読み込みエラー: ウォレットは CommunityCoin の最新バージョンを必要とします</translation>
     </message>
     <message>
         <location line="+98"/>
-        <source>Wallet needed to be rewritten: restart Philosopherstone to complete</source>
-        <translation>ウォレットが書き直される必要がありました: 完了するために Philosopherstone を再起動します</translation>
+        <source>Wallet needed to be rewritten: restart CommunityCoin to complete</source>
+        <translation>ウォレットが書き直される必要がありました: 完了するために CommunityCoin を再起動します</translation>
     </message>
     <message>
         <location line="-100"/>
@@ -3298,8 +3298,8 @@ rpcpassword=%s
     </message>
     <message>
         <location line="-28"/>
-        <source>Unable to bind to %s on this computer. Philosopherstone is probably already running.</source>
-        <translation>このコンピュータの %s にバインドすることができません。おそらく Philosopherstone は既に実行されています。</translation>
+        <source>Unable to bind to %s on this computer. CommunityCoin is probably already running.</source>
+        <translation>このコンピュータの %s にバインドすることができません。おそらく CommunityCoin は既に実行されています。</translation>
     </message>
     <message>
         <location line="+69"/>

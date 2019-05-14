@@ -11,7 +11,7 @@
    </rect>
   </property>
   <property name="windowTitle">
-   <string>About Philosopherstone</string>
+   <string>About CommunityCoin</string>
   </property>
   <layout class="QHBoxLayout" name="horizontalLayout_2">
    <item>
@@ -50,7 +50,7 @@
           <cursorShape>IBeamCursor</cursorShape>
          </property>
          <property name="text">
-          <string>&lt;b&gt;Philosopherstone&lt;/b&gt; version</string>
+          <string>&lt;b&gt;CommunityCoin&lt;/b&gt; version</string>
          </property>
          <property name="textInteractionFlags">
           <set>Qt::LinksAccessibleByMouse|Qt::TextSelectableByKeyboard|Qt::TextSelectableByMouse</set>
@@ -91,7 +91,7 @@
         <cursorShape>IBeamCursor</cursorShape>
        </property>
        <property name="text">
-        <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;a href=&quot;http://philosopherstones.org&quot;&gt;philosopherstones.org&lt;/a&gt;&lt;p&gt;Copyright © 2009-2012 Bitcoin Developers&lt;br/&gt;Copyright © 2012 PPCoin Developers&lt;br/&gt;Copyright © 2013 NovaCoin Developers &lt;br/&gt;Copyright © 2013-2017 Philosopherstone Developers &lt;/p&gt;&lt;p&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;Donate&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot; font-size:10pt; font-weight:600;&quot;&gt;9X47uUXJvKqv5UihrnchNzFodeRtYkYj1b&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+        <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;a href=&quot;http://philosopherstones.org&quot;&gt;philosopherstones.org&lt;/a&gt;&lt;p&gt;Copyright © 2009-2012 Bitcoin Developers&lt;br/&gt;Copyright © 2012 PPCoin Developers&lt;br/&gt;Copyright © 2013 NovaCoin Developers &lt;br/&gt;Copyright © 2013-2017 CommunityCoin Developers &lt;/p&gt;&lt;p&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;Donate&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot; font-size:10pt; font-weight:600;&quot;&gt;9X47uUXJvKqv5UihrnchNzFodeRtYkYj1b&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
        </property>
        <property name="textFormat">
         <enum>Qt::RichText</enum>

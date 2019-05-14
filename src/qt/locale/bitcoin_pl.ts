@@ -3,13 +3,13 @@
     <name>AboutDialog</name>
     <message>
         <location filename="../forms/aboutdialog.ui" line="+14"/>
-        <source>About Philosopherstone Core</source>
-        <translation>O Philosopherstone Core</translation>
+        <source>About CommunityCoin Core</source>
+        <translation>O CommunityCoin Core</translation>
     </message>
     <message>
         <location line="+39"/>
-        <source>&lt;b&gt;Philosopherstone Core&lt;/b&gt; version</source>
-        <translation>Wersja &lt;b&gt;Philosopherstone Core&lt;/b&gt;</translation>
+        <source>&lt;b&gt;CommunityCoin Core&lt;/b&gt; version</source>
+        <translation>Wersja &lt;b&gt;CommunityCoin Core&lt;/b&gt;</translation>
     </message>
     <message>
         <location line="+57"/>
@@ -33,8 +33,8 @@ This product includes software developed by the OpenSSL Project for use in the O
     </message>
     <message>
         <location line="+0"/>
-        <source>The Philosopherstone developers</source>
-        <translation>Deweloperzy Philosopherstone</translation>
+        <source>The CommunityCoin developers</source>
+        <translation>Deweloperzy CommunityCoin</translation>
     </message>
 </context>
 <context>
@@ -121,12 +121,12 @@ This product includes software developed by the OpenSSL Project for use in the O
     </message>
     <message>
         <location line="+7"/>
-        <source>These are your Philosopherstone addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
-        <translation>Tutaj znajdują się Twoje adresy Philosopherstone do wysyłania płatności. Zawsze sprawdzaj ilość i adres odbiorcy przed wysyłką monet.</translation>
+        <source>These are your CommunityCoin addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
+        <translation>Tutaj znajdują się Twoje adresy CommunityCoin do wysyłania płatności. Zawsze sprawdzaj ilość i adres odbiorcy przed wysyłką monet.</translation>
     </message>
     <message>
         <location line="+4"/>
-        <source>These are your Philosopherstone addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
+        <source>These are your CommunityCoin addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
         <translation>To twoje adresy bitcoin do odbierania płatności. Zaleca się używanie nowych adresów odbiorczych dla każdej tranzakcji.</translation>
     </message>
     <message>
@@ -274,8 +274,8 @@ This product includes software developed by the OpenSSL Project for use in the O
     </message>
     <message>
         <location line="-56"/>
-        <source>Philosopherstone will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your stones from being stolen by malware infecting your computer.</source>
-        <translation>Program Philosopherstone zamknie się aby dokończyć proces szyfrowania. Pamiętaj, że szyfrowanie portfela nie zabezpiecza w pełni Twoich bitcoinów przed kradzieżą przez wirusy lub trojany mogące zainfekować Twój komputer.</translation>
+        <source>CommunityCoin will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your stones from being stolen by malware infecting your computer.</source>
+        <translation>Program CommunityCoin zamknie się aby dokończyć proces szyfrowania. Pamiętaj, że szyfrowanie portfela nie zabezpiecza w pełni Twoich bitcoinów przed kradzieżą przez wirusy lub trojany mogące zainfekować Twój komputer.</translation>
     </message>
     <message>
         <location line="+13"/>
@@ -363,8 +363,8 @@ This product includes software developed by the OpenSSL Project for use in the O
     </message>
     <message>
         <location line="+7"/>
-        <source>Show information about Philosopherstone</source>
-        <translation>Pokaż informację o Philosopherstone</translation>
+        <source>Show information about CommunityCoin</source>
+        <translation>Pokaż informację o CommunityCoin</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -409,12 +409,12 @@ This product includes software developed by the OpenSSL Project for use in the O
     </message>
     <message>
         <location line="-358"/>
-        <source>Send stones to a Philosopherstone address</source>
-        <translation>Wyślij monety na adres Philosopherstone</translation>
+        <source>Send stones to a CommunityCoin address</source>
+        <translation>Wyślij monety na adres CommunityCoin</translation>
     </message>
     <message>
         <location line="+47"/>
-        <source>Modify configuration options for Philosopherstone</source>
+        <source>Modify configuration options for CommunityCoin</source>
         <translation>Zmienia opcje konfiguracji bitcoina</translation>
     </message>
     <message>
@@ -444,8 +444,8 @@ This product includes software developed by the OpenSSL Project for use in the O
     </message>
     <message>
         <location line="+375"/>
-        <source>Philosopherstone</source>
-        <translation>Philosopherstone</translation>
+        <source>CommunityCoin</source>
+        <translation>CommunityCoin</translation>
     </message>
     <message>
         <location line="-563"/>
@@ -481,12 +481,12 @@ This product includes software developed by the OpenSSL Project for use in the O
     </message>
     <message>
         <location line="+7"/>
-        <source>Sign messages with your Philosopherstone addresses to prove you own them</source>
+        <source>Sign messages with your CommunityCoin addresses to prove you own them</source>
         <translation>Podpisz wiadomości swoim adresem aby udowodnić jego posiadanie</translation>
     </message>
     <message>
         <location line="+2"/>
-        <source>Verify messages to ensure they were signed with specified Philosopherstone addresses</source>
+        <source>Verify messages to ensure they were signed with specified CommunityCoin addresses</source>
         <translation>Zweryfikuj wiadomość,  aby upewnić się, że została podpisana odpowiednim adresem Bitcoin.</translation>
     </message>
     <message>
@@ -518,7 +518,7 @@ This product includes software developed by the OpenSSL Project for use in the O
     <message>
         <location line="-331"/>
         <location line="+10"/>
-        <source>Philosopherstone Core</source>
+        <source>CommunityCoin Core</source>
         <translation>Rdzeń BitCoin</translation>
     </message>
     <message>
@@ -529,8 +529,8 @@ This product includes software developed by the OpenSSL Project for use in the O
     <message>
         <location line="+27"/>
         <location line="+2"/>
-        <source>&amp;About Philosopherstone Core</source>
-        <translation>&amp;O Philosopherstone Core</translation>
+        <source>&amp;About CommunityCoin Core</source>
+        <translation>&amp;O CommunityCoin Core</translation>
     </message>
     <message>
         <location line="+34"/>
@@ -565,13 +565,13 @@ This product includes software developed by the OpenSSL Project for use in the O
     <message>
         <location line="+126"/>
         <location line="+5"/>
-        <source>Philosopherstone client</source>
-        <translation>Philosopherstone klient</translation>
+        <source>CommunityCoin client</source>
+        <translation>CommunityCoin klient</translation>
     </message>
     <message numerus="yes">
         <location line="+133"/>
-        <source>%n active connection(s) to Philosopherstone network</source>
-        <translation><numerusform>%n aktywne połączenie do sieci Philosopherstone</numerusform><numerusform>%n aktywne połączenia do sieci Philosopherstone</numerusform><numerusform>%n aktywnych połączeń do sieci Philosopherstone</numerusform></translation>
+        <source>%n active connection(s) to CommunityCoin network</source>
+        <translation><numerusform>%n aktywne połączenie do sieci CommunityCoin</numerusform><numerusform>%n aktywne połączenia do sieci CommunityCoin</numerusform><numerusform>%n aktywnych połączeń do sieci CommunityCoin</numerusform></translation>
     </message>
     <message>
         <location line="+22"/>
@@ -688,8 +688,8 @@ Adres: %4
     </message>
     <message>
         <location filename="../bitcoin.cpp" line="+116"/>
-        <source>A fatal error occurred. Philosopherstone can no longer continue safely and will quit.</source>
-        <translation>Błąd krytyczny. Philosopherstone nie może kontynuować bezpiecznie więc zostanie zamknięty.</translation>
+        <source>A fatal error occurred. CommunityCoin can no longer continue safely and will quit.</source>
+        <translation>Błąd krytyczny. CommunityCoin nie może kontynuować bezpiecznie więc zostanie zamknięty.</translation>
     </message>
 </context>
 <context>
@@ -1041,7 +1041,7 @@ Adres: %4
     </message>
     <message>
         <location line="-5"/>
-        <source>The entered address &quot;%1&quot; is not a valid Philosopherstone address.</source>
+        <source>The entered address &quot;%1&quot; is not a valid CommunityCoin address.</source>
         <translation>Wprowadzony adres &quot;%1&quot; nie jest poprawnym adresem Bitcoin.</translation>
     </message>
     <message>
@@ -1093,7 +1093,7 @@ Adres: %4
     <message>
         <location line="+0"/>
         <location line="+13"/>
-        <source>Philosopherstone Core</source>
+        <source>CommunityCoin Core</source>
         <translation>Rdzeń BitCoin</translation>
     </message>
     <message>
@@ -1141,17 +1141,17 @@ Adres: %4
     </message>
     <message>
         <location line="+9"/>
-        <source>Welcome to Philosopherstone Core.</source>
+        <source>Welcome to CommunityCoin Core.</source>
         <translation type="unfinished"/>
     </message>
     <message>
         <location line="+26"/>
-        <source>As this is the first time the program is launched, you can choose where Philosopherstone Core will store its data.</source>
+        <source>As this is the first time the program is launched, you can choose where CommunityCoin Core will store its data.</source>
         <translation type="unfinished"/>
     </message>
     <message>
         <location line="+10"/>
-        <source>Philosopherstone Core will download and store a copy of the Philosopherstone block chain. At least %1GB of data will be stored in this directory, and it will grow over time. The wallet will also be stored in this directory.</source>
+        <source>CommunityCoin Core will download and store a copy of the CommunityCoin block chain. At least %1GB of data will be stored in this directory, and it will grow over time. The wallet will also be stored in this directory.</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -1166,8 +1166,8 @@ Adres: %4
     </message>
     <message>
         <location filename="../intro.cpp" line="+85"/>
-        <source>Philosopherstone</source>
-        <translation>Philosopherstone</translation>
+        <source>CommunityCoin</source>
+        <translation>CommunityCoin</translation>
     </message>
     <message>
         <location line="+1"/>
@@ -1242,13 +1242,13 @@ Adres: %4
     </message>
     <message>
         <location line="+31"/>
-        <source>Automatically start Philosopherstone after logging in to the system.</source>
-        <translation>Automatycznie uruchamia Philosopherstone po zalogowaniu do systemu.</translation>
+        <source>Automatically start CommunityCoin after logging in to the system.</source>
+        <translation>Automatycznie uruchamia CommunityCoin po zalogowaniu do systemu.</translation>
     </message>
     <message>
         <location line="+3"/>
-        <source>&amp;Start Philosopherstone on system login</source>
-        <translation>Uruchamiaj Philosopherstone wraz z zalogowaniem do &amp;systemu</translation>
+        <source>&amp;Start CommunityCoin on system login</source>
+        <translation>Uruchamiaj CommunityCoin wraz z zalogowaniem do &amp;systemu</translation>
     </message>
     <message>
         <location line="+35"/>
@@ -1267,8 +1267,8 @@ Adres: %4
     </message>
     <message>
         <location line="+6"/>
-        <source>Automatically open the Philosopherstone client port on the router. This only works when your router supports UPnP and it is enabled.</source>
-        <translation>Automatycznie otwiera port klienta Philosopherstone na routerze. Ta opcja dzieła tylko jeśli twój router wspiera UPnP i jest ono włączone.</translation>
+        <source>Automatically open the CommunityCoin client port on the router. This only works when your router supports UPnP and it is enabled.</source>
+        <translation>Automatycznie otwiera port klienta CommunityCoin na routerze. Ta opcja dzieła tylko jeśli twój router wspiera UPnP i jest ono włączone.</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -1277,8 +1277,8 @@ Adres: %4
     </message>
     <message>
         <location line="+7"/>
-        <source>Connect to the Philosopherstone network through a SOCKS proxy (e.g. when connecting through Tor).</source>
-        <translation>Podłącz się do sieci Philosopherstone przez proxy SOCKS (np. gdy łączysz się poprzez Tor&apos;a)</translation>
+        <source>Connect to the CommunityCoin network through a SOCKS proxy (e.g. when connecting through Tor).</source>
+        <translation>Podłącz się do sieci CommunityCoin przez proxy SOCKS (np. gdy łączysz się poprzez Tor&apos;a)</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -1367,8 +1367,8 @@ Adres: %4
     </message>
     <message>
         <location line="+9"/>
-        <source>Whether to show Philosopherstone addresses in the transaction list or not.</source>
-        <translation>Pokazuj adresy Philosopherstone na liście transakcji.</translation>
+        <source>Whether to show CommunityCoin addresses in the transaction list or not.</source>
+        <translation>Pokazuj adresy CommunityCoin na liście transakcji.</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -1430,7 +1430,7 @@ Adres: %4
         <location line="-9"/>
         <location line="+9"/>
         <source>This setting will take effect after restarting Bitcoin.</source>
-        <translation>To ustawienie zostanie zastosowane po restarcie Philosopherstone</translation>
+        <translation>To ustawienie zostanie zastosowane po restarcie CommunityCoin</translation>
     </message>
     <message>
         <location line="+29"/>
@@ -1448,7 +1448,7 @@ Adres: %4
     <message>
         <location line="+50"/>
         <location line="+214"/>
-        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the Philosopherstone network after a connection is established, but this process has not completed yet.</source>
+        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the CommunityCoin network after a connection is established, but this process has not completed yet.</source>
         <translation>Wyświetlana informacja może być nieaktualna. Twój portfel synchronizuje się automatycznie z siecią bitcoin, zaraz po tym jak uzyskano połączenie, ale proces ten nie został jeszcze ukończony.</translation>
     </message>
     <message>
@@ -1517,8 +1517,8 @@ Adres: %4
     </message>
     <message>
         <location line="+1"/>
-        <source>URI can not be parsed! This can be caused by an invalid Philosopherstone address or malformed URI parameters.</source>
-        <translation>URI nie może zostać przetworzony! Prawdopodobnie błędny adres Philosopherstone bądź nieprawidłowe parametry URI.</translation>
+        <source>URI can not be parsed! This can be caused by an invalid CommunityCoin address or malformed URI parameters.</source>
+        <translation>URI nie może zostać przetworzony! Prawdopodobnie błędny adres CommunityCoin bądź nieprawidłowe parametry URI.</translation>
     </message>
     <message>
         <location line="+91"/>
@@ -1575,8 +1575,8 @@ Adres: %4
     <message>
         <location filename="../bitcoin.cpp" line="+119"/>
         <location line="+5"/>
-        <source>Philosopherstone</source>
-        <translation>Philosopherstone</translation>
+        <source>CommunityCoin</source>
+        <translation>CommunityCoin</translation>
     </message>
     <message>
         <location line="-4"/>
@@ -1745,7 +1745,7 @@ Adres: %4
     </message>
     <message>
         <location line="-79"/>
-        <source>Philosopherstone Core</source>
+        <source>CommunityCoin Core</source>
         <translation>Rdzeń BitCoin</translation>
     </message>
     <message>
@@ -1755,12 +1755,12 @@ Adres: %4
     </message>
     <message>
         <location line="+7"/>
-        <source>Open the Philosopherstone debug log file from the current data directory. This can take a few seconds for large log files.</source>
-        <translation>Otwórz plik logowania debugowania Philosopherstone z obecnego katalogu z danymi. Może to potrwać kilka sekund przy większych plikach.</translation>
+        <source>Open the CommunityCoin debug log file from the current data directory. This can take a few seconds for large log files.</source>
+        <translation>Otwórz plik logowania debugowania CommunityCoin z obecnego katalogu z danymi. Może to potrwać kilka sekund przy większych plikach.</translation>
     </message>
     <message>
         <location line="+26"/>
-        <source>Show the Bitcoin-Core help message to get a list with possible Philosopherstone command-line options.</source>
+        <source>Show the Bitcoin-Core help message to get a list with possible CommunityCoin command-line options.</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -1770,8 +1770,8 @@ Adres: %4
     </message>
     <message>
         <location filename="../rpcconsole.cpp" line="-30"/>
-        <source>Welcome to the Philosopherstone RPC console.</source>
-        <translation>Witam w konsoli Philosopherstone RPC</translation>
+        <source>Welcome to the CommunityCoin RPC console.</source>
+        <translation>Witam w konsoli CommunityCoin RPC</translation>
     </message>
     <message>
         <location line="+1"/>
@@ -2137,8 +2137,8 @@ Adres: %4
     </message>
     <message>
         <location line="-136"/>
-        <source>Enter a Philosopherstone address (e.g. 1NS17iag9jJgTHD1VXjvLCEnZuQ3rJDE9L)</source>
-        <translation>Wprowadź adres Philosopherstone (np. 1NS17iag9jJgTHD1VXjvLCEnZuQ3rJDE9L)</translation>
+        <source>Enter a CommunityCoin address (e.g. 1NS17iag9jJgTHD1VXjvLCEnZuQ3rJDE9L)</source>
+        <translation>Wprowadź adres CommunityCoin (np. 1NS17iag9jJgTHD1VXjvLCEnZuQ3rJDE9L)</translation>
     </message>
     <message>
         <location line="+15"/>
@@ -2227,8 +2227,8 @@ Adres: %4
     </message>
     <message>
         <location line="+113"/>
-        <source>Warning: Invalid Philosopherstone address</source>
-        <translation>Ostrzeżenie: nieprawidłowy adres Philosopherstone</translation>
+        <source>Warning: Invalid CommunityCoin address</source>
+        <translation>Ostrzeżenie: nieprawidłowy adres CommunityCoin</translation>
     </message>
     <message>
         <location line="+13"/>
@@ -2351,8 +2351,8 @@ Adres: %4
     </message>
     <message>
         <location filename="../sendcoinsentry.cpp" line="+1"/>
-        <source>Enter a Philosopherstone address (e.g. 1NS17iag9jJgTHD1VXjvLCEnZuQ3rJDE9L)</source>
-        <translation>Wprowadź adres Philosopherstone (np. 1NS17iag9jJgTHD1VXjvLCEnZuQ3rJDE9L)</translation>
+        <source>Enter a CommunityCoin address (e.g. 1NS17iag9jJgTHD1VXjvLCEnZuQ3rJDE9L)</source>
+        <translation>Wprowadź adres CommunityCoin (np. 1NS17iag9jJgTHD1VXjvLCEnZuQ3rJDE9L)</translation>
     </message>
 </context>
 <context>
@@ -2375,7 +2375,7 @@ Adres: %4
     <message>
         <location line="+18"/>
         <source>The address to sign the message with (e.g. 1NS17iag9jJgTHD1VXjvLCEnZuQ3rJDE9L)</source>
-        <translation>Wprowadź adres Philosopherstone (np. 1NS17iag9jJgTHD1VXjvLCEnZuQ3rJDE9L)</translation>
+        <translation>Wprowadź adres CommunityCoin (np. 1NS17iag9jJgTHD1VXjvLCEnZuQ3rJDE9L)</translation>
     </message>
     <message>
         <location line="+10"/>
@@ -2416,7 +2416,7 @@ Adres: %4
     </message>
     <message>
         <location line="+21"/>
-        <source>Sign the message to prove you own this Philosopherstone address</source>
+        <source>Sign the message to prove you own this CommunityCoin address</source>
         <translation>Podpisz wiadomość aby dowieść, że ten adres jest twój</translation>
     </message>
     <message>
@@ -2448,11 +2448,11 @@ Adres: %4
     <message>
         <location line="+21"/>
         <source>The address the message was signed with (e.g. 1NS17iag9jJgTHD1VXjvLCEnZuQ3rJDE9L)</source>
-        <translation>Wprowadź adres Philosopherstone (np. 1NS17iag9jJgTHD1VXjvLCEnZuQ3rJDE9L)</translation>
+        <translation>Wprowadź adres CommunityCoin (np. 1NS17iag9jJgTHD1VXjvLCEnZuQ3rJDE9L)</translation>
     </message>
     <message>
         <location line="+40"/>
-        <source>Verify the message to ensure it was signed with the specified Philosopherstone address</source>
+        <source>Verify the message to ensure it was signed with the specified CommunityCoin address</source>
         <translation>Zweryfikuj wiadomość,  aby upewnić się, że została podpisana odpowiednim adresem Bitcoin.</translation>
     </message>
     <message>
@@ -2468,8 +2468,8 @@ Adres: %4
     <message>
         <location filename="../signverifymessagedialog.cpp" line="+29"/>
         <location line="+3"/>
-        <source>Enter a Philosopherstone address (e.g. 1NS17iag9jJgTHD1VXjvLCEnZuQ3rJDE9L)</source>
-        <translation>Wprowadź adres Philosopherstone (np. 1NS17iag9jJgTHD1VXjvLCEnZuQ3rJDE9L)</translation>
+        <source>Enter a CommunityCoin address (e.g. 1NS17iag9jJgTHD1VXjvLCEnZuQ3rJDE9L)</source>
+        <translation>Wprowadź adres CommunityCoin (np. 1NS17iag9jJgTHD1VXjvLCEnZuQ3rJDE9L)</translation>
     </message>
     <message>
         <location line="-2"/>
@@ -2478,8 +2478,8 @@ Adres: %4
     </message>
     <message>
         <location line="+3"/>
-        <source>Enter Philosopherstone signature</source>
-        <translation>Wprowadź podpis Philosopherstone</translation>
+        <source>Enter CommunityCoin signature</source>
+        <translation>Wprowadź podpis CommunityCoin</translation>
     </message>
     <message>
         <location line="+84"/>
@@ -2552,13 +2552,13 @@ Adres: %4
     <name>SplashScreen</name>
     <message>
         <location filename="../splashscreen.cpp" line="+26"/>
-        <source>Philosopherstone Core</source>
+        <source>CommunityCoin Core</source>
         <translation>Rdzeń BitCoin</translation>
     </message>
     <message>
         <location line="+2"/>
-        <source>The Philosopherstone Core developers</source>
-        <translation>Deweloperzy Philosopherstone Core</translation>
+        <source>The CommunityCoin Core developers</source>
+        <translation>Deweloperzy CommunityCoin Core</translation>
     </message>
     <message>
         <location line="+1"/>
@@ -3146,8 +3146,8 @@ Adres: %4
     </message>
     <message>
         <location line="+23"/>
-        <source>Specify configuration file (default: philosopherstone.conf)</source>
-        <translation>Wskaż plik konfiguracyjny (domyślnie: philosopherstone.conf)</translation>
+        <source>Specify configuration file (default: communitycoin.conf)</source>
+        <translation>Wskaż plik konfiguracyjny (domyślnie: communitycoin.conf)</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -3235,7 +3235,7 @@ rpcpassword=%s
 The username and password MUST NOT be the same.
 If the file does not exist, create it with owner-readable-only file permissions.
 It is also recommended to set alertnotify so you are notified of problems;
-for example: alertnotify=echo %%s | mail -s &quot;Philosopherstone Alert&quot; admin@foo.com
+for example: alertnotify=echo %%s | mail -s &quot;CommunityCoin Alert&quot; admin@foo.com
 </source>
         <translation>%s, musisz ustawić rpcpassword w pliku konfiguracyjnym:⏎
 %s⏎
@@ -3265,8 +3265,8 @@ na przykład: alertnotify=echo %%s | mail -s &quot;Alarm Bitcoin&quot; admin@foo
     </message>
     <message>
         <location line="+3"/>
-        <source>Cannot obtain a lock on data directory %s. Philosopherstone is probably already running.</source>
-        <translation>Nie można zablokować folderu danych %s.  Philosopherstone prawdopodobnie już działa.</translation>
+        <source>Cannot obtain a lock on data directory %s. CommunityCoin is probably already running.</source>
+        <translation>Nie można zablokować folderu danych %s.  CommunityCoin prawdopodobnie już działa.</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -3305,8 +3305,8 @@ na przykład: alertnotify=echo %%s | mail -s &quot;Alarm Bitcoin&quot; admin@foo
     </message>
     <message>
         <location line="+3"/>
-        <source>Warning: Please check that your computer&apos;s date and time are correct! If your clock is wrong Philosopherstone will not work properly.</source>
-        <translation>Uwaga: Sprawdź czy data i czas na Twoim komputerze są prawidłowe! Jeśli nie to Philosopherstone nie będzie działał prawidłowo.</translation>
+        <source>Warning: Please check that your computer&apos;s date and time are correct! If your clock is wrong CommunityCoin will not work properly.</source>
+        <translation>Uwaga: Sprawdź czy data i czas na Twoim komputerze są prawidłowe! Jeśli nie to CommunityCoin nie będzie działał prawidłowo.</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -3340,13 +3340,13 @@ na przykład: alertnotify=echo %%s | mail -s &quot;Alarm Bitcoin&quot; admin@foo
     </message>
     <message>
         <location line="+1"/>
-        <source>Philosopherstone Core Daemon</source>
+        <source>CommunityCoin Core Daemon</source>
         <translation type="unfinished"/>
     </message>
     <message>
         <location line="+1"/>
-        <source>Philosopherstone RPC client version</source>
-        <translation>wersja klienta RPC philosopherstone</translation>
+        <source>CommunityCoin RPC client version</source>
+        <translation>wersja klienta RPC CommunityCoin</translation>
     </message>
     <message>
         <location line="+1"/>
@@ -3540,8 +3540,8 @@ na przykład: alertnotify=echo %%s | mail -s &quot;Alarm Bitcoin&quot; admin@foo
     </message>
     <message>
         <location line="+1"/>
-        <source>Send command to Philosopherstone server</source>
-        <translation>Wyślij polecenie do serwera Philosopherstone</translation>
+        <source>Send command to CommunityCoin server</source>
+        <translation>Wyślij polecenie do serwera CommunityCoin</translation>
     </message>
     <message>
         <location line="+8"/>
@@ -3560,8 +3560,8 @@ na przykład: alertnotify=echo %%s | mail -s &quot;Alarm Bitcoin&quot; admin@foo
     </message>
     <message>
         <location line="+2"/>
-        <source>Start Philosopherstone server</source>
-        <translation>Startowanie serwera Philosopherstone</translation>
+        <source>Start CommunityCoin server</source>
+        <translation>Startowanie serwera CommunityCoin</translation>
     </message>
     <message>
         <location line="+12"/>
@@ -3665,8 +3665,8 @@ na przykład: alertnotify=echo %%s | mail -s &quot;Alarm Bitcoin&quot; admin@foo
     </message>
     <message>
         <location line="+9"/>
-        <source>SSL options: (see the Philosopherstone Wiki for SSL setup instructions)</source>
-        <translation>Opcje SSL: (odwiedź Philosopherstone Wiki w celu uzyskania instrukcji)</translation>
+        <source>SSL options: (see the CommunityCoin Wiki for SSL setup instructions)</source>
+        <translation>Opcje SSL: (odwiedź CommunityCoin Wiki w celu uzyskania instrukcji)</translation>
     </message>
     <message>
         <location line="+4"/>
@@ -3830,12 +3830,12 @@ na przykład: alertnotify=echo %%s | mail -s &quot;Alarm Bitcoin&quot; admin@foo
     </message>
     <message>
         <location line="+1"/>
-        <source>Error loading wallet.dat: Wallet requires newer version of Philosopherstone</source>
-        <translation>Błąd ładowania wallet.dat: Portfel wymaga nowszej wersji Philosopherstone</translation>
+        <source>Error loading wallet.dat: Wallet requires newer version of CommunityCoin</source>
+        <translation>Błąd ładowania wallet.dat: Portfel wymaga nowszej wersji CommunityCoin</translation>
     </message>
     <message>
         <location line="+98"/>
-        <source>Wallet needed to be rewritten: restart Philosopherstone to complete</source>
+        <source>Wallet needed to be rewritten: restart CommunityCoin to complete</source>
         <translation>Portfel wymaga przepisania: zrestartuj Bitcoina żeby ukończyć</translation>
     </message>
     <message>
@@ -3895,8 +3895,8 @@ na przykład: alertnotify=echo %%s | mail -s &quot;Alarm Bitcoin&quot; admin@foo
     </message>
     <message>
         <location line="-32"/>
-        <source>Unable to bind to %s on this computer. Philosopherstone is probably already running.</source>
-        <translation>Nie można przywiązać %s na tym komputerze. Philosopherstone prawdopodobnie już działa.</translation>
+        <source>Unable to bind to %s on this computer. CommunityCoin is probably already running.</source>
+        <translation>Nie można przywiązać %s na tym komputerze. CommunityCoin prawdopodobnie już działa.</translation>
     </message>
     <message>
         <location line="+94"/>

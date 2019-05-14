@@ -100,8 +100,8 @@ else
 OBJS += obj/txdb-bdb.o
 endif
 
-test check: test_philosopherstone.exe FORCE
-	test_philosopherstone.exe
+test check: test_comd.exe FORCE
+	test_comd.exe
 
 obj/%.o: %.cpp $(HEADERS)
 	g++ -c $(CFLAGS) -o $@ $<
@@ -120,11 +120,11 @@ TESTOBJS := $(patsubst test/%.cpp,obj-test/%.o,$(wildcard test/*.cpp))
 obj-test/%.o: test/%.cpp $(HEADERS)
 	g++ -c $(TESTDEFS) $(CFLAGS) -o $@ $<
 
-test_philosopherstone.exe: $(TESTOBJS) $(filter-out obj/init.o,$(OBJS:obj/%=obj/%))
+test_comd.exe: $(TESTOBJS) $(filter-out obj/init.o,$(OBJS:obj/%=obj/%))
 	g++ $(CFLAGS) $(LDFLAGS) -o $@ $(LIBPATHS) $^ -lboost_unit_test_framework $(LIBS)
 
 clean:
-	-del /Q stoned test_philosopherstone
+	-del /Q stoned test_comd
 	-del /Q obj\*
 	-del /Q obj-test\*
 

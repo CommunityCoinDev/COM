@@ -1082,7 +1082,7 @@ static std::string FormatException(std::exception* pex, const char* pszThread)
     char pszModule[MAX_PATH] = "";
     GetModuleFileNameA(NULL, pszModule, sizeof(pszModule));
 #else
-    const char* pszModule = "Philosopherstone";
+    const char* pszModule = "CommunityCoin";
 #endif
     if (pex)
         return strprintf(
@@ -1125,13 +1125,13 @@ void PrintExceptionContinue(std::exception* pex, const char* pszThread)
 boost::filesystem::path GetDefaultDataDir()
 {
     namespace fs = boost::filesystem;
-    // Windows < Vista: C:\Documents and Settings\Username\Application Data\Philosopherstone
-    // Windows >= Vista: C:\Users\Username\AppData\Roaming\Philosopherstone
-    // Mac: ~/Library/Application Support/Philosopherstone
-    // Unix: ~/.Philosopherstone
+    // Windows < Vista: C:\Documents and Settings\Username\Application Data\CommunityCoin
+    // Windows >= Vista: C:\Users\Username\AppData\Roaming\CommunityCoin
+    // Mac: ~/Library/Application Support/CommunityCoin
+    // Unix: ~/.CommunityCoin
 #ifdef WIN32
     // Windows
-    return GetSpecialFolderPath(CSIDL_APPDATA) / "Philosopherstone";
+    return GetSpecialFolderPath(CSIDL_APPDATA) / "CommunityCoin";
 #else
     fs::path pathRet;
     char* pszHome = getenv("HOME");
@@ -1143,10 +1143,10 @@ boost::filesystem::path GetDefaultDataDir()
     // Mac
     pathRet /= "Library/Application Support";
     fs::create_directory(pathRet);
-    return pathRet / "Philosopherstone";
+    return pathRet / "CommunityCoin";
 #else
     // Unix
-    return pathRet / ".Philosopherstone";
+    return pathRet / ".CommunityCoin";
 #endif
 #endif
 }
@@ -1188,7 +1188,7 @@ const boost::filesystem::path &GetDataDir(bool fNetSpecific)
 
 boost::filesystem::path GetConfigFile()
 {
-    boost::filesystem::path pathConfigFile(GetArg("-conf", "Philosopherstone.conf"));
+    boost::filesystem::path pathConfigFile(GetArg("-conf", "CommunityCoin.conf"));
     if (!pathConfigFile.is_complete()) pathConfigFile = GetDataDir(false) / pathConfigFile;
     return pathConfigFile;
 }
@@ -1219,7 +1219,7 @@ void ReadConfigFile(map<string, string>& mapSettingsRet,
 
 boost::filesystem::path GetPidFile()
 {
-    boost::filesystem::path pathPidFile(GetArg("-pid", "Philosopherstoned.pid"));
+    boost::filesystem::path pathPidFile(GetArg("-pid", "comd.pid"));
     if (!pathPidFile.is_complete()) pathPidFile = GetDataDir() / pathPidFile;
     return pathPidFile;
 }
@@ -1349,10 +1349,10 @@ void AddTimeData(const CNetAddr& ip, int64 nTime)
                 if (!fMatch)
                 {
                     fDone = true;
-                    string strMessage = _("Warning: Please check that your computer's date and time are correct! If your clock is wrong Philosopherstone will not work properly.");
+                    string strMessage = _("Warning: Please check that your computer's date and time are correct! If your clock is wrong CommunityCoin will not work properly.");
                     strMiscWarning = strMessage;
                     printf("*** %s\n", strMessage.c_str());
-                    uiInterface.ThreadSafeMessageBox(strMessage+" ", string("Philosopherstone"), CClientUIInterface::MSG_WARNING);
+                    uiInterface.ThreadSafeMessageBox(strMessage+" ", string("CommunityCoin"), CClientUIInterface::MSG_WARNING);
                 }
             }
         }

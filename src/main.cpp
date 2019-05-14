@@ -72,7 +72,7 @@ map<uint256, set<uint256> > mapOrphanTransactionsByPrev;
 // Constant stuff for coinbase transactions we create:
 CScript COINBASE_FLAGS;
 
-const string strMessageMagic = "Philosopherstone Signed Message:\n";
+const string strMessageMagic = "CommunityCoin Signed Message:\n";
 
 double dHashesPerSec;
 int64 nHPSTimerStart;
@@ -2611,7 +2611,7 @@ bool CheckDiskSpace(uint64 nAdditionalBytes)
         string strMessage = _("Warning: Disk space is low!");
         strMiscWarning = strMessage;
         printf("*** %s\n", strMessage.c_str());
-        uiInterface.ThreadSafeMessageBox(strMessage, "Philosopherstone", CClientUIInterface::MSG_WARNING);
+        uiInterface.ThreadSafeMessageBox(strMessage, "CommunityCoin", CClientUIInterface::MSG_WARNING);
         StartShutdown();
         return false;
     }
@@ -2710,7 +2710,7 @@ bool LoadBlockIndex(bool fAllowNew)
         txNew.vout.resize(1);
         txNew.vin[0].scriptSig = CScript() << 486604799 << CBigNum(9999) << vector<unsigned char>((const unsigned char*)pszTimestamp, (const unsigned char*)pszTimestamp + strlen(pszTimestamp));
         txNew.vout[0].SetEmpty();
-		txNew.strTxComment = "text:Philosopherstone genesis block";
+		txNew.strTxComment = "text:CommunityCoin genesis block";
 
         CBlock block;
         block.vtx.push_back(txNew);
