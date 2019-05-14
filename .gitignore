@@ -18,6 +18,7 @@ src/peercoind
 src/test_peercoin
 src/test/test_peercoin
 src/qt/test/test_peercoin-qt
+src/comd
 communitycoin-qt
 
 # autoreconf
