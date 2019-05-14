@@ -25,9 +25,7 @@ class CInv;
 class CRequestTracker;
 class CNode;
 
-static const int LAST_POW_BLOCK = 224000;
-static const int FIRST_HALVING_BLOCK = 1060000;
-static const int SECOND_HALVING_BLOCK = 1380000;
+static const int LAST_POW_BLOCK = 0; // disable POW at all
 
 static const unsigned int MAX_BLOCK_SIZE = 1000000;
 static const unsigned int MAX_BLOCK_SIZE_GEN = MAX_BLOCK_SIZE/2;
@@ -38,10 +36,11 @@ static const unsigned int MAX_INV_SZ = 50000;
 static const int64 MIN_TX_FEE = 1 * CENT;
 static const int64 MIN_RELAY_TX_FEE = 0.1 * CENT;
 static const int64 MAX_MONEY = 2000000000 * COIN;
-static const int64 MAX_MINT_PROOF_OF_WORK = 64 * COIN;
-static const int64 MAX_MINT_PROOF_OF_WORK_LEGACY = 64 * COIN;
-static const int64 MAX_MINT_PROOF_OF_STAKE = 0.50 * MAX_MINT_PROOF_OF_WORK;	// 50% annual interest
-static const unsigned int RWD_SWITCH_TIME = 1376006400;		// August 9, 2013 00:00:00 GMT
+static const int64 MAX_MINT_PROOF_OF_WORK = 1 * COIN; // 1 Coin per Block
+static const int64 MAX_MINT_PROOF_OF_WORK_LEGACY = 1 * COIN;
+static const int64 MAX_MINT_PROOF_OF_STAKE = 0.21 * MAX_MINT_PROOF_OF_WORK;	// 21% annual interest
+static const int64 REWARD_REDUCING_VALUE = 1 - 0.21; // reduce the annual interest value by 21%
+
 /** Split/Combine Threshold Max */
 static const int64 MAX_SPLIT_AMOUNT = 200 * COIN;
 static const int64 MAX_COMBINE_AMOUNT = MAX_SPLIT_AMOUNT;

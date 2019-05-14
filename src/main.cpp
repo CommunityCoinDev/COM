@@ -42,13 +42,14 @@ static CBigNum bnProofOfStakeLimit(~uint256(0) >> 20);
 static CBigNum bnProofOfWorkLimitTestNet(~uint256(0) >> 20);
 static CBigNum bnProofOfStakeLimitTestNet(~uint256(0) >> 20);
 
-unsigned int nStakeMinAge = 60 * 60 * 24 * 5;	// minimum age for coin age: 5d
-unsigned int nStakeMinAge2 = 60 * 60 * 24 * 8.8;	// PALM until fork
-unsigned int nStakeMaxAge = 60 * 60 * 24 * 15;	// stake age of full weight: 15d
-unsigned int nStakeTargetSpacing = 120;			// 2-minute block spacing
-unsigned int nStakeTargetSpacingNEW = 200;
+unsigned int nStakeMinAge = 60 * 60 * 24 * 31;	// minimum age for coin age: 31d
+unsigned int nStakeMinAge2 = 60 * 60 * 24 * 31;	// PALM until fork
+unsigned int nStakeMaxAge = 60 * 60 * 24 * 50;	// stake age of full weight: 50d
+unsigned int nStakeTargetSpacing = 60;			// 60 seconds block spacing
+unsigned int nStakeTargetSpacingNEW = 60;       // 60 seconds block spacing
+const unsigned int nBlocksPerYear = 365 * 24 * 60 * 60 / nStakeTargetSpacingNEW; // amount of blocks per year as a target
 
-int64 nChainStartTime = 1374911180;
+int64 nChainStartTime = 1557833976;
 int nCoinbaseMaturity = 30;
 int nCoinbaseMaturityMultipiler = 130;
 CBlockIndex* pindexGenesisBlock = NULL;
@@ -1014,15 +1015,10 @@ int64 GetProofOfStakeReward(int64 nCoinAge, unsigned int nBits, unsigned int nTi
 
 	nRewardCoinYear = MAX_MINT_PROOF_OF_STAKE;
 
-	if (nHeight > SECOND_HALVING_BLOCK)
-		nRewardCoinYear /= 4;
-	else if (nHeight > FIRST_HALVING_BLOCK)
-		nRewardCoinYear /= 2;
+    for( ; nHeight >= nBlocksPerYear; nHeight -= nBlocksPerYear )
+        nRewardCoinYear *= REWARD_REDUCING_VALUE;
 
     int64 nSubsidy = nCoinAge * nRewardCoinYear / 365;
-	if(nTime > RWD_SWITCH_TIME)
-		nSubsidy /= 64;
-
 
 	if (fDebug && GetBoolArg("-printcreation"))
         printf("GetProofOfStakeReward(): create=%s nCoinAge=%" PRI64d" nBits=%d\n", FormatMoney(nSubsidy).c_str(), nCoinAge, nBits);
@@ -1171,11 +1167,11 @@ unsigned int static GetNextTargetRequiredV3(const CBlockIndex* pindexLast, bool 
 
 unsigned int GetNextTargetRequired(const CBlockIndex* pindexLast, bool fProofOfStake)
 {
-    if (pindexLast->nHeight < 213500)
+    /*if (pindexLast->nHeight < 213500)
         return GetNextTargetRequiredV1(pindexLast, fProofOfStake);
     else if (pindexLast->nHeight >= 213500 && pindexLast->nHeight < 224100)
         return GetNextTargetRequiredV2(pindexLast, fProofOfStake);
-	else
+	else*/
         return GetNextTargetRequiredV3(pindexLast, fProofOfStake);
 }
 
