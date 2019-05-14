@@ -52,9 +52,7 @@ BITCOIN_CORE_H = \
   allocators.h \
   base58.h \
   bignum.h \
-  rpcclient.h \
   rpcprotocol.h \
-  rpcserver.h \
   bloom.h \
   checkpoints.h \
   checkpointsync.h \
@@ -107,7 +105,6 @@ version.o: obj/build.h
 libpeercoin_server_a_SOURCES = \
   addrman.cpp \
   alert.cpp \
-  rpcserver.cpp \
   bloom.cpp \
   checkpoints.cpp \
   checkpointsync.cpp \
@@ -122,7 +119,6 @@ libpeercoin_server_a_SOURCES = \
   rpcblockchain.cpp \
   rpcnet.cpp \
   rpcrawtransaction.cpp \
-  rpcserver.cpp \
   txdb.cpp \
   $(JSON_H) \
   $(BITCOIN_CORE_H)
@@ -151,7 +147,6 @@ libpeercoin_common_a_SOURCES = \
   $(BITCOIN_CORE_H)
 
 libpeercoin_cli_a_SOURCES = \
-  rpcclient.cpp \
   $(BITCOIN_CORE_H)
 
 nodist_libpeercoin_common_a_SOURCES = $(top_srcdir)/src/obj/build.h
