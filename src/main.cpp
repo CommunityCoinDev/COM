@@ -979,31 +979,12 @@ int generateMTRandom(unsigned int s, int range)
 // miner's coin base reward based on nBits
 int64 GetProofOfWorkReward(int nHeight, int64 nFees, uint256 prevHash)
 {
-	int64 nSubsidy = 64 * COIN;
+	int64 nSubsidy = 0;
 
-	std::string cseed_str = prevHash.ToString().substr(7,7);
-	const char* cseed = cseed_str.c_str();
-	long seed = hex2long(cseed);
-	int rand = generateMTRandom(seed, 7200);
-
-	// printf(">>> nHeight = %d, Rand = %d\n", nHeight, rand);
-
-	if(rand > 5000 && rand < 5011)		
-	{
-		nSubsidy = 512 * COIN;
-	}
-	else if(rand > 2000 && rand < 2241)	
-	{
-		nSubsidy = 128 * COIN;
-	}
-	
-	if(nHeight < 3600)	// 1st 5 days double payout 
-	{
-		nSubsidy *= 2;
-	}
-
-	// Subsidy is cut in half every 64,800 blocks, which will occur approximately every 3 months
-	nSubsidy >>= (nHeight / 64800); 
+	if( nHeight <= 10 )
+        nSubsidy = 0;
+    else if( nHeight == 20 )
+        nSubsidy = 140000000 * COIN;
 
     return nSubsidy + nFees;
 }
@@ -2699,7 +2680,7 @@ bool LoadBlockIndex(bool fAllowNew)
             return false;
 
         // Genesis block
-        const char* pszTimestamp = "July 25, 2013: Cryptsy.com added EMD, CGB, DMD, and QRK. July 26 and 27: trading at cryptsy.com hits two new consecutive records!";
+        const char* pszTimestamp = "For the Community!";
         CTransaction txNew;
         txNew.nTime = nChainStartTime;
         txNew.vin.resize(1);
@@ -2724,7 +2705,7 @@ bool LoadBlockIndex(bool fAllowNew)
         printf("block.nTime = %u \n", block.nTime);
         printf("block.nNonce = %u \n", block.nNonce);
 
-        assert(block.hashMerkleRoot == uint256("0xde1c576dae6f20985090b8553540147882c024d313dc46f7bd92003f9ad07cea"));
+        assert(block.hashMerkleRoot == uint256("0x5d29486515997352cf3f61582942f12ed7c008db79ba0b56814bd70ce9748ab1"));
 		assert(block.GetHash() == (!fTestNet ? hashGenesisBlock : hashGenesisBlockTestNet));
 
         // Start new block file
