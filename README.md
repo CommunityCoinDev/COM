@@ -1,4 +1,4 @@
-CommunityCoin Development, forked from [Peercoin](https://peercoin.net)
+CommunityCoin Development, forked from [Peercoin](https://peercoin.net) with parts of [NovaCoin](http://novacoin.org/) and [Philosopherstone Coin](http://philosopherstones.org/)
 ==================================
 
 [![Build Status](https://travis-ci.org/CommunityCoinDev/COM.svg?branch=master)](https://travis-ci.org/CommunityCoinDev/COM)
@@ -17,6 +17,17 @@ We're not starting to bring up some new fancy consensus algorithms since that's 
 * Documentation: [Peercoin Whitepaper](https://peercoin.net/resources.html#whitepaper)
 * Help: 
 [Website](https://www.communitycoin.world)
+
+### CommunityCoin Technical Details
+* Mainnet Port: 36451 (RPC: 36452)
+* Testnet Port: 46451 (RPC: 46452)
+* Consensus: pure PoS
+* Blocktime: 1 minute
+* Pre-Mine: 140.000.000
+* approx. max. Distribution: 360.820.000
+* Coin maturing: 31 days
+* reward p.A. when staking: 21%
+* reduction of the reward p.A.: 21%
 
 ## Development:
 ### Contributing
