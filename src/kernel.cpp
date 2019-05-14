@@ -246,7 +246,7 @@ static bool GetKernelStakeModifier(uint256 hashBlockFrom, uint64& nStakeModifier
                     pindex->GetBlockHash().ToString().c_str(), pindex->nHeight, hashBlockFrom.ToString().c_str());
             else
 			{
-				// printf(">> nStakeModifierTime = %"PRI64d", pindexFrom->GetBlockTime() = %"PRI64d", nStakeModifierSelectionInterval = %"PRI64d"\n",
+				// printf(">> nStakeModifierTime = %" PRI64d", pindexFrom->GetBlockTime() = %" PRI64d", nStakeModifierSelectionInterval = %" PRI64d"\n",
 				//	nStakeModifierTime, pindexFrom->GetBlockTime(), nStakeModifierSelectionInterval);
                 return false;
 			}
@@ -306,7 +306,7 @@ bool CheckStakeKernelHash(unsigned int nBits, const CBlock& blockFrom, unsigned 
     CBigNum bnCoinDayWeight = CBigNum(nValueIn) * nTimeWeight / COIN / (24 * 60 * 60);
     targetProofOfStake = CBigNum(bnCoinDayWeight * bnTargetPerCoinDay).getuint256();
 
-	// printf(">>> CheckStakeKernelHash: nTimeWeight = %"PRI64d"\n", nTimeWeight);
+	// printf(">>> CheckStakeKernelHash: nTimeWeight = %" PRI64d"\n", nTimeWeight);
     // Calculate hash
     CDataStream ss(SER_GETHASH, 0);
     uint64 nStakeModifier = 0;

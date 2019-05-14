@@ -585,7 +585,7 @@ bool AppInit2()
            if (nSplitThreshold > MAX_SPLIT_AMOUNT)
                nSplitThreshold = MAX_SPLIT_AMOUNT;
        }
-       printf("splitthreshold set to %"PRI64d"\n",nSplitThreshold);
+       printf("splitthreshold set to %" PRI64d"\n",nSplitThreshold);
     }
 
     if (mapArgs.count("-combinethreshold"))
@@ -596,7 +596,7 @@ bool AppInit2()
            if (nCombineThreshold > MAX_COMBINE_AMOUNT)
                nCombineThreshold = MAX_COMBINE_AMOUNT;
        }
-       printf("combinethreshold set to %"PRI64d"\n",nCombineThreshold);
+       printf("combinethreshold set to %" PRI64d"\n",nCombineThreshold);
     }
 
     // ********************************************************* Step 6: network initialization
@@ -747,7 +747,7 @@ bool AppInit2()
         printf("Shutdown requested. Exiting.\n");
         return false;
     }
-    printf(" block index %15"PRI64d"ms\n", GetTimeMillis() - nStart);
+    printf(" block index %15" PRI64d"ms\n", GetTimeMillis() - nStart);
 
     if (GetBoolArg("-printblockindex") || GetBoolArg("-printblocktree"))
     {
@@ -838,7 +838,7 @@ bool AppInit2()
     }
 
     printf("%s", strErrors.str().c_str());
-    printf(" wallet      %15"PRI64d"ms\n", GetTimeMillis() - nStart);
+    printf(" wallet      %15" PRI64d"ms\n", GetTimeMillis() - nStart);
 
     RegisterWallet(pwalletMain);
 
@@ -858,7 +858,7 @@ bool AppInit2()
         printf("Rescanning last %i blocks (from block %i)...\n", pindexBest->nHeight - pindexRescan->nHeight, pindexRescan->nHeight);
         nStart = GetTimeMillis();
         pwalletMain->ScanForWalletTransactions(pindexRescan, true);
-        printf(" rescan      %15"PRI64d"ms\n", GetTimeMillis() - nStart);
+        printf(" rescan      %15" PRI64d"ms\n", GetTimeMillis() - nStart);
     }
 
     // ********************************************************* Step 9: import blocks
@@ -900,7 +900,7 @@ bool AppInit2()
             printf("Invalid or missing peers.dat; recreating\n");
     }
 
-    printf("Loaded %i addresses from peers.dat  %"PRI64d"ms\n",
+    printf("Loaded %i addresses from peers.dat  %" PRI64d"ms\n",
            addrman.size(), GetTimeMillis() - nStart);
 
     // ********************************************************* Step 11: start node
@@ -911,11 +911,11 @@ bool AppInit2()
     RandAddSeedPerfmon();
 
     //// debug print
-    printf("mapBlockIndex.size() = %"PRIszu"\n",   mapBlockIndex.size());
+    printf("mapBlockIndex.size() = %" PRIszu"\n",   mapBlockIndex.size());
     printf("nBestHeight = %d\n",            nBestHeight);
-    printf("setKeyPool.size() = %"PRIszu"\n",      pwalletMain->setKeyPool.size());
-    printf("mapWallet.size() = %"PRIszu"\n",       pwalletMain->mapWallet.size());
-    printf("mapAddressBook.size() = %"PRIszu"\n",  pwalletMain->mapAddressBook.size());
+    printf("setKeyPool.size() = %" PRIszu"\n",      pwalletMain->setKeyPool.size());
+    printf("mapWallet.size() = %" PRIszu"\n",       pwalletMain->mapWallet.size());
+    printf("mapAddressBook.size() = %" PRIszu"\n",  pwalletMain->mapAddressBook.size());
 
     if (!NewThread(StartNode, NULL))
         InitError(_("Error: could not start node"));
