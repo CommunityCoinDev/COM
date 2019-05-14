@@ -15,15 +15,15 @@
 #include <string>
 #include "uint256.h"
 
-#define PPCOIN_PORT  16281
-#define RPC_PORT     16282
-#define TESTNET_PORT 26281
-#define TESTNET_RPC_PORT 26282
+#define MAINNET_PORT  36451
+#define MAINNET_RPC_PORT     36452
+#define TESTNET_PORT 46451
+#define TESTNET_RPC_PORT 46452
 
 extern bool fTestNet;
 static inline unsigned short GetDefaultPort(const bool testnet = fTestNet)
 {
-    return testnet ? TESTNET_PORT : PPCOIN_PORT;
+    return testnet ? TESTNET_PORT : MAINNET_PORT;
 }
 
 
