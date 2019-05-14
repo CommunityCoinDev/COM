@@ -3,20 +3,20 @@ language: cpp
 matrix:
   include:
       #linux
-      - os: linux
-        services: docker
-        env:
-          - V=Dockerfile-stretch
-        script:
-          - ./archive.sh
-          - docker build -f scripts/docker/debian/Dockerfile-stretch .
-      - os: linux
-        services: docker
-        env:
-          - V=Dockerfile-jessie
-        script:
-          - ./archive.sh
-          - docker build -f scripts/docker/debian/Dockerfile-jessie .
+      #- os: linux
+      #  services: docker
+      #  env:
+      #    - V=Dockerfile-stretch
+      #  script:
+      #    - ./archive.sh
+      #    - docker build -f scripts/docker/debian/Dockerfile-stretch .
+      #- os: linux
+      #  services: docker
+      #  env:
+      #    - V=Dockerfile-jessie
+      #  script:
+      #    - ./archive.sh
+      #    - docker build -f scripts/docker/debian/Dockerfile-jessie .
       - os: linux
         sudo: required
         env:
@@ -27,16 +27,16 @@ matrix:
         install: true
         script:
           - ./scripts/install-ubuntu.sh
-      - os: linux
-        sudo: required
-        env:
-          - V=ubuntu-debuild
-        before_install:
-          - ./scripts/travis-uninstall-packages.sh
-          - ./scripts/dependencies-ubuntu.sh
-        install: true
-        script:
-          - ./scripts/debuild.sh
+      #- os: linux
+      #  sudo: required
+      #  env:
+      #    - V=ubuntu-debuild
+      #  before_install:
+      #    - ./scripts/travis-uninstall-packages.sh
+      #    - ./scripts/dependencies-ubuntu.sh
+      #  install: true
+      #  script:
+      #    - ./scripts/debuild.sh
       #cross compile windows
       #- os: linux
       #  services: docker
