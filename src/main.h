@@ -51,8 +51,8 @@ inline bool MoneyRange(int64 nValue) { return (nValue >= 0 && nValue <= MAX_MONE
 // Threshold for nLockTime: below this value it is interpreted as block number, otherwise as UNIX timestamp.
 static const unsigned int LOCKTIME_THRESHOLD = 500000000; // Tue Nov  5 00:53:20 1985 UTC
 
-static const uint256 hashGenesisBlockOfficial("0xaf88ec5876ab4ad3acdeec246192760a4ae975e4f28762e8ae96dd1f25b1712e");
-static const uint256 hashGenesisBlockTestNet ("0xaf88ec5876ab4ad3acdeec246192760a4ae975e4f28762e8ae96dd1f25b1712e");
+static const uint256 hashGenesisBlockOfficial("0x000008afad76737c1bea3f04ccee15c2c6c8b99d6e787646e2f132fa40501230");
+static const uint256 hashGenesisBlockTestNet ("0x000008afad76737c1bea3f04ccee15c2c6c8b99d6e787646e2f132fa40501230");
 
 inline int64 PastDrift(int64 nTime)   { return nTime - 2 * 60 * 60; } // up to 2 hours from the past
 inline int64 FutureDrift(int64 nTime) { return nTime + 2 * 60 * 60; } // up to 2 hours from the future
