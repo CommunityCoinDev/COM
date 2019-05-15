@@ -12,6 +12,7 @@ bin
 *.exe
 src/*.exe
 src/*/*.exe
+src/peers.dat
 src/peercoin
 src/peercoin-cli
 src/peercoind
