@@ -162,7 +162,6 @@ HEADERS += \
     src/key.h \
     src/keystore.h \
     src/main.h \
-    src/miner.h \
     src/mruset.h \
     src/net.h \
     src/netbase.h \
@@ -228,7 +227,6 @@ SOURCES += \
     src/key.cpp \
     src/keystore.cpp \
     src/main.cpp \
-    src/miner.cpp \
     src/net.cpp \
     src/netbase.cpp \
     src/noui.cpp \
