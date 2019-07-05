@@ -42,9 +42,9 @@ static CBigNum bnProofOfStakeLimit(~uint256(0) >> 20);
 static CBigNum bnProofOfWorkLimitTestNet(~uint256(0) >> 20);
 static CBigNum bnProofOfStakeLimitTestNet(~uint256(0) >> 20);
 
-unsigned int nStakeMinAge = 60 * 60 * 24 * 31;	// minimum age for coin age: 31d
-unsigned int nStakeMinAge2 = 60 * 60 * 24 * 31;	// PALM until fork
-unsigned int nStakeMaxAge = 60 * 60 * 24 * 50;	// stake age of full weight: 50d
+unsigned int nStakeMinAge = 60;                 // starting at 60 seconds, flexing on demand
+unsigned int nStakeMinAge2 = 60;                // starting at 60 seconds, flexing on demand
+unsigned int nStakeMaxAge = 60*60;              // starting at 1 hour, flexing on demand
 unsigned int nStakeTargetSpacing = 60;			// 60 seconds block spacing
 unsigned int nStakeTargetSpacingNEW = 60;       // 60 seconds block spacing
 const unsigned int nBlocksPerYear = 365 * 24 * 60 * 60 / nStakeTargetSpacingNEW; // amount of blocks per year as a target
@@ -2428,6 +2428,25 @@ bool ProcessBlock(CNode* pfrom, CBlock* pblock)
     if (pfrom && !CSyncCheckpoint::strMasterPrivKey.empty())
         Checkpoints::SendSyncCheckpoint(Checkpoints::AutoSelectSyncCheckpoint());
 
+    // recalculate sliding window for flexible coin stake ages
+    if( (mapBlockIndex[hash]->nHeight < FLEX_AGE_WINDOW) && ((mapBlockIndex[hash]->nHeight % FLEX_AGE_WINDOW_INTERVAL) == 0) )
+    {
+        if( mapBlockIndex[hash]->nHeight >= FLEX_AGE_WINDOW )
+        {
+            nStakeMinAge = nStakeMinAge2 = FLEX_AGE_WINDOW_MIN_AGE;
+            nStakeMaxAge = FLEX_AGE_WINDOW_MAX_AGE;
+        }
+        else
+        {
+            nStakeMinAge = nStakeMinAge2 = (unsigned int)(((float)mapBlockIndex[hash]->nHeight / (float)FLEX_AGE_WINDOW) * FLEX_AGE_WINDOW_MIN_AGE);
+            nStakeMaxAge = (unsigned int)(((float)mapBlockIndex[hash]->nHeight / (float)FLEX_AGE_WINDOW) * FLEX_AGE_WINDOW_MAX_AGE);
+        }
+        /*printf("=================================== CHANGED FLEX ===================================\n");
+        printf("nStakeMinAge: %u\n", nStakeMinAge);
+        printf("nStakeMinAge2: %u\n", nStakeMinAge2);
+        printf("nStakeMaxAge: %u\n", nStakeMaxAge);
+        printf("=================================== CHANGED FLEX ===================================\n");*/
+    }
     return true;
 }
 
