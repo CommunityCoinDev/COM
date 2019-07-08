@@ -42,16 +42,16 @@ static CBigNum bnProofOfStakeLimit(~uint256(0) >> 20);
 static CBigNum bnProofOfWorkLimitTestNet(~uint256(0) >> 20);
 static CBigNum bnProofOfStakeLimitTestNet(~uint256(0) >> 20);
 
-unsigned int nStakeMinAge = 60 * 60 * 24 * 31;	// minimum age for coin age: 31d
-unsigned int nStakeMinAge2 = 60 * 60 * 24 * 31;	// PALM until fork
-unsigned int nStakeMaxAge = 60 * 60 * 24 * 50;	// stake age of full weight: 50d
+unsigned int nStakeMinAge = 60;                 // starting at 60 seconds, flexing on demand
+unsigned int nStakeMinAge2 = 60;                // starting at 60 seconds, flexing on demand
+unsigned int nStakeMaxAge = 60*60;              // starting at 1 hour, flexing on demand
 unsigned int nStakeTargetSpacing = 60;			// 60 seconds block spacing
 unsigned int nStakeTargetSpacingNEW = 60;       // 60 seconds block spacing
 const unsigned int nBlocksPerYear = 365 * 24 * 60 * 60 / nStakeTargetSpacingNEW; // amount of blocks per year as a target
 
 int64 nChainStartTime = 1557833976;
 int nCoinbaseMaturity = 30;
-int nCoinbaseMaturityMultipiler = 130;
+int nCoinbaseMaturityMultipiler = 10;
 CBlockIndex* pindexGenesisBlock = NULL;
 int nBestHeight = -1;
 CBigNum bnBestChainTrust = 0;
@@ -979,12 +979,7 @@ int generateMTRandom(unsigned int s, int range)
 // miner's coin base reward based on nBits
 int64 GetProofOfWorkReward(int nHeight, int64 nFees, uint256 prevHash)
 {
-	int64 nSubsidy = 1 * COIN;
-
-	if( nHeight == 20 )
-        nSubsidy = 140000000 * COIN;
-
-    return nSubsidy + nFees;
+	return (140000000 * COIN / LAST_POW_BLOCK) + nFees;
 }
 
 // miner's coin stake reward based on nBits and coin age spent (coin-days)
@@ -2284,11 +2279,26 @@ bool ProcessBlockFast(CNode* pfrom, CBlock* pblock)
 	if (pblock->IsProofOfStake())
 	{
 		uint256 hashProofOfStake = 0, targetProofOfStake = 0;
-		if (!CheckProofOfStake(pblock->vtx[1], pblock->nBits, hashProofOfStake, targetProofOfStake))
-		{
-			printf("WARNING: ProcessBlock(): check proof-of-stake failed for block %s\n", hash.ToString().c_str());
-			return false; // do not error here as we expect this during initial block download
-		}
+		// it can happen upon restart that our sliding window isn't calculated. so we reset the sliding window params to the last height and retry it. this can only happen once
+        printf("INFO: ProcessBlock(): recalculating sliding-window for block %s\n", hash.ToString().c_str());
+
+        if( !mapBlockIndex.count(pblock->hashPrevBlock) )
+        {
+            printf("WARNING: ProcessBlock(): recalculating sliding-window failed due to missing previous block in %s\n", hash.ToString().c_str());
+            return false;
+        }
+
+        // recalc sliding window
+        AdjustSlidingWindow(mapBlockIndex[pblock->hashPrevBlock]->nHeight, true);
+
+        if (!CheckProofOfStake(pblock->vtx[1], pblock->nBits, hashProofOfStake, targetProofOfStake))
+        {
+            printf("WARNING: ProcessBlock(): check proof-of-stake failed for block %s\n", hash.ToString().c_str());
+            return false; // do not error here as we expect this during initial block download
+        }
+        else
+            printf("INFO: Sliding Window correction was successfull!\n");
+
 		if (!mapProofOfStake.count(hash)) // add to mapProofOfStake
 			mapProofOfStake.insert(make_pair(hash, hashProofOfStake));
 	}
@@ -2316,6 +2326,9 @@ bool ProcessBlockFast(CNode* pfrom, CBlock* pblock)
 		}
 		mapOrphanBlocksByPrev.erase(hashPrev);
 	}
+
+    // recalc sliding window
+    AdjustSlidingWindow(mapBlockIndex[hash]->nHeight);
 
 	return true;
 }
@@ -2345,8 +2358,25 @@ bool ProcessBlock(CNode* pfrom, CBlock* pblock)
         uint256 hashProofOfStake = 0, targetProofOfStake = 0;
         if (!CheckProofOfStake(pblock->vtx[1], pblock->nBits, hashProofOfStake, targetProofOfStake))
         {
-            printf("WARNING: ProcessBlock(): check proof-of-stake failed for block %s\n", hash.ToString().c_str());
-            return false; // do not error here as we expect this during initial block download
+            // it can happen upon restart that our sliding window isn't calculated. so we reset the sliding window params to the last height and retry it. this can only happen once
+            printf("INFO: ProcessBlock(): recalculating sliding-window for block %s\n", hash.ToString().c_str());
+
+            if( !mapBlockIndex.count(pblock->hashPrevBlock) )
+            {
+                printf("WARNING: ProcessBlock(): recalculating sliding-window failed due to missing previous block in %s\n", hash.ToString().c_str());
+                return false;
+            }
+
+            // recalc sliding window
+            AdjustSlidingWindow(mapBlockIndex[pblock->hashPrevBlock]->nHeight, true);
+
+            if (!CheckProofOfStake(pblock->vtx[1], pblock->nBits, hashProofOfStake, targetProofOfStake))
+            {
+                printf("WARNING: ProcessBlock(): check proof-of-stake failed for block %s\n", hash.ToString().c_str());
+                return false; // do not error here as we expect this during initial block download
+            }
+            else
+                printf("INFO: Sliding Window correction was successfull!\n");
         }
         if (!mapProofOfStake.count(hash)) // add to mapProofOfStake
             mapProofOfStake.insert(make_pair(hash, hashProofOfStake));
@@ -2433,7 +2463,33 @@ bool ProcessBlock(CNode* pfrom, CBlock* pblock)
     if (pfrom && !CSyncCheckpoint::strMasterPrivKey.empty())
         Checkpoints::SendSyncCheckpoint(Checkpoints::AutoSelectSyncCheckpoint());
 
+    // recalculate sliding window
+    AdjustSlidingWindow(mapBlockIndex[hash]->nHeight);
+    
     return true;
+}
+
+void AdjustSlidingWindow(int nHeight, bool bForce)
+{
+    // recalculate sliding window for flexible coin stake ages
+    if( bForce || ((nHeight < FLEX_AGE_WINDOW) && (( nHeight % FLEX_AGE_WINDOW_INTERVAL) == 0)) )
+    {
+        if( nHeight >= FLEX_AGE_WINDOW )
+        {
+            nStakeMinAge = nStakeMinAge2 = FLEX_AGE_WINDOW_MIN_AGE;
+            nStakeMaxAge = FLEX_AGE_WINDOW_MAX_AGE;
+        }
+        else
+        {
+            nStakeMinAge = nStakeMinAge2 = (unsigned int)(((float)nHeight / (float)FLEX_AGE_WINDOW) * FLEX_AGE_WINDOW_MIN_AGE);
+            nStakeMaxAge = (unsigned int)(((float)nHeight / (float)FLEX_AGE_WINDOW) * FLEX_AGE_WINDOW_MAX_AGE);
+        }
+        /*printf("=================================== CHANGED FLEX ===================================\n");
+        printf("nStakeMinAge: %u\n", nStakeMinAge);
+        printf("nStakeMinAge2: %u\n", nStakeMinAge2);
+        printf("nStakeMaxAge: %u\n", nStakeMaxAge);
+        printf("=================================== CHANGED FLEX ===================================\n");*/
+    }
 }
 
 bool CBlock::SignPoSBlock(CWallet& wallet)
@@ -2442,12 +2498,12 @@ bool CBlock::SignPoSBlock(CWallet& wallet)
     // something except proof-of-stake block template
     if (!vtx[0].vout[0].IsEmpty())
         return false;
-
+        
     // if we are trying to sign
     // a complete proof-of-stake block
     if (IsProofOfStake())
         return true;
-
+        
     static int64 nLastCoinStakeSearchTime = GetAdjustedTime(); // startup timestamp
 
     CKey key;

@@ -25,7 +25,11 @@ class CInv;
 class CRequestTracker;
 class CNode;
 
-static const int LAST_POW_BLOCK = 30; // disable POW after 30 initial blocks
+static const int LAST_POW_BLOCK = 1000; // disable POW after 1000 initial blocks
+static const int FLEX_AGE_WINDOW = 500000; // 500.000 blocks sliding window for coin age maturity to ensure proper startup phase
+static const int FLEX_AGE_WINDOW_INTERVAL = 10; // every 100 blocks we change the coinage values
+static const int FLEX_AGE_WINDOW_MIN_AGE = 60 * 60 * 24 * 31;	// minimum age for coin age: 31d, as soon as we're done flexing
+static const int FLEX_AGE_WINDOW_MAX_AGE = 60 * 60 * 24 * 50;	// stake age of full weight: 50d, as soon as we're done flexing
 
 static const unsigned int MAX_BLOCK_SIZE = 1000000;
 static const unsigned int MAX_BLOCK_SIZE_GEN = MAX_BLOCK_SIZE/2;
@@ -53,6 +57,8 @@ static const unsigned int LOCKTIME_THRESHOLD = 500000000; // Tue Nov  5 00:53:20
 
 static const uint256 hashGenesisBlockOfficial("0x000008afad76737c1bea3f04ccee15c2c6c8b99d6e787646e2f132fa40501230");
 static const uint256 hashGenesisBlockTestNet ("0x000008afad76737c1bea3f04ccee15c2c6c8b99d6e787646e2f132fa40501230");
+
+static const int64 nMaxClockDrift = 2 * 60 * 60; // two hours
 
 inline int64 PastDrift(int64 nTime)   { return nTime - 2 * 60 * 60; } // up to 2 hours from the past
 inline int64 FutureDrift(int64 nTime) { return nTime + 2 * 60 * 60; } // up to 2 hours from the future
@@ -109,6 +115,7 @@ void UnregisterWallet(CWallet* pwalletIn);
 void SyncWithWallets(const CTransaction& tx, const CBlock* pblock = NULL, bool fUpdate = false, bool fConnect = true);
 bool ProcessBlock(CNode* pfrom, CBlock* pblock);
 bool ProcessBlockFast(CNode* pfrom, CBlock* pblock);
+void AdjustSlidingWindow(int nHeight, bool bForce = false);
 bool CheckDiskSpace(uint64 nAdditionalBytes=0);
 FILE* OpenBlockFile(unsigned int nFile, unsigned int nBlockPos, const char* pszMode="rb");
 FILE* AppendBlockFile(unsigned int& nFileRet);

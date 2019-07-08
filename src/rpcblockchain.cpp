@@ -65,6 +65,9 @@ double GetPoSKernelPS()
         pindex = pindex->pprev;
     }
 
+    if( !nStakesHandled )
+        return 0;
+
     return dStakeKernelsTriedAvg / nStakesTime;
 }
 

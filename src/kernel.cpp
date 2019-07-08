@@ -308,7 +308,7 @@ bool CheckStakeKernelHash(unsigned int nBits, const CBlock& blockFrom, unsigned 
 
     if (!GetKernelStakeModifier(hashBlockFrom, nStakeModifier, nStakeModifierHeight, nStakeModifierTime, fPrintProofOfStake))
 	{
-		// printf(">>> CheckStakeKernelHash: GetKernelStakeModifier return false\n");
+        // printf(">>> CheckStakeKernelHash: GetKernelStakeModifier return false\n");
         return false;
 	}
     ss << nStakeModifier;
@@ -330,12 +330,12 @@ bool CheckStakeKernelHash(unsigned int nBits, const CBlock& blockFrom, unsigned 
     }
 
     // Now check if proof-of-stake hash meets target protocol
-	
+
     if (CBigNum(hashProofOfStake) > bnCoinDayWeight * bnTargetPerCoinDay)
-	{
-		// printf(">>> bnCoinDayWeight = %s, bnTargetPerCoinDay=%s\n", 
-		//	bnCoinDayWeight.ToString().c_str(), bnTargetPerCoinDay.ToString().c_str()); 
-		// printf(">>> CheckStakeKernelHash - hashProofOfStake too much\n");
+    {
+        // printf(">>> bnCoinDayWeight = %s, bnTargetPerCoinDay=%s\n",
+        //	bnCoinDayWeight.ToString().c_str(), bnTargetPerCoinDay.ToString().c_str());
+        // printf(">>> CheckStakeKernelHash - hashProofOfStake too much\n");
         return false;
 	}
 

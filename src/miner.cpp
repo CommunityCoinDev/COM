@@ -573,18 +573,16 @@ void StakeMiner(CWallet *pwallet)
 
     bool fTryToSync = true;
 
-    while (true)
+     while (true)
     {
         if (fShutdown)
             return;
-
         while (pwallet->IsLocked())
         {
             MilliSleep(1000);
             if (fShutdown)
                 return;
         }
-
         strMintWarning = "";
 
         while (vNodes.empty() || IsInitialBlockDownload())
@@ -594,7 +592,6 @@ void StakeMiner(CWallet *pwallet)
             if (fShutdown)
                 return;
         }
-
         if (fTryToSync)
         {
             fTryToSync = false;
@@ -604,7 +601,6 @@ void StakeMiner(CWallet *pwallet)
                 continue;
             }
         }
-
         //
         // Create new block
         //
@@ -614,8 +610,8 @@ void StakeMiner(CWallet *pwallet)
         if (!pblock.get())
             return;
         IncrementExtraNonce(pblock.get(), pindexPrev, nExtraNonce);
-
         // Trying to sign a block
+        
         if (pblock->SignPoSBlock(*pwallet))
         {
             SetThreadPriority(THREAD_PRIORITY_NORMAL);
