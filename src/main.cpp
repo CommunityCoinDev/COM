@@ -51,7 +51,7 @@ const unsigned int nBlocksPerYear = 365 * 24 * 60 * 60 / nStakeTargetSpacingNEW;
 
 int64 nChainStartTime = 1557833976;
 int nCoinbaseMaturity = 30;
-int nCoinbaseMaturityMultipiler = 130;
+int nCoinbaseMaturityMultipiler = 10;
 CBlockIndex* pindexGenesisBlock = NULL;
 int nBestHeight = -1;
 CBigNum bnBestChainTrust = 0;
