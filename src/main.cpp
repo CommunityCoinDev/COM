@@ -2279,26 +2279,28 @@ bool ProcessBlockFast(CNode* pfrom, CBlock* pblock)
 	if (pblock->IsProofOfStake())
 	{
 		uint256 hashProofOfStake = 0, targetProofOfStake = 0;
-		// it can happen upon restart that our sliding window isn't calculated. so we reset the sliding window params to the last height and retry it. this can only happen once
-        printf("INFO: ProcessBlock(): recalculating sliding-window for block %s\n", hash.ToString().c_str());
-
-        if( !mapBlockIndex.count(pblock->hashPrevBlock) )
-        {
-            printf("WARNING: ProcessBlock(): recalculating sliding-window failed due to missing previous block in %s\n", hash.ToString().c_str());
-            return false;
-        }
-
-        // recalc sliding window
-        AdjustSlidingWindow(mapBlockIndex[pblock->hashPrevBlock]->nHeight, true);
-
         if (!CheckProofOfStake(pblock->vtx[1], pblock->nBits, hashProofOfStake, targetProofOfStake))
         {
-            printf("WARNING: ProcessBlock(): check proof-of-stake failed for block %s\n", hash.ToString().c_str());
-            return false; // do not error here as we expect this during initial block download
-        }
-        else
-            printf("INFO: Sliding Window correction was successfull!\n");
+            // it can happen upon restart that our sliding window isn't calculated. so we reset the sliding window params to the last height and retry it. this can only happen once
+            printf("INFO: ProcessBlock(): recalculating sliding-window for block %s\n", hash.ToString().c_str());
 
+            if( !mapBlockIndex.count(pblock->hashPrevBlock) )
+            {
+                printf("WARNING: ProcessBlock(): recalculating sliding-window failed due to missing previous block in %s\n", hash.ToString().c_str());
+                return false;
+            }
+
+            // recalc sliding window
+            AdjustSlidingWindow(mapBlockIndex[pblock->hashPrevBlock]->nHeight, true);
+
+            if (!CheckProofOfStake(pblock->vtx[1], pblock->nBits, hashProofOfStake, targetProofOfStake))
+            {
+                printf("WARNING: ProcessBlock(): check proof-of-stake failed for block %s\n", hash.ToString().c_str());
+                return false; // do not error here as we expect this during initial block download
+            }
+            else
+                printf("INFO: Sliding Window correction was successfull!\n");
+        }
 		if (!mapProofOfStake.count(hash)) // add to mapProofOfStake
 			mapProofOfStake.insert(make_pair(hash, hashProofOfStake));
 	}
