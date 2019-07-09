@@ -27,7 +27,7 @@ class CNode;
 
 static const int LAST_POW_BLOCK = 1000; // disable POW after 1000 initial blocks
 static const int FLEX_AGE_WINDOW = 500000; // 500.000 blocks sliding window for coin age maturity to ensure proper startup phase
-static const int FLEX_AGE_WINDOW_INTERVAL = 10; // every 100 blocks we change the coinage values
+static const int FLEX_AGE_WINDOW_INTERVAL = 100; // every 100 blocks we change the coinage values
 static const int FLEX_AGE_WINDOW_MIN_AGE = 60 * 60 * 24 * 31;	// minimum age for coin age: 31d, as soon as we're done flexing
 static const int FLEX_AGE_WINDOW_MAX_AGE = 60 * 60 * 24 * 50;	// stake age of full weight: 50d, as soon as we're done flexing
 
