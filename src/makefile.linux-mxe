@@ -1,0 +1,126 @@
+# Copyright (c) 2009-2010 Satoshi Nakamoto
+# Distributed under the MIT/X11 software license, see the accompanying
+# file COPYING or http://www.opensource.org/licenses/mit-license.php.
+
+MXE_PATH=/opt/mxe
+MXE_BIN=$(MXE_PATH)/usr/bin
+MXE_INCLUDE_PATH=$(MXE_PATH)/usr/x86_64-w64-mingw32.static/include
+MXE_LIB_PATH=$(MXE_PATH)/usr/x86_64-w64-mingw32.static/lib
+
+USE_UPNP:=0
+USE_LEVELDB:=1
+
+CC            = $(MXE_BIN)/x86_64-w64-mingw32.static-gcc
+CXX           = $(MXE_BIN)/x86_64-w64-mingw32.static-g++
+AR            = $(MXE_BIN)/x86_64-w64-mingw32.static-ar
+RANLIB        = $(MXE_BIN)/x86_64-w64-mingw32.static-ranlib
+DEFINES       = -DUNICODE -D_UNICODE -DWIN32 -DUSE_PTHREADS -DBOOST_THREAD_USE_LIB -DBOOST_SPIRIT_THREADSAFE -DBOOST_THREAD_PROVIDES_GENERIC_SHARED_MUTEX_ON_WIN -D__NO_SYSTEM_INCLUDES -DSTATICLIB -DWIN32 -DWIN32_LEAN_AND_MEAN -D_MT -DBOOST_THREAD_PROVIDES_GENERIC_SHARED_MUTEX_ON_WIN -D_WINDOWS -DUSE_PTHREADS
+INCPATH       = -I"$(CURDIR)" -I"$(CURDIR)"/obj $(MXE_INCLUDE) -Iinclude -Ihelpers -isystem $(MXE_INCLUDE)/boost -isystem $(MXE_INCLUDE)/openssl 
+CFLAGS        = -O2 -msse2 -w -Wall -Wextra -Wformat -Wformat-security -Wno-unused-parameter $(DEFINES) $(INCPATH)
+LFLAGS        = -Wl,--dynamicbase -Wl,--nxcompat -static -static-libgcc -static-libstdc++
+LIBS          = -L$(MXE_LIB_PATH) -ldb_cxx -lmswsock -lboost_system-mt -lboost_filesystem-mt -lboost_program_options-mt -lboost_thread_win32-mt -lboost_chrono-mt -lpthread -lssl -lcrypto -lz
+
+TESTDEFINES = -DTEST_DATA_DIR=$(abspath test/data)
+
+ifndef USE_UPNP
+	override USE_UPNP = -
+endif
+ifneq (${USE_UPNP}, -)
+	LIBS += -L"$(MXE_LIB_PATH)/miniupnpc"
+	LIBS += -l miniupnpc -l iphlpapi
+	DEFINES += -DSTATICLIB -DUSE_UPNP=$(USE_UPNP) -DMINIUPNP_STATICLIB
+endif
+
+LIBS += -l mingwthrd -l kernel32 -l user32 -l gdi32 -l comdlg32 -l winspool -l winmm -l shell32 -l comctl32 -l ole32 -l oleaut32 -l uuid -l rpcrt4 -l advapi32 -l ws2_32 -l mswsock
+
+# TODO: make the mingw builds smarter about dependencies, like the linux/osx builds are
+HEADERS = $(wildcard *.h)
+
+OBJS= \
+    obj/alert.o \
+    obj/version.o \
+    obj/checkpoints.o \
+    obj/netbase.o \
+    obj/addrman.o \
+    obj/crypter.o \
+    obj/key.o \
+    obj/db.o \
+    obj/init.o \
+    obj/irc.o \
+    obj/keystore.o \
+    obj/main.o \
+    obj/miner.o \
+    obj/net.o \
+    obj/protocol.o \
+    obj/bitcoinrpc.o \
+    obj/rpcdump.o \
+    obj/rpcnet.o \
+    obj/rpcmining.o \
+    obj/rpcwallet.o \
+    obj/rpcblockchain.o \
+    obj/rpcrawtransaction.o \
+    obj/script.o \
+    obj/sync.o \
+    obj/util.o \
+    obj/wallet.o \
+    obj/walletdb.o \
+    obj/noui.o \
+    obj/kernel.o \
+    obj/pbkdf2.o \
+    obj/scrypt_mine.o \
+    obj/scrypt-x86.o \
+    obj/scrypt-x86_64.o
+
+all: comd.exe
+
+#
+# LevelDB support
+#
+ifeq (${USE_LEVELDB}, 1)
+LIBS += $(CURDIR)/leveldb/libleveldb.a $(CURDIR)/leveldb/libmemenv.a
+DEFINES += -I"$(CURDIR)/leveldb/include" -DUSE_LEVELDB
+DEFINES += -I"$(CURDIR)/leveldb/helpers"
+DEFINES += -I"$(CURDIR)/leveldb/helpers/memenv"
+OBJS += obj/txdb-leveldb.o
+leveldb/libleveldb.a:
+	@echo "Building LevelDB ..."; cd leveldb; CC=$(CC) CXX=$(CXX) AR=$(AR) TARGET_OS=OS_WINDOWS_CROSSCOMPILE make libleveldb.a libmemenv.a -lshlwapi && $(RANLIB) libleveldb.a && $(RANLIB) libmemenv.a && cd ..
+obj/txdb-leveldb.o: leveldb/libleveldb.a
+else
+OBJS += obj/txdb-bdb.o
+endif
+
+LIBS += -lshlwapi
+
+obj/build.h: FORCE
+	/bin/sh ../share/genbuild.sh obj/build.h
+version.cpp: obj/build.h
+DEFINES += -DHAVE_BUILD_INFO
+
+obj/%.o: %.cpp $(HEADERS)
+	$(CXX) -c $(CFLAGS) -o $@ $<
+
+comd.exe: $(OBJS:obj/%=obj/%)
+	$(CXX) $(CFLAGS) $(LFLAGS) -o $@ $^ $(LIBS)
+
+TESTOBJS := $(patsubst test/%.cpp,obj-test/%.o,$(wildcard test/*.cpp))
+
+obj-test/%.o: test/%.cpp $(HEADERS)
+	$(CXX) -c $(TESTDEFINES) $(CFLAGS) -o $@ $<
+
+test_comd.exe: $(TESTOBJS) $(filter-out obj/init.o,$(OBJS:obj/%=obj/%))
+	$(CXX) $(CFLAGS) $(LFLAGS) -o $@ $(LIBS) $^ -lboost_unit_test_framework-mt-s $(LIBS)
+
+obj/scrypt-x86.o: scrypt-x86.S
+	$(CXX) -c $(CFLAGS) -MMD -o $@ $<
+
+obj/scrypt-x86_64.o: scrypt-x86_64.S
+	$(CXX) -c $(CFLAGS) -MMD -o $@ $<
+
+clean:
+	-rm -f obj/*.o
+	-rm -f comd.exe
+	-rm -f obj-test/*.o
+	-rm -f test_comd.exe
+	-rm -f obj/build.h
+	cd leveldb; make clean; cd ..
+FORCE:

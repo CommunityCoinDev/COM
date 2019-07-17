@@ -11,6 +11,9 @@
 #include <string>
 #include <vector>
 
+#ifdef USE_PTHREADS
+	#include <pthread.h>
+#endif
 #include <db_cxx.h>
 
 class CAddress;
