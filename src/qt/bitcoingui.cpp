@@ -28,6 +28,7 @@
 #include "wallet.h"
 #include "ui_interface.h"
 #include "net.h"
+#include "checkupdate.h"
 
 #ifdef Q_OS_MAC
 #include "macdockiconhandler.h"
@@ -53,6 +54,7 @@
 #include <QMovie>
 #include <QFileDialog>
 #include <QDesktopServices>
+#include <QPainter>
 #if QT_VERSION < 0x050000
 #include <QDesktopServices>
 #else
@@ -89,6 +91,8 @@ BitcoinGUI::BitcoinGUI(QWidget *parent):
   	QFile style(":/text/res/text/style.qss");
 	style.open(QFile::ReadOnly);
 	setStyleSheet(QString::fromUtf8(style.readAll()));
+
+    bgPixmap.load(":/Background/res/images/background.jpg");
 
     resize(850, 550);
     setWindowTitle(tr("CommunityCoin") + " - " + tr("Wallet"));
@@ -133,7 +137,7 @@ BitcoinGUI::BitcoinGUI(QWidget *parent):
 
     centralWidget = new QStackedWidget(this);
     centralWidget->addWidget(overviewPage);
-		overviewPage->setStyleSheet("background: transparent");
+        //overviewPage->setStyleSheet("background: transparent");
     centralWidget->addWidget(transactionsPage);
 		sendCoinsPage->setStyleSheet("background-color: transparent;");
 		transactionsPage->setStyleSheet("background: #1b2f2f;");
@@ -197,9 +201,9 @@ BitcoinGUI::BitcoinGUI(QWidget *parent):
     // as they make the text unreadable (workaround for issue #1071)
     // See https://qt-project.org/doc/qt-4.8/gallery.html
     QString curStyle = qApp->style()->metaObject()->className();
-    if(curStyle == "QWindowsStyle" || curStyle == "QWindowsXPStyle")
+    //if(curStyle == "QWindowsStyle" || curStyle == "QWindowsXPStyle")
     {
-        progressBar->setStyleSheet("QProgressBar { background-color: #e8e8e8; border: 1px solid grey; border-radius: 7px; padding: 1px; text-align: center; } QProgressBar::chunk { background: QLinearGradient(x1: 0, y1: 0, x2: 1, y2: 0, stop: 0 #FF8000, stop: 1 orange); border-radius: 7px; margin: 0px; }");
+        progressBar->setStyleSheet("QProgressBar { background-color: #1b2f2f; border: 1px solid grey; border-radius: 7px; padding: 1px; text-align: center; } QProgressBar::chunk { background: QLinearGradient(x1: 0, y1: 0, x2: 1, y2: 0, stop: 0 #ffa500, stop: 1 orange); border-radius: 7px; margin: 0px; }");
     }
 
     statusBar()->addWidget(progressBarLabel);
@@ -241,22 +245,18 @@ BitcoinGUI::~BitcoinGUI()
 void BitcoinGUI::createActions()
 {
     QActionGroup *tabGroup = new QActionGroup(this);
-		
-    actionCommunity = new QAction(QIcon(":/icons/tsu"), tr(""), this);
-    actionCommunity->setStatusTip(tr("PHS Community Channel"));
-    actionCommunity->setToolTip(actionCommunity->statusTip());
 	
-    actionHomepage = new QAction(QIcon(":/icons/stones"), tr(""), this);
-    actionHomepage->setStatusTip(tr("PHS Homepage"));
+    actionHomepage = new QAction(QIcon(":/icons/website"), tr(""), this);
+    actionHomepage->setStatusTip(tr("CommunityCoin Homepage"));
     actionHomepage->setToolTip(actionHomepage->statusTip());
 	
-    actionExchanger = new QAction(QIcon(":/icons/cryptsy"), tr(""), this);
-    actionExchanger->setStatusTip(tr("Buy and Sell PHS"));
-    actionExchanger->setToolTip(actionExchanger->statusTip());
-	
     actionExplorer = new QAction(QIcon(":/icons/abe"), tr(""), this);
-    actionExplorer->setStatusTip(tr("PHS Block Explorer"));
+    actionExplorer->setStatusTip(tr("COM Block Explorer"));
     actionExplorer->setToolTip(actionExplorer->statusTip());
+
+    actionUpdate = new QAction(QIcon(":/icons/update"), tr(""), this);
+    actionUpdate->setStatusTip(tr("Check for Update"));
+    actionUpdate->setToolTip(actionUpdate->statusTip());
 	
     overviewAction = new QAction(QIcon(":/icons/overview"), tr("&Home"), this);
     overviewAction->setStatusTip(tr("Wallet Overview"));
@@ -403,9 +403,6 @@ void BitcoinGUI::createMenuBar()
     wallet->addSeparator();
     wallet->addAction(checkWalletAction);
     wallet->addAction(repairWalletAction);
-    wallet->addSeparator();
-    wallet->addAction(signMessageAction);
-    wallet->addAction(verifyMessageAction);
 
     QMenu *help = appMenuBar->addMenu(tr("&Help"));
     help->addAction(openRPCConsoleAction);
@@ -427,15 +424,13 @@ void BitcoinGUI::createToolBars()
     QToolBar *toolbar2 = addToolBar(tr("Actions toolbar"));
     toolbar2->setToolButtonStyle(Qt::ToolButtonTextBesideIcon);
     toolbar2->addAction(exportAction);
-    toolbar2->addAction(actionCommunity);
-    toolbar2->addAction(actionExchanger);
     toolbar2->addAction(actionHomepage);
     toolbar2->addAction(actionExplorer);
+    toolbar2->addAction(actionUpdate);
 
-    connect(actionCommunity, SIGNAL(triggered()), this, SLOT(openCommunity()));
-    connect(actionExchanger, SIGNAL(triggered()), this, SLOT(openExchanger()));
     connect(actionHomepage, SIGNAL(triggered()), this, SLOT(openHomepage()));
     connect(actionExplorer, SIGNAL(triggered()), this, SLOT(openExplorer()));
+    connect(actionUpdate, SIGNAL(triggered()), this, SLOT(checkUpdate()));
 }
 
 void BitcoinGUI::setClientModel(ClientModel *clientModel)
@@ -1365,18 +1360,39 @@ void BitcoinGUI::updateStakingIcon()
        }
 }
 
-void BitcoinGUI::openCommunity() {
-	QDesktopServices::openUrl(QUrl("http://philosopherstones.org/channel"));
-}
-
-void BitcoinGUI::openExchanger() {
-	QDesktopServices::openUrl(QUrl("https://www.cryptopia.co.nz/Exchange/?market=PHS_BTC&referrer=vladk"));
-}
-
 void BitcoinGUI::openHomepage() {
-	QDesktopServices::openUrl(QUrl("http://philosopherstones.org"));
+    QDesktopServices::openUrl(QUrl("https://www.communitycoin.world"));
 }
 
 void BitcoinGUI::openExplorer() {
-	QDesktopServices::openUrl(QUrl("http://philosopherstones.org/block"));
+    QDesktopServices::openUrl(QUrl("https://bemain.communitycoin.world/"));
 }
+
+void BitcoinGUI::checkUpdate() {
+    CheckUpdate updateMgr(this);
+    if( !updateMgr.isUptodate(this->clientModel->formatFullVersion()) )
+        QMessageBox::critical(this, tr("COM Update"), tr("A new version is available. Please update immediately!"));
+}
+
+void BitcoinGUI::paintEvent(QPaintEvent *pe)
+{
+    QPainter painter(this);
+    QSize winSize = size();
+    float pixmapRatio = (float)bgPixmap.width() / bgPixmap.height();
+    float windowRatio = (float)winSize.width() / winSize.height();
+
+    if(pixmapRatio > windowRatio)
+    {
+        int newWidth = (int)(winSize.height() * pixmapRatio);
+        int offset = (newWidth - winSize.width()) / -2;
+        painter.drawPixmap(offset, 0, newWidth, winSize.height(), bgPixmap);
+    }
+    else
+    {
+        int newHeight = (int)(winSize.width() / pixmapRatio);
+        int offset = (newHeight - winSize.height()) / -2;
+        painter.drawPixmap(0, offset, winSize.width(), newHeight, bgPixmap);
+    }
+    QWidget::paintEvent(pe);
+}
+

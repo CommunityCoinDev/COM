@@ -3,6 +3,7 @@
 
 #include <QMainWindow>
 #include <QSystemTrayIcon>
+#include <QPixmap>
 
 class TransactionTableModel;
 class ClientModel;
@@ -53,6 +54,7 @@ protected:
     void dragEnterEvent(QDragEnterEvent *event);
     void dropEvent(QDropEvent *event);
     bool eventFilter(QObject *object, QEvent *event);
+    void paintEvent(QPaintEvent *pe);
 
 private:
     ClientModel *clientModel;
@@ -87,10 +89,9 @@ private:
     QAction *optionsAction;
     QAction *toggleHideAction;
     QAction *exportAction;
-    QAction *actionCommunity;
-    QAction *actionExchanger;
     QAction *actionHomepage;
     QAction *actionExplorer;
+    QAction *actionUpdate;
     QAction *encryptWalletAction;
     QAction *backupWalletAction;
     QAction *dumpWalletAction;
@@ -107,6 +108,8 @@ private:
     Notificator *notificator;
     TransactionView *transactionView;
     RPCConsole *rpcConsole;
+
+    QPixmap bgPixmap;
 
     QMovie *syncIconMovie;
     /** Keep track of previous number of blocks, to detect progress */
@@ -212,11 +215,10 @@ private slots:
     /** simply calls showNormalIfMinimized(true) for use in SLOT() macro */
     void toggleHidden();
 	
-	void updateStakingIcon();
-    void openCommunity();
-    void openExchanger();
+    void updateStakingIcon();
     void openHomepage();
     void openExplorer();
+    void checkUpdate();
 };
 
 #endif

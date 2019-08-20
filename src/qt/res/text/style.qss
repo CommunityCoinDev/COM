@@ -2,8 +2,12 @@
 QMenu { background-color: #121f1f ; color: #FFFFFF; }
 QMenu::separator { background: #FFFFFF; height: 1px; } 
 QMenu::item:selected { background-color: #ffffff; color: #000000 ; }
- 
-QMenuBar { color: #000000; background: #000000 ;}
+
+QMessageBox { background-color: #121f1f ; color: #FFFFFF; }
+QDialog { background-color: #121f1f ; color: #FFFFFF; }
+#payAmount { background-color: #121f1f ; color: #FFFFFF; }
+
+QMenuBar { color: #000000; background: #121f1f ;}
 QMenuBar {background-color: #121f1f ; color: #FFFFFF; }
 QMenuBar::item { background-color: #121f1f ; color: #FFFFFF; }
 QMenuBar::item:selected { background-color: #FFFFFF; color: #000000; }
@@ -12,11 +16,12 @@ QToolTip { color: #ffffff; background-color: #000000; border: none; }
 
 QCheckBox { color: white;}
 
-QFrame#frame, QFrame#frame_2, QFrame#frame_3 { background-color: #1b2f2f; border-style: plain; border-width: 15px; border-radius: 15px; border-color: transparent ; min-width: 10em; padding: 6px;}
+QFrame#frame, QFrame#frame_2, QFrame#frame_3, QFrame#diffplotframe { background: rgba(32,65,67,220); border-style: plain; border-width: 15px; border-radius: 15px; border-color: transparent ; min-width: 10em; padding: 6px;}
+#diffplot { background: transparent; }
 
 QLabel[openExternalLinks=true],QLabel[openExternalLinks=false], QHeaderView, QCheckBox { color: #ffffff; background-color: #1b2f2f; background: transparent;}
 
-QPushButton, QToolButton { border: 2px solid transparent; border-radius: 12px; background-color: transparent; color: #ffffff; padding: 2px; margin: 2px;}
+QPushButton, QToolButton { border: 2px solid transparent; border-radius: 12px; background-color: transparent; color: #ffffff; padding: 2px; margin: 2px; fill: red;}
 QPushButton:pressed, QToolButton:checked { border-color: #ffa500; background-color: #000000; color: #ffa500;}
 QPushButton:hover, QToolButton:hover{ border-color: #ffffff; color: #ffa500; background-color: #000000;}
 QPushButton:pressed, QToolButton:pressed { border-color: #ffa500; color: #ffffff;}
@@ -25,17 +30,17 @@ scrollAreaWidgetContents QToolButton { border-radius: 8px; border-width: 0px;}
 
 QStatusBar {background: #1b2f2f;}
 
-QToolBar { background: #1b2f2f; border: 0px solid black; padding: 3px;}
+QToolBar { background: transparent; border: 0px solid black; padding: 3px;}
 
 scrollAreaWidgetContents { background: transparent;}
 scrollAreaWidgetContents > QFrame { background-color: transparent; border-width: 0px; border-style: none;}
 
-QLineEdit,QLineEdit:disabled{border: 1px solid orange;color: white;}
+QLineEdit,QLineEdit:disabled{border: 1px solid orange;color: white; background-color: #121f1f ; }
 
 QTableView { color: #ffffff; border-style: none; selection-background-color: #ffffff; alternate-background-color: #121f1f; selection-color: #000000 ; border: 0px solid black;}
 
 QHeaderView { color: #ffffff; background-color: #000000; background-image: none;}
-QHeaderView::section { color: #fffffff; background-color: #121f1f;}
+QHeaderView::section { color: #ffffff; background-color: #121f1f;}
 QHeaderView::section:checked { background-color: #121f1f ;}
 
 QTabWidget:focus, QCheckBox:focus, QRadioButton:focus{    border: none;	background-color: #1b2f2f;	background: #1b2f2f;}
@@ -50,12 +55,10 @@ QTabBar::tab:first:selected { margin-left: 0;}
 QTabBar::tab:last:selected { margin-right: 0;}
 QTabBar::tab:only-one { margin: 0;}
 
-QTextEdit,QTextEdit:disabled {	padding: 0px; background-color: #1b2f2f; background: #1b2f2f; background-image:none;}
+QTextEdit,QTextEdit:disabled {	padding: 0px; background-color: #121f1f; background: #121f1f; background-image:none;}
 
 QComboBox QAbstractItemView { color: #ffffff; selection-background-color: #ffffff; selection-color: #000000;};
 
 
 color: #ffffff;
 font: 75 bold 10pt;
-background: #1b2f2f;
-background-image: url(:/Background/res/images/11.png);

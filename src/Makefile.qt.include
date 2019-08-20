@@ -206,7 +206,6 @@ RES_ICONS = \
   qt/res/icons/receive.png \
   qt/res/icons/editpaste.png \
   qt/res/icons/editcopy.png \
-  qt/res/icons/add.png \
   qt/res/icons/bitcoin_testnet.png \
   qt/res/icons/toolbar_testnet.png \
   qt/res/icons/edit.png \

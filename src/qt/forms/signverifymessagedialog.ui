@@ -20,7 +20,7 @@
    <item>
     <widget class="QTabWidget" name="tabWidget">
      <property name="currentIndex">
-      <number>1</number>
+      <number>0</number>
      </property>
      <widget class="QWidget" name="tabSignMessage">
       <attribute name="title">
@@ -46,11 +46,11 @@
           <number>0</number>
          </property>
          <item>
-          <widget class="QValidatedLineEdit" name="addressIn_SM">
+          <widget class="QValidatedLineEdit" name="addressIn_SM" native="true">
            <property name="toolTip">
             <string>The address to sign the message with (e.g. 4Zo1ga6xuKuQ7JV7M9rGDoxdbYwV5zgQJ5)</string>
            </property>
-           <property name="maxLength">
+           <property name="maxLength" stdset="0">
             <number>34</number>
            </property>
           </widget>
@@ -249,11 +249,11 @@
           <number>0</number>
          </property>
          <item>
-          <widget class="QValidatedLineEdit" name="addressIn_VM">
+          <widget class="QValidatedLineEdit" name="addressIn_VM" native="true">
            <property name="toolTip">
             <string>The address the message was signed with (e.g. 4Zo1ga6xuKuQ7JV7M9rGDoxdbYwV5zgQJ5)</string>
            </property>
-           <property name="maxLength">
+           <property name="maxLength" stdset="0">
             <number>34</number>
            </property>
           </widget>
@@ -284,7 +284,7 @@
         <widget class="QPlainTextEdit" name="messageIn_VM"/>
        </item>
        <item>
-        <widget class="QValidatedLineEdit" name="signatureIn_VM"/>
+        <widget class="QValidatedLineEdit" name="signatureIn_VM" native="true"/>
        </item>
        <item>
         <layout class="QHBoxLayout" name="horizontalLayout_2_VM">
@@ -375,7 +375,7 @@
  <customwidgets>
   <customwidget>
    <class>QValidatedLineEdit</class>
-   <extends>QLineEdit</extends>
+   <extends>QWidget</extends>
    <header>qvalidatedlineedit.h</header>
   </customwidget>
  </customwidgets>

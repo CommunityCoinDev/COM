@@ -38,7 +38,7 @@ SendCoinsDialog::SendCoinsDialog(QWidget *parent) :
 #if QT_VERSION >= 0x040700
     /* Do not move this to the XML file, Qt before 4.7 will choke on it */
     ui->editTxComment->setPlaceholderText(tr("Enter a transaction comment (Note: This information is public)"));
-    ui->lineEditCoinControlChange->setPlaceholderText(tr("Enter a PHS address (e.g. 9fy8YX65LbUCeakWvXmNYrisrnK96ZGwtf)"));
+    ui->lineEditCoinControlChange->setPlaceholderText(tr("Enter a COM address (e.g. 9fy8YX65LbUCeakWvXmNYrisrnK96ZGwtf)"));
 #endif
 
     addEntry();

@@ -1,8 +1,8 @@
 TEMPLATE = app
 TARGET = communitycoin-qt
 VERSION = 1.0.0
-QT += core gui network
-INCLUDEPATH += src src/json src/qt
+QT += core gui network widgets svg
+INCLUDEPATH += build src src/json src/qt
 DEFINES += QT_GUI BOOST_THREAD_USE_LIB BOOST_SPIRIT_THREADSAFE BOOST_THREAD_PROVIDES_GENERIC_SHARED_MUTEX_ON_WIN __NO_SYSTEM_INCLUDES
 CONFIG += no_include_pwd
 CONFIG += thread
@@ -90,7 +90,8 @@ contains(BITCOIN_NEED_QT_PLUGINS, 1) {
 
 INCLUDEPATH += src/leveldb/include src/leveldb/helpers
 LIBS += $$PWD/src/leveldb/libleveldb.a $$PWD/src/leveldb/libmemenv.a
-SOURCES += src/txdb-leveldb.cpp
+SOURCES += src/txdb-leveldb.cpp \
+    src/qt/checkupdate.cpp
 !win32 {
     # we use QMAKE_CXXFLAGS_RELEASE even without RELEASE=1 because we use RELEASE to indicate linking preferences not -O preferences
     genleveldb.commands = cd $$PWD/src/leveldb && CC=$$QMAKE_CC CXX=$$QMAKE_CXX $(MAKE) OPT=\"$$QMAKE_CXXFLAGS $$QMAKE_CXXFLAGS_RELEASE\" libleveldb.a libmemenv.a
@@ -213,7 +214,8 @@ HEADERS += \
     src/util.h \
     src/version.h \
     src/wallet.h \
-    src/walletdb.h 
+    src/walletdb.h \ 
+    src/qt/checkupdate.h
 
 SOURCES += \
     src/addrman.cpp \
