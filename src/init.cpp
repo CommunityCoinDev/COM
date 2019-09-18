@@ -888,6 +888,10 @@ bool AppInit2()
         }
     }
 
+    // recalculate nStakeMinAge for sliding window algorithm
+    AdjustSlidingWindow(nBestHeight, true);
+    printf("Adjusted sliding window algorithm to %u\n", nStakeMinAge);
+
     // ********************************************************* Step 10: load peers
 
     uiInterface.InitMessage(_("Loading addresses..."));
