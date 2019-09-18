@@ -2473,24 +2473,26 @@ bool ProcessBlock(CNode* pfrom, CBlock* pblock)
 
 void AdjustSlidingWindow(int nHeight, bool bForce)
 {
+    // upon force find last correction frame
+    if( bForce )
+        nHeight = nHeight - (nHeight % FLEX_AGE_WINDOW_INTERVAL);
+
     // recalculate sliding window for flexible coin stake ages
-    if( bForce || ((nHeight < FLEX_AGE_WINDOW) && (( nHeight % FLEX_AGE_WINDOW_INTERVAL) == 0)) )
+    if( (nHeight < FLEX_AGE_WINDOW) && (( nHeight % FLEX_AGE_WINDOW_INTERVAL) == 0) )
     {
-        if( nHeight >= FLEX_AGE_WINDOW )
-        {
-            nStakeMinAge = nStakeMinAge2 = FLEX_AGE_WINDOW_MIN_AGE;
-            nStakeMaxAge = FLEX_AGE_WINDOW_MAX_AGE;
-        }
-        else
-        {
-            nStakeMinAge = nStakeMinAge2 = (unsigned int)(((float)nHeight / (float)FLEX_AGE_WINDOW) * FLEX_AGE_WINDOW_MIN_AGE);
-            nStakeMaxAge = (unsigned int)(((float)nHeight / (float)FLEX_AGE_WINDOW) * FLEX_AGE_WINDOW_MAX_AGE);
-        }
+        nStakeMinAge = nStakeMinAge2 = (unsigned int)(((float)nHeight / (float)FLEX_AGE_WINDOW) * FLEX_AGE_WINDOW_MIN_AGE);
+        nStakeMaxAge = (unsigned int)(((float)nHeight / (float)FLEX_AGE_WINDOW) * FLEX_AGE_WINDOW_MAX_AGE);
+
         /*printf("=================================== CHANGED FLEX ===================================\n");
         printf("nStakeMinAge: %u\n", nStakeMinAge);
         printf("nStakeMinAge2: %u\n", nStakeMinAge2);
         printf("nStakeMaxAge: %u\n", nStakeMaxAge);
         printf("=================================== CHANGED FLEX ===================================\n");*/
+    }
+    else if( nHeight >= FLEX_AGE_WINDOW )
+    {
+        nStakeMinAge = nStakeMinAge2 = FLEX_AGE_WINDOW_MIN_AGE;
+        nStakeMaxAge = FLEX_AGE_WINDOW_MAX_AGE;
     }
 }
 
