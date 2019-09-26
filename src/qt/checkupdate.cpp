@@ -1,4 +1,5 @@
 #include "checkupdate.h"
+#include <QTextStream>
 
 CheckUpdate::CheckUpdate(QObject *parent) : QObject(parent)
 {
@@ -16,7 +17,10 @@ bool CheckUpdate::isUptodate(QString strCurrentVersion)
     connect(response, SIGNAL(finished()), &event, SLOT(quit()));
     event.exec();
 
-    QString content = response->readAll();
+    QString content = response->readAll().simplified();
+
+    QTextStream out(stdout);
+    out << "Checking for update. This version: " << strCurrentVersion << " - Server version " << content << endl;
 
     if( strCurrentVersion != content )
         return false;
