@@ -1372,6 +1372,8 @@ void BitcoinGUI::checkUpdate() {
     CheckUpdate updateMgr(this);
     if( !updateMgr.isUptodate(this->clientModel->formatFullVersion()) )
         QMessageBox::critical(this, tr("COM Update"), tr("A new version is available. Please update immediately!"));
+    else
+        QMessageBox::information(this, tr("COM Update"), tr("No update available. You are already up to date."));
 }
 
 void BitcoinGUI::paintEvent(QPaintEvent *pe)
