@@ -15,19 +15,20 @@ INCLUDEPATHS= \
  -I"$(CURDIR)" \
  -I"$(CURDIR)/obj" \
  -I"$(BREWDIR)/opt/berkeley-db@4/include" \
- -I"$(BREWDIR)/opt/openssl/include" \
+ -I"$(BREWDIR)/opt/openssl@1.0/include" \
  -I"$(BREWDIR)/opt/miniupnpc/include" \
- -I"$(BREWDIR)/opt/boost/include"
+ -I"$(BREWDIR)/opt/boost@1.55/include"
 
 LIBPATHS= \
  -L"$(DEPSDIR)/lib" \
  -L"$(BREWDIR)/opt/berkeley-db@4/lib" \
- -L"$(BREWDIR)/opt/openssl/lib" \
+ -L"$(BREWDIR)/opt/openssl@1.0/lib" \
  -L"$(BREWDIR)/opt/miniupnpc/lib" \
- -L"$(BREWDIR)/opt/boost/lib"
+ -L"$(BREWDIR)/opt/boost@1.55/lib"
 
 USE_UPNP:=1
 USE_IPV6:=1
+STATIC:=1
 
 LIBS= -dead_strip
 
@@ -36,16 +37,16 @@ TESTDEFS = -DTEST_DATA_DIR=$(abspath test/data)
 ifdef STATIC
 # Build STATIC if you are redistributing the bitcoind binary
 TESTLIBS += \
- $(DEPSDIR)/lib/libboost_unit_test_framework-mt.a
+ libboost_unit_test_framework-mt.a
 LIBS += \
- $(DEPSDIR)/lib/db48/libdb_cxx-4.8.a \
- $(DEPSDIR)/lib/libboost_system-mt.a \
- $(DEPSDIR)/lib/libboost_filesystem-mt.a \
- $(DEPSDIR)/lib/libboost_program_options-mt.a \
- $(DEPSDIR)/lib/libboost_thread-mt.a \
- $(DEPSDIR)/lib/libboost_chrono-mt.a \
- $(DEPSDIR)/lib/libssl.a \
- $(DEPSDIR)/lib/libcrypto.a \
+ -ldb_cxx-4.8 \
+ -lboost_system-mt \
+ -lboost_filesystem-mt \
+ -lboost_program_options-mt \
+ -lboost_thread-mt \
+ -lboost_chrono-mt \
+ -lssl \
+ -lcrypto \
  -lz
 else
 TESTLIBS += \
@@ -86,7 +87,6 @@ CFLAGS += -Wall -Wextra -Wformat -Wformat-security -Wno-unused-parameter \
 OBJS= \
     leveldb/libleveldb.a \
     obj/alert.o \
-    obj/bitcoind.o \
     obj/version.o \
     obj/checkpoints.o \
     obj/netbase.o \
@@ -95,18 +95,16 @@ OBJS= \
     obj/key.o \
     obj/db.o \
     obj/init.o \
+    obj/irc.o \
     obj/keystore.o \
     obj/main.o \
+    obj/miner.o \
     obj/net.o \
     obj/protocol.o \
-    obj/kernelrecord.o \
-    obj/rpcserver.o \
-    obj/rpcclient.o \
-    obj/rpcprotocol.o \
+    obj/bitcoinrpc.o \
     obj/rpcdump.o \
     obj/rpcnet.o \
     obj/rpcmining.o \
-    obj/rpcminting.o \
     obj/rpcwallet.o \
     obj/rpcblockchain.o \
     obj/rpcrawtransaction.o \
@@ -115,13 +113,13 @@ OBJS= \
     obj/util.o \
     obj/wallet.o \
     obj/walletdb.o \
-    obj/kernel.o \
-    obj/checkpointsync.o \
-    obj/hash.o \
-    obj/bloom.o \
     obj/noui.o \
-    obj/leveldbwrapper.o \
-    obj/txdb.o
+    obj/kernel.o \
+    obj/pbkdf2.o \
+    obj/scrypt_mine.o \
+    obj/scrypt-x86.o \
+    obj/scrypt-x86_64.o \
+    obj/txdb-leveldb.o
 
 ifndef USE_UPNP
 	override USE_UPNP = -
@@ -129,7 +127,7 @@ endif
 ifneq (${USE_UPNP}, -)
 	DEFS += -DUSE_UPNP=$(USE_UPNP)
 ifdef STATIC
-	LIBS += $(DEPSDIR)/lib/libminiupnpc.a
+	LIBS += -lminiupnpc
 else
 	LIBS += -lminiupnpc
 endif
@@ -139,7 +137,7 @@ ifneq (${USE_IPV6}, -)
 	DEFS += -DUSE_IPV6=$(USE_IPV6)
 endif
 
-all: peercoind
+all: comd
 
 test check: test_bitcoin FORCE
 	./test_bitcoin
@@ -163,6 +161,12 @@ obj/build.h: FORCE
 version.cpp: obj/build.h
 DEFS += -DHAVE_BUILD_INFO
 
+obj/scrypt-x86.o: scrypt-x86.S
+	$(CXX) -no-integrated-as -c $(xCXXFLAGS) -MMD -o $@ $<
+
+obj/scrypt-x86_64.o: scrypt-x86_64.S
+	$(CXX) -no-integrated-as -c $(xCXXFLAGS) -MMD -o $@ $<
+
 obj/%.o: %.cpp
 	$(CXX) -c $(CFLAGS) -MMD -MF $(@:%.o=%.d) -o $@ $<
 	@cp $(@:%.o=%.d) $(@:%.o=%.P); \
@@ -170,9 +174,8 @@ obj/%.o: %.cpp
 	      -e '/^$$/ d' -e 's/$$/ :/' < $(@:%.o=%.d) >> $(@:%.o=%.P); \
 	  rm -f $(@:%.o=%.d)
 
-peercoind: $(OBJS:obj/%=obj/%)
+comd: $(OBJS:obj/%=obj/%)
 	$(CXX) $(CFLAGS) -o $@ $(LIBPATHS) $^ $(LIBS)
-	@cp $@ ppcoind
 
 TESTOBJS := $(patsubst test/%.cpp,obj-test/%.o,$(wildcard test/*.cpp))
 
@@ -183,12 +186,11 @@ obj-test/%.o: test/%.cpp
 	      -e '/^$$/ d' -e 's/$$/ :/' < $(@:%.o=%.d) >> $(@:%.o=%.P); \
 	  rm -f $(@:%.o=%.d)
 
-test_peercoin: $(TESTOBJS) $(filter-out obj/init.o,$(OBJS:obj/%=obj/%))
+test_comd: $(TESTOBJS) $(filter-out obj/init.o,$(OBJS:obj/%=obj/%))
 	$(CXX) $(CFLAGS) -o $@ $(LIBPATHS) $^ $(LIBS) $(TESTLIBS)
 
 clean:
-	-rm -f peercoind test_peercoin
-	-rm -f ppcoind
+	-rm -f comd
 	-rm -f obj/*.o
 	-rm -f obj-test/*.o
 	-rm -f obj/*.P

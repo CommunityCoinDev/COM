@@ -9,6 +9,11 @@ CONFIG += thread
 CONFIG += static
 greaterThan(QT_MAJOR_VERSION, 4): QT += widgets
 
+#QT CC, CXX, LD overrides for mac
+macx:QMAKE_CC = /usr/bin/clang
+macx:QMAKE_CXX = /usr/bin/clang++
+macx:QMAKE_LINK = /usr/bin/clang++
+
 #BOOST_LIB_SUFFIX=-mgw71-mt-s-1_64
 #BOOST_INCLUDE_PATH=D:/deps/x64/boost_1_64_0
 #BOOST_LIB_PATH=D:/deps/x64/boost_1_64_0/stage/lib
@@ -27,8 +32,8 @@ UI_DIR = build
 
 # use: qmake "RELEASE=1"
 contains(RELEASE, 1) {
-    # Mac: compile for maximum compatibility (10.5, 32-bit)
-    macx:QMAKE_CXXFLAGS += -mmacosx-version-min=10.5 -arch x86_64 -isysroot /Developer/SDKs/MacOSX10.5.sdk
+    # Mac: compile for maximum compatibility (10.12, 64-bit)
+    macx:QMAKE_CXXFLAGS += -mmacosx-version-min=10.12 -arch x86_64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk
 
     !windows:!macx {
         # Linux: static link
@@ -47,6 +52,8 @@ QMAKE_LFLAGS *= -fstack-protector-all --param ssp-buffer-size=1
 win32:QMAKE_LFLAGS *= -Wl,--dynamicbase -Wl,--nxcompat
 # on Windows: enable GCC large address aware linker flag
 win32:QMAKE_LFLAGS *= -Wl,-static
+# on mac: tune min-version
+macx:QMAKE_CXXFLAGS += -mmacosx-version-min=10.12 -arch x86_64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk
 
 # use: qmake "USE_QRCODE=1"
 # libqrencode (http://fukuchi.org/works/qrencode/index.en.html) must be installed for support
@@ -66,6 +73,13 @@ contains(USE_UPNP, -) {
     message(Building with UPNP support)
     count(USE_UPNP, 0) {
         USE_UPNP=1
+    }
+
+    isEmpty(MINIUPNPC_INCLUDE_PATH) {
+       macx:MINIUPNPC_INCLUDE_PATH = /usr/local/opt/miniupnpc/include
+    }
+    isEmpty(MINIUPNPC_LIB_PATH) {
+       macx:MINIUPNPC_LIB_PATH = /usr/local/opt/miniupnpc/lib
     }
     DEFINES += USE_UPNP=$$USE_UPNP STATICLIB MINIUPNP_STATICLIB
     INCLUDEPATH += $$MINIUPNPC_INCLUDE_PATH
@@ -354,7 +368,7 @@ isEmpty(BOOST_THREAD_LIB_SUFFIX) {
 }
 
 isEmpty(BDB_LIB_PATH) {
-    macx:BDB_LIB_PATH = /opt/local/lib/db48
+    macx:BDB_LIB_PATH = /usr/local/opt/berkeley-db@4/lib
 }
 
 isEmpty(BDB_LIB_SUFFIX) {
@@ -362,16 +376,25 @@ isEmpty(BDB_LIB_SUFFIX) {
 }
 
 isEmpty(BDB_INCLUDE_PATH) {
-    macx:BDB_INCLUDE_PATH = /opt/local/include/db48
+    macx:BDB_INCLUDE_PATH = /usr/local/opt/berkeley-db@4/include
 }
 
 isEmpty(BOOST_LIB_PATH) {
-    macx:BOOST_LIB_PATH = /opt/local/lib
+    macx:BOOST_LIB_PATH = /usr/local/opt/boost@1.55/lib
 }
 
 isEmpty(BOOST_INCLUDE_PATH) {
-    macx:BOOST_INCLUDE_PATH = /opt/local/include
+    macx:BOOST_INCLUDE_PATH = /usr/local/opt/boost@1.55/include
 }
+
+isEmpty(OPENSSL_LIB_PATH) {
+    macx:OPENSSL_LIB_PATH = /usr/local/opt/openssl@1.0/lib
+}
+
+isEmpty(OPENSSL_INCLUDE_PATH) {
+    macx:OPENSSL_INCLUDE_PATH = /usr/local/opt/openssl@1.0/include
+}
+
 
 windows:DEFINES += WIN32 WIN32_LEAN_AND_MEAN
 windows:RC_FILE = src/qt/res/bitcoin-qt.rc
@@ -389,10 +412,10 @@ windows:!contains(MINGW_THREAD_BUGFIX, 0) {
 
 
 
-macx:HEADERS += src/qt/macdockiconhandler.h
-macx:OBJECTIVE_SOURCES += src/qt/macdockiconhandler.mm
+macx:HEADERS += src/qt/macdockiconhandler.h src/qt/macnotificationhandler.h
+macx:OBJECTIVE_SOURCES += src/qt/macdockiconhandler.mm src/qt/macnotificationhandler.mm
 macx:LIBS += -framework Foundation -framework ApplicationServices -framework AppKit
-macx:DEFINES += MAC_OSX MSG_NOSIGNAL=0
+macx:DEFINES += MAC_OSX MSG_NOSIGNAL=0 BOOST_NO_CXX11_SCOPED_ENUMS
 macx:ICON = src/qt/res/icons/communitycoin.icns
 macx:TARGET = "communitycoin-qt"
 macx:QMAKE_CFLAGS_THREAD += -pthread
