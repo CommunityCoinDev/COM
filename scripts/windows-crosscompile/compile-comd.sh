@@ -18,12 +18,13 @@ x86_64-w64-mingw32.static-qmake-qt5 \
         BDB_INCLUDE_PATH=$MXE_INCLUDE_PATH \
         BDB_LIB_PATH=$MXE_LIB_PATH \
 	USE_UPNP=0 \
+	USE_BUILD_INFO=1 \
         MINIUPNPC_INCLUDE_PATH=$MXE_INCLUDE_PATH \
         MINIUPNPC_LIB_PATH=$MXE_LIB_PATH \
 	DEFINES+="USE_PTHREADS USE_UPNP=0" \
         QMAKE_LRELEASE=$MXE_PATH/usr/x86_64-w64-mingw32.static/qt5/bin/lrelease ../../communitycoin-qt.pro
 
-rm -Rf ../../build
+rm -Rf ../../build/*
 cd ../../src/leveldb/
 make clean
 cd ../../scripts/windows-crosscompile/
