@@ -135,3 +135,4 @@ db4/
 #ignore in top level directory only
 /debian
 scripts/windows-crosscompile/communitycoin-qt_plugin_import.cpp
+scripts/automated_payout/config.inc.php
